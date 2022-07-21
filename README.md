@@ -1,6 +1,6 @@
 <h1 align="center">My Portfoliyo</h1>
 <h3 align="center">Here---> Links of Site Map,wire Frame & Mock Up</h3>
-![MacBook Pro 16_ - 1]
+<image align="center" src="assests\readme\MacBook Pro 16_ - 1.png">
 
  Site Map Link **https://www.gloomaps.com/jaxYeegQnq**
  
