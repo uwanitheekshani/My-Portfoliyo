@@ -1,7 +1,6 @@
 <h1 align="center">My Portfoliyo</h1>
 <h3 align="center">Here---> Links of Site Map,wire Frame & Mock Up</h3>
-<image align="center" src="assests\readme\MacBook Pro 16_ - 1.png">
-
+<image align="center" alt="Coding" src="https://dribbble.com/shots/13912339-Portfolio-gif/attachments/5521410?mode=media">
  Site Map Link **https://www.gloomaps.com/jaxYeegQnq**
  
  Wire Frame Link **https://wireframe.cc/m1Gdus**
