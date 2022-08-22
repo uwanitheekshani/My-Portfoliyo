@@ -7,17 +7,25 @@
     <meta content="width=device-width initial-scale=1" name="viewport">
     <!--    <link href="assets/img/fav.png" rel="icon">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assests/fonts/css/all.min.css" rel="stylesheet">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+
 
     <style>
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
         header {
             background: white;
             box-shadow: 0px -1px 8px 2px #1c1717e8;
-            position: relative;
-            height: 10vh;
-            width: 99.7vw;
+            position: fixed;
+            height: 73px;
+            width: 100%;
+            top: 0;
+            z-index: 2;
         }
 
         header > img {
@@ -25,14 +33,13 @@
             position: relative;
             top: 20px;
             left: 10px;
-            margin: auto;
+            /*margin: auto;*/
         }
 
         header > nav {
             position: absolute;
             right: 40px;
             top: 0;
-            margin: auto;
         }
 
         header>nav>ul>li{
@@ -40,73 +47,76 @@
             cursor: pointer;
             padding: 10px;
             color: rgba(46, 41, 41, 0.96);
-            margin: auto;
+            /*margin: auto;*/
         }
 
         main {
-            border: 2px solid black;
-            width: 99.5vw;
             position: relative;
-            margin: auto;
-            top: 0px;
+            margin-top: 73px;
         }
 
-        main>aside{
+        main>nav{
             position: absolute;
-            left: 0px;
-            height: 105vh;
-            width: 13vw;
+            width: 270px;
             background-color: rebeccapurple;
-            display: inline;
-            top: 0px;
+            top: 0;
+            bottom: 0;
 
         }
 
 
-        main>aside>nav>ul{
-            position: relative;
+        main>nav>ul>li{
             display: block;
             cursor: pointer;
-            padding-left: 0px;
-        }
-
-        main>aside>nav>ul>li{
+            padding-top: 40px;
+            list-style: none;
             color: white;
-            padding-top: 6px;
+            font-size: 19px;
         }
 
-        main>section{
-            position: absolute;
-            left: 185px;
-            height: 10vh;
-            width: 85vw;
-            top: 3px;
+        main > section {
+            margin-left: 270px;
+            padding: 10px;
         }
 
-
-
-        main>section>img{
+        main>section>section:first-child{
             position: relative;
-            display: inline-block;
-            top: 5px;
-            width: 27.2vw;
-            border: 1px solid black;
+            height: 300px;
+        }
+
+        main>section>section:first-child>div{
+            height:100% ;
+            width: calc(100% / 3);
+            position: absolute;
+            border: 1px solid rgba(0, 0, 0, 0.33);
+        }
+
+        main>section>section:first-child>div:first-child{
+            background: url("../../../assests/images/gif.gif");
+            left: 0;
+        }
+
+        main>section>section:first-child>div:nth-child(2){
+            background: url("../../../assests/images/gif.gif");
+            left: calc(100% / 3);
+        }
+
+        main>section>section:first-child>div:nth-child(3){
+            background: url("../../../assests/images/gif.gif");
+            right: 0;
         }
 
         footer{
             background: #808080;
-            position: relative;
-            height: 5vh;
-            width: 99.9vw;
-            bottom: 0px;
-            top: 102.5vh;
+            height: 60px;
         }
 
-        footer>h1{
-            position: relative;
-            color: white;
-            font-size: 18px;
+        footer>h4{
+            margin-top: 0;
+            color: #e5e5e5;
             text-align: center;
+            padding-top: 20px;
+            font-weight: lighter;
         }
 
 
@@ -128,7 +138,7 @@
     </nav>
 </header>
 <main>
-        <aside>
+
             <nav>
                 <ul>
                     <li>Home</li>
@@ -137,12 +147,33 @@
                     <li>About Us</li>
                 </ul>
             </nav>
-        </aside>
+
        <section>
 
-            <img src="../../../assests/images/gif.gif" alt="Gif" />
-            <img src="../../../assests/images/gif.gif" alt="Gif" />
-            <img src="../../../assests/images/gif.gif" alt="Gif" />
+           <section>
+               <div>
+
+               </div>
+
+               <div>
+
+               </div>
+
+               <div>
+
+               </div>
+           </section>
+
+           <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
             temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
@@ -153,28 +184,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
             temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
             mollitia odio reiciendis voluptatem.</p>
+           </section>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
-            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
-            mollitia odio reiciendis voluptatem.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
-            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
-            mollitia odio reiciendis voluptatem.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
-            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
-            mollitia odio reiciendis voluptatem.</p>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
-               temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
-               mollitia odio reiciendis voluptatem.</p>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
-               temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
-               mollitia odio reiciendis voluptatem.</p>
     </section>
 </main>
 <footer>
-    <h1>
+    <h4>
         Developed By IJSE
-    </h1>
+    </h4>
 </footer>
 
 </body>
