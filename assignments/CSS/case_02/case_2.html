@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic Web Layout</title>
-    <link href="assests/css/normalize.css" rel="stylesheet">
+    <link href="../../../assests/css/normalize.css" rel="stylesheet">
     <meta content="width=device-width initial-scale=1" name="viewport">
     <!--    <link href="assets/img/fav.png" rel="icon">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link href="assests/fonts/css/all.min.css" rel="stylesheet">
+    <link href="../../../assests/fonts/css/all.min.css" rel="stylesheet">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
 
 
@@ -16,6 +16,41 @@
 
         * {
             font-family: 'Poppins', sans-serif;
+        }
+        main ul > li:hover a {
+            color: #eee309;
+        }
+
+        main ul > li:hover i {
+            color: #ff9500;
+        }
+
+        header ul > li:hover a {
+            color: rgba(228, 12, 12, 0.89);
+        }
+
+        header ul > li:hover i {
+            color: #c21e1e;
+        }
+
+        header ul > li > i {
+            padding-right: 6px;
+        }
+
+        header ul > li > a {
+            color: rgba(46, 41, 41, 0.96);
+            text-decoration: none;
+        }
+
+        main ul > li > i {
+            padding-right: 15px;
+            font-size: 20px;
+            color: #ccffcd;
+        }
+
+        main ul > li > a {
+            color: #ccffcd;
+            text-decoration: none;
         }
 
         header {
@@ -130,10 +165,10 @@
 
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Contacts</li>
-            <li>About Us</li>
+            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
+            <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
         </ul>
     </nav>
 </header>
@@ -141,10 +176,10 @@
 
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>Contacts</li>
-                    <li>About Us</li>
+                    <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+                    <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
+                    <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
                 </ul>
             </nav>
 
