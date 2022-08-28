@@ -6,10 +6,54 @@
     <meta content="This is a demonstration for learning HTML" name="description">
     <meta content="width=device-width initial-scale=1 maximum-scale=1 minimum-scale=1 user-scalable=no" name="viewport">
     <meta content="green" name="theme-color">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="assests/fonts/css/all.min.css" rel="stylesheet">
     <style>
         body{
-            background-color: cornflowerblue;
+           margin: 0;
         }
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+       /* add header background colour*/
+        header>section>section:nth-child(1){
+            background:#30336b ;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            height: 73px;
+            z-index: 2;
+        }
+
+        /* add header name */
+        header>section>section:nth-child(1)>div{
+          font-family: lnika;
+          font-size: 30px;
+          -webkit-text-fill-color: #F3BF06;
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+        /*nav of header*/
+        header>section>section:nth-child(1)>nav{
+            position: absolute;
+            right: 40px;
+            top: 0;
+        }
+        /*header nav links*/
+        header>section>section:nth-child(1)>nav>ul>li{
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            font-family: 'Poppins', Inter;
+            font-size: 17px;
+            color: #ECECEC;
+        }
+
     </style>
 </head>
 <body>
