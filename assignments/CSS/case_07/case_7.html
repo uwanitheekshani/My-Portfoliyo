@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Web Layout</title>
+    <link href="../../../assests/css/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <!--    <link href="assets/img/fav.png" rel="icon">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="../../../assests/fonts/css/all.min.css" rel="stylesheet">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+
+
+    <style>
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        main ul > li:hover a {
+            color: #eee309;
+        }
+
+        main ul > li:hover i {
+            color: #ff9500;
+        }
+
+        header ul > li:hover a {
+            color: rgba(228, 12, 12, 0.89);
+        }
+
+        header ul > li:hover i {
+            color: #c21e1e;
+        }
+
+        header ul > li > i {
+            padding-right: 6px;
+        }
+
+        header ul > li > a {
+            color: rgba(46, 41, 41, 0.96);
+            text-decoration: none;
+        }
+
+        main ul > li > i {
+            padding-right: 15px;
+            font-size: 20px;
+            color: #ccffcd;
+        }
+
+        main ul > li > a {
+            color: #ccffcd;
+            text-decoration: none;
+        }
+
+        header {
+            background: white;
+            box-shadow: 0px -1px 8px 2px #1c1717e8;
+            position: fixed;
+            height: 73px;
+            width: 100%;
+            top: 0;
+            z-index: 2;
+        }
+
+        header > img {
+            width: 190px;
+            position: relative;
+            top: 20px;
+            left: 10px;
+            /*margin: auto;*/
+        }
+
+        header > nav {
+            position: absolute;
+            right: 40px;
+            top: 0;
+        }
+
+        header>nav>ul>li{
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            color: rgba(46, 41, 41, 0.96);
+            /*margin: auto;*/
+        }
+
+        main {
+            position: relative;
+            margin-top: 73px;
+        }
+
+        main>nav{
+            position: absolute;
+            width: 270px;
+            background-color: rebeccapurple;
+            top: 0;
+            bottom: 0;
+
+        }
+
+
+        main>nav>ul>li{
+            display: block;
+            cursor: pointer;
+            padding-top: 40px;
+            list-style: none;
+            color: white;
+            font-size: 19px;
+        }
+
+        main > section {
+            margin-left: 270px;
+            padding: 10px;
+        }
+
+        main>section>section:first-child{
+            position: relative;
+            height: 300px;
+        }
+
+        main>section>section:first-child>div{
+            height:100% ;
+            width: calc(100% / 3);
+            position: absolute;
+            border: 1px solid rgba(0, 0, 0, 0.33);
+        }
+
+        main>section>section:first-child>div:first-child{
+            background: url("../../../assests/images/gif.gif");
+            left: 0;
+        }
+
+        main>section>section:first-child>div:nth-child(2){
+            background: url("../../../assests/images/gif.gif");
+            left: calc(100% / 3);
+        }
+
+        main>section>section:first-child>div:nth-child(3){
+            background: url("../../../assests/images/gif.gif");
+            right: 0;
+        }
+
+        footer{
+            background: #808080;
+            height: 60px;
+        }
+
+        footer>h4{
+            margin-top: 0;
+            color: #e5e5e5;
+            text-align: center;
+            padding-top: 20px;
+            font-weight: lighter;
+        }
+
+        @media all and (max-width: 425px) {
+            header {
+                height: 100px;
+            }
+
+            header > img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            header > nav {
+                top: 49px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: max-content;
+            }
+
+            header > nav > ul > li {
+                padding: 0px 5px 0px 5px;
+                font-size: 15px;
+            }
+
+            header > nav > ul {
+                padding: 0;
+            }
+
+            header ul > li > i {
+                padding-right: 2px;
+            }
+
+            main > nav {
+                display: none;
+            }
+
+            main > section {
+                margin-left: 0px;
+            }
+
+            main > section > section:first-child {
+                height: 900px;
+                position: relative;
+            }
+
+            main > section > section:first-child > div {
+                height: 300px;
+                width: 100%;
+                position: relative;
+            }
+
+            main > section > section:first-child > div:nth-child(1) {
+                background: url("../../../assests/images/gif.gif");
+                background-position: center;
+                left: 0;
+            }
+
+            main > section > section:first-child > div:nth-child(2) {
+                background: url("../../../assests/images/gif.gif");
+                background-position: center;
+                left: 0;
+            }
+
+            main > section > section:first-child > div:nth-child(3) {
+                background: url("../../../assests/images/gif.gif");
+                background-position: center;
+                left: 0;
+            }
+        }
+
+        @media all and (max-width: 768px){
+            header > nav > ul > li {
+                font-size: 16px;
+            }
+
+            main > nav {
+                display: none;
+            }
+
+            main > section {
+                margin-left: 0px;
+            }
+
+        }
+
+        @media all and (max-width: 375px){
+            header > nav > ul > li {
+                font-size: 12px;
+            }
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+<header>
+    <img src="../../../assests/images/favicon.png" alt="Logo" />
+
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
+            <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+
+            <nav>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i><a href="https://ijse.lk" target="_blank">Home</a></li>
+                    <li><i class="fa-solid fa-earth-asia"></i><a href="#">Services</a></li>
+                    <li><i class="fa-solid fa-headphones-simple"></i><a href="#">Contact</a></li>
+                    <li><i class="fa-solid fa-address-card"></i><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+
+       <section>
+
+           <section>
+               <div>
+
+               </div>
+
+               <div>
+
+               </div>
+
+               <div>
+
+               </div>
+           </section>
+
+           <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio illo repellat
+            temporibus veniam? A corporis cupiditate esse inventore libero, pariatur qui. Aut cumque et, eveniet
+            mollitia odio reiciendis voluptatem.</p>
+           </section>
+
+    </section>
+</main>
+<footer>
+    <h4>
+        Developed By IJSE
+    </h4>
+</footer>
+
+</body>
+</html>
