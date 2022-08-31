@@ -9,44 +9,61 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=IBM Plex Mono' rel='stylesheet'>
     <link href="assests/fonts/css/all.min.css" rel="stylesheet">
+    <link href="assests/css/normalize.css" rel="stylesheet">
     <style>
-        body{
-           margin: 0;
+
+        /*::-webkit-scrollbar {*/
+        /*    scrollbar-width: none;*/
+        /*}*/
+
+        body {
+            margin: 0;
         }
+
 
         * {
             font-family: 'Poppins', sans-serif;
         }
 
-       /* add header background colour*/
-        header>section>section:nth-child(1){
+        header{
+            position: relative;
+            height:460px ;
+            width: 98.7vw;
+        }
+
+        /* add header background colour*/
+        header > section > section:nth-child(1) {
             /*background:#30336b ;*/
-            background:#1b1c30c9;
+            background: #3F3C42;
             position: fixed;
-            width: 100%;
+            width: 98.7vw;
             top: 0;
             height: 73px;
-            z-index: 2;
+            z-index: 5;
         }
 
         /* add header name */
-        header>section>section:nth-child(1)>div{
-          font-family: lnika;
-          font-size: 30px;
-          -webkit-text-fill-color: #F3BF06;
+        header > section > section:nth-child(1) > div {
+            font-family: lnika;
+            font-size: 30px;
+            -webkit-text-fill-color: #F3BF06;
             position: relative;
-            top: 20px;
+            top: 19px;
             left: 10px;
         }
+
         /*nav of header*/
-        header>section>section:nth-child(1)>nav{
+        header > section > section:nth-child(1) > nav {
             position: absolute;
-            right: 40px;
+            right: 20px;
             top: 0;
+
         }
+
         /*header nav links*/
-        header>section>section:nth-child(1)>nav>ul>li{
+        header > section > section:nth-child(1) > nav > ul > li {
             display: inline-block;
             cursor: pointer;
             padding: 10px;
@@ -55,54 +72,180 @@
             color: #ECECEC;
         }
 
+        main {
+            position: relative;
+            margin-top: 73px;
+        }
+
+        /* add main background image */
+        header > section > section:nth-child(2) {
+            position: absolute;
+            background: url("assests/images/woman with lap.jpg");
+            opacity: 0.9;
+            background-size: cover;
+            background-position: center;
+            height: 460px;
+            z-index: 3;
+            width: 98.7vw;
+            margin: auto;
+        }
+
+        /* add 2nd background image */
+        header > section > section:nth-child(2)>div:nth-child(1) {
+            position: relative;
+            background: url("assests/images/dark brown.jpg");
+            opacity: 0.8;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            background-size: cover;
+            background-position: center;
+            height: 460px;
+            width: 98.7vw;
+            margin: auto;
+        }
+
+
+        /* add my pic for header image */
+        header > section > section:nth-child(2) > section:nth-child(2) > div {
+            position: absolute;
+            width: 12vw;
+            height: 12vw;
+            border-radius: 50%;
+            border: 8px solid #C7A47B;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            background:url("assests/images/my image.png") no-repeat center;
+            background-size: 105% 105%;
+            z-index: 5;
+        }
+
+        /* add h1 in header */
+        header > section > section:nth-child(2) > section:nth-child(3) > h1 {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 298px;
+            font-family: 'Poppins', Inter;
+            z-index: 5;
+        }
+
+        /* add h2 in header */
+        header > section > section:nth-child(2) > section:nth-child(3) > h2 {
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 350px;
+            font-family: IBM Plex Mono;
+            z-index: 5;
+        }
+
+        /* add icons path */
+        header > section > section:nth-child(2) > section:nth-child(4) {
+            display: inline-block;
+            position: absolute;
+            right: 15px;
+            top: 410px;
+            z-index: 5;
+
+        }
+
+        /* add icons in header */
+        header > section > section:nth-child(2) > section:nth-child(4) > img {
+            /*position: absolute;*/
+            height: 40px;
+            width: 40px;
+            padding-right: 8px;
+        }
+
+        /* add scroll down bar path in header */
+        header > section > section:nth-child(2) > div:nth-child(5) {
+            position: absolute;
+            left: 20px;
+            top: 410px;
+            z-index: 5;
+        }
+
+        /* add h3 in header */
+        header > section > section:nth-child(2) > section:nth-child(5) > h3 {
+            /*position: absolute;*/
+            font-family:  'Poppins', Inter;
+        }
+
+        /*header>section>section:nth-child(2)>section>div>div{*/
+        /*    width: 175px;*/
+        /*    height: 175px;*/
+        /*    position: absolute;*/
+        /*    border-radius: 100%;*/
+        /*    right: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*    top: 0px;*/
+        /*    margin: auto;*/
+        /*}*/
+
     </style>
 </head>
 <body>
 <header>
     <section>
 
-    <section>
-        <div>Uwani</div>
-        <br>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Gallery</li>
-            <li>Education</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Services</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-    </section>
-
         <section>
-            <p style="text-align:center;"><img src="assests/images/my image.png" alt=""></p>
+            <div>Uwani</div>
+            <br>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Gallery</li>
+                    <li>Education</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         </section>
 
         <section>
-            <h1 align="center"><b><span style="color: yellow;font-size: 30px">Uwani Theekshani</span></b></h1>
-            <h2 align="center">Full-Stack Developer</h2>
-        </section>
+            <div></div>
+            <section>
+                <div>
+                    <!--            <div></div>-->
+                </div>
+                <!--            style="text-align:center;"><img src="assests/images/my image.png" alt=""-->
+            </section>
 
-        <section>
-            <img src="assests/images/icon-linkedin.png" alt="" usemap="#linkedinmap">
-            <img src="assests/images/icon-github.png" alt="" usemap="#githubmap">
-            <img src="assests/images/icon-facebook.png" alt="" usemap="#facebookmap">
 
-            <map name="linkedinmap">
-                <area shape="circle" target="_blank" href="https://www.linkedin.com/in/uwani-theekshani-43a00a244/" coords="0,0,50">
-            </map>
+            <section>
+                <h1 align="center"><b><span style="color: #F3BF06;font-size: 40px">Uwani Theekshani</span></b></h1>
+                <h2 align="center"><b><span style="color: #FFFFFF;font-size: 27px">Full-Stack Developer</span></b></h2>
+            </section>
 
-            <map name="githubmap">
-                <area shape="circle" target="_blank" href="https://github.com/uwanitheekshani" coords="0,0,50">
-            </map>
+            <section>
+                <img alt="" src="assests/images/icon-linkedin.png" usemap="#linkedinmap">
+                <img alt="" src="assests/images/icon-github.png" usemap="#githubmap">
+                <img alt="" src="assests/images/icon-facebook.png" usemap="#facebookmap">
 
-            <map name="facebookmap">
-                <area shape="circle" target="_blank" href="https://m.facebook.com/100068583085394/" coords="0,0,50">
-            </map>
+                <map name="linkedinmap">
+                    <area coords="0,0,50" href="https://www.linkedin.com/in/uwani-theekshani-43a00a244/" shape="circle"
+                          target="_blank">
+                </map>
+
+                <map name="githubmap">
+                    <area coords="0,0,50" href="https://github.com/uwanitheekshani" shape="circle" target="_blank">
+                </map>
+
+                <map name="facebookmap">
+                    <area coords="0,0,50" href="https://m.facebook.com/100068583085394/" shape="circle" target="_blank">
+                </map>
+
+            </section>
+
+            <div><h3 ><span style="color: #FFFFFF;font-size: 15px">- Scroll Down</span></h3></div>
 
         </section>
 
@@ -110,46 +253,46 @@
 </header>
 
 <main>
-<!--    About Me section-->
+    <!--    About Me section-->
     <section>
-    <aside>
-        <img src="assests/images/my image 2.png" alt="This is AboutPage Image">
-    </aside>
+        <aside>
+            <img alt="This is AboutPage Image" src="assests/images/my image 2.png">
+        </aside>
 
-    <section>
         <section>
-            <div>Discover</div>
-            <h2><b>About Me</b></h2>
-        </section>
-        <article>
-           <pre>
+            <section>
+                <div>Discover</div>
+                <h2><b>About Me</b></h2>
+            </section>
+            <article>
+           <p>
                My name is Uwani Theekshani. I'm first year undergraduate
                student in <abbr title="Institute of Software Engineering">IJSE</abbr>. I'm very passionate and dedicated to
                my work. I'm currently learning about software development ,
                web development and internet technologies. I have skill about
                web application design and software developing in java.
-           </pre>
-        </article>
-        <address>
-             <ul>
-                 <li><b>Name :</b> Uwani Theekshani</li>
-                 <li><b>Date Of Birth :</b> 22 April 2000</li>
-                 <li><b>Nationality :</b> Sri Lankan</li>
-                 <li><b>Address :</b> No.10/c,Kaluthara,Sri lanka</li>
-                 <li><b>Phone :</b> <a href="tel:+94715336845">(+94)-715336845</a></li>
-                 <li><b>E-Mail :</b> <a href="mailto:uwanitheekshani@gmail.com">uwanitheekshani@gmail.com</a></li>
-             </ul>
+           </p>
+            </article>
+            <address>
+                <ul>
+                    <li><b>Name :</b> Uwani Theekshani</li>
+                    <li><b>Date Of Birth :</b> 22 April 2000</li>
+                    <li><b>Nationality :</b> Sri Lankan</li>
+                    <li><b>Address :</b> No.10/c,Kaluthara,Sri lanka</li>
+                    <li><b>Phone :</b> <a href="tel:+94715336845">(+94)-715336845</a></li>
+                    <li><b>E-Mail :</b> <a href="mailto:uwanitheekshani@gmail.com">uwanitheekshani@gmail.com</a></li>
+                </ul>
 
-        </address>
-        <section>
-            <nav><a href="Download Cv" download="">DOWNLOAD CV</a></nav>
+            </address>
+            <section>
+                <nav><a download="" href="Download Cv">DOWNLOAD CV</a></nav>
+            </section>
+
         </section>
 
     </section>
 
-    </section>
-
-<!--       My Gallery Section-->
+    <!--       My Gallery Section-->
 
     <section>
         <section>
@@ -158,64 +301,64 @@
         </section>
 
         <section>
-            <pre>Feeling Happy</pre>
-            <img src="assests/images/my image 4.jpg" width="200px" height="200px" alt="This is Gallery Image">
-            <img src="assests/images/my image 5.jpeg" width="300px" height="300px" alt="This is Gallery Image">
-            <img src="assests/images/my image 3.jpeg" width="200px" height="200px" alt="This is gallery Image">
+            <p>Feeling Happy</p>
+            <img alt="This is Gallery Image" height="200px" src="assests/images/my image 4.jpg" width="200px">
+            <img alt="This is Gallery Image" height="300px" src="assests/images/my image 5.jpeg" width="300px">
+            <img alt="This is gallery Image" height="200px" src="assests/images/my image 3.jpeg" width="200px">
         </section>
 
         <section>
             <div>My Interests</div>
-            <img src="assests/images/music.png" width="100px" height="100px" alt="">
-            <img src="assests/images/dancing.png" width="100px" height="100px" alt="">
-            <img src="assests/images/movie.png" width="100px" height="100px" alt="">
-            <img src="assests/images/book.png" width="100px" height="100px" alt="">
+            <img alt="" height="100px" src="assests/images/music.png" width="100px">
+            <img alt="" height="100px" src="assests/images/dancing.png" width="100px">
+            <img alt="" height="100px" src="assests/images/movie.png" width="100px">
+            <img alt="" height="100px" src="assests/images/book.png" width="100px">
         </section>
 
     </section>
 
-<!--    Education Section-->
+    <!--    Education Section-->
     <section>
 
-    <section>
-        <h1><b>Education</b></h1>
-    </section>
+        <section>
+            <h1><b>Education</b></h1>
+        </section>
 
-    <section>
-                           <pre>
-                           <img src="assests/images/ijse.jpeg" width="50px" height="50px" alt="">
+        <section>
+                           <p>
+                           <img alt="" height="50px" src="assests/images/ijse.jpeg" width="50px">
                                        Higher Education
                                          2021-present
                             IJSE(Institute Of Software Engineering)
 
-    <img src="assests/images/bwe.jpeg" width="50px" height="50px" alt="">
+    <img alt="" height="50px" src="assests/images/bwe.jpeg" width="50px">
                 Deploma in English
                         2021
             BritishWay English Academy
 
-                           <img src="assests/images/scl.jpeg" width="50px" height="50px" alt="">
+                           <img alt="" height="50px" src="assests/images/scl.jpeg" width="50px">
                                        Faced Advanced Level(A/L)
                                              Exam-2019
                                              2018-2019
                                   G/Dharmashoka College Ambalangoda
 
-    <img src="assests/images/scl2.jpeg" width="50px" height="50px" alt="">
+    <img alt="" height="50px" src="assests/images/scl2.jpeg" width="50px">
                 Advanced Level(A/L)
                     2017-2018
             K/Kannangara Central College Mathugama
 
-                           <img src="assests/images/scl1.jpeg" width="50px" height="50px" alt="">
+                           <img alt="" height="50px" src="assests/images/scl1.jpeg" width="50px">
                                        Faced Ordinary Level(O/L) Exam-2016
                                                     2011-2016
                                             K/Velapura Maha Vidyalaya
 
-    <img src="assests/images/scl1.jpeg" width="50px" height="50px" alt="">
+    <img alt="" height="50px" src="assests/images/scl1.jpeg" width="50px">
                 Primary Education
                     2006-2010
             K/Velapura Maha Vidyalaya
-                           </pre>
-        
-    </section>
+                           </p>
+
+        </section>
 
     </section>
 
@@ -231,19 +374,25 @@
         </section>
 
         <section>
-            <pre>
-             <img src="assests/images/java.png" width="100px" height="100px" alt="">                     <img src="assests/images/javascript.png" width="100px" height="100px" alt="">
-             <img src="assests/images/mysql.png" width="100px" height="100px" alt="">                    <img src="assests/images/html.png" width="100px" height="100px" alt="">
-             <img src="assests/images/css.png" width="100px" height="100px" alt="">                      <img src="assests/images/hibernate.png" width="100px" height="100px" alt="">
-            </pre>
+            <p>
+             <img alt="" height="100px" src="assests/images/java.png" width="100px">                     <img
+                    alt="" height="100px" src="assests/images/javascript.png" width="100px">
+             <img alt="" height="100px" src="assests/images/mysql.png" width="100px">                    <img
+                    alt="" height="100px" src="assests/images/html.png" width="100px">
+             <img alt="" height="100px" src="assests/images/css.png" width="100px">                      <img
+                    alt="" height="100px" src="assests/images/hibernate.png" width="100px">
+            </p>
 
         </section>
 
         <section>
             <div>Tools</div>
             <br>
-            <pre><img src="assests/images/netbeans.png" width="100px" height="100px" alt=""> <img src="assests/images/intellig.png" width="100px" height="100px" alt=""> <img src="assests/images/vscode.png" width="100px" height="100px" alt=""> <img src="assests/images/senebuilder.png" width="100px" height="100px" alt="">
-            </pre>
+            <p><img alt="" height="100px" src="assests/images/netbeans.png" width="100px"> <img
+                    alt="" height="100px" src="assests/images/intellig.png" width="100px"> <img
+                    alt="" height="100px" src="assests/images/vscode.png" width="100px"> <img
+                    alt="" height="100px" src="assests/images/senebuilder.png" width="100px">
+            </p>
         </section>
 
     </section>
@@ -257,13 +406,13 @@
         </section>
 
         <section>
-          <nav>
-              <ul>
-                  <li>Standalone</li>
-                  <li>Web</li>
-                  <li>Mobile</li>
-              </ul>
-          </nav>
+            <nav>
+                <ul>
+                    <li>Standalone</li>
+                    <li>Web</li>
+                    <li>Mobile</li>
+                </ul>
+            </nav>
         </section>
 
         <section>
@@ -284,20 +433,20 @@
 
             <aside>
                 <div>UI/UX Design</div>
-                <div><img src="assests/images/uiux.png" width="100px" height="100px" alt=""></div>
-                <pre>
+                <div><img alt="" height="100px" src="assests/images/uiux.png" width="100px"></div>
+                <p>
                     Standalone applications design,
                     Mobile apps,Web sites Design.
                     Forcused on all aspects of a
                     products development, Including
                     design,branding and marketing.
-                </pre>
+                </p>
             </aside>
 
             <section>
                 <div>Software Development</div>
-                <div><img src="assests/images/software.png" width="100px" height="100px" alt=""></div>
-                <pre>
+                <div><img alt="" height="100px" src="assests/images/software.png" width="100px"></div>
+                <p>
                     The application Designer
                     gathers requirements from buisness from
                     buisness systems analysts
@@ -306,19 +455,19 @@
                     applications are using with
                     java, Mysql languages and
                     Hibernate framework.
-                </pre>
+                </p>
             </section>
 
             <aside>
                 <div>Web Development</div>
-                <div><img src="assests/images/web.png" width="100px" height="100px" alt=""></div>
-                <pre>
+                <div><img alt="" height="100px" src="assests/images/web.png" width="100px"></div>
+                <p>
                     Full Stack Development,
                     eCommerce Development,
                     Customized web app
                     development using with
                     JavaScript, CSS and HTML.
-                </pre>
+                </p>
             </aside>
 
         </section>
@@ -335,54 +484,54 @@
         <section>
 
             <aside>
-              <pre>
-                  <div><img src="assests/images/user.png" width="75px" height="75px" alt=""></div>
+              <p>
+                  <div><img alt="" height="75px" src="assests/images/user.png" width="75px"></div>
                   <b>Name</b>
                   K.A.D.Uwani Theekshani
                   <br>
-                  <div><img src="assests/images/location.png" width="75px" height="75px" alt=""></div>
+                  <div><img alt="" height="75px" src="assests/images/location.png" width="75px"></div>
                   <b>Address</b>
                   No.10/c,
                   Kaluthara,Sri Lanka
                   <br>
-                  <div><img src="assests/images/phone.png" width="75px" height="75px" alt=""></div>
+                  <div><img alt="" height="75px" src="assests/images/phone.png" width="75px"></div>
                   <b>Mobile No</b>
                   <a href="tel:+94715336845">(+94)-715336845</a>
                   <br>
-                  <div><img src="assests/images/email.png" width="75px" height="75px" alt=""></div>
+                  <div><img alt="" height="75px" src="assests/images/email.png" width="75px"></div>
                   <b>Email</b>
                   <a href="mailto:uwanitheekshani@gmail.com">uwanitheekshani@gmail.com</a>
-              </pre>
+              </p>
             </aside>
 
             <section>
                 <article>
-                    <pre>
+                    <p>
                         Thank you for viewing my portfoliyo.
 
                         I'm happy to answer any questions you have or provide you with an estimate.
                         Just send me a message in the form below with any questions you may have.
-                    </pre>
+                    </p>
                 </article>
 
                 <section>
                     <div><b><span style="color: yellow">Message Me</span></b></div>
                     <br>
-                 <form action="mail" method="post">
-                     <input type="text" name="name" placeholder="Your Name" size="50" required>
-                     <br>
-                     <br>
-                     <input type="text" name="email" placeholder="Email" size="50" required>
-                     <br>
-                     <br>
-                     <input type="text" name="subject" placeholder="Subject" size="50" required>
-                     <br>
-                     <br>
-                     <textarea name="msg" cols="50" rows="10" placeholder="Message"></textarea>
-                     <br>
-                     <br>
-                     <button>Submit</button>
-                 </form>
+                    <form action="mail" method="post">
+                        <input name="name" placeholder="Your Name" required size="50" type="text">
+                        <br>
+                        <br>
+                        <input name="email" placeholder="Email" required size="50" type="text">
+                        <br>
+                        <br>
+                        <input name="subject" placeholder="Subject" required size="50" type="text">
+                        <br>
+                        <br>
+                        <textarea cols="50" name="msg" placeholder="Message" rows="10"></textarea>
+                        <br>
+                        <br>
+                        <button>Submit</button>
+                    </form>
 
                 </section>
 
@@ -399,24 +548,25 @@
 <!--    footer-->
 <footer>
     <address>
-      <small>Developed By uwani | 2022 All Rights Reserved</small>
+        <small>Developed By uwani | 2022 All Rights Reserved</small>
     </address>
 
     <aside>
-        <img src="assests/images/icon-linkedin.png" alt="" usemap="#linkedinmap">
-        <img src="assests/images/icon-github.png" alt="" usemap="#githubmap">
-        <img src="assests/images/icon-facebook.png" alt="" usemap="#facebookmap">
+        <img alt="" src="assests/images/icon-linkedin.png" usemap="#linkedinmap">
+        <img alt="" src="assests/images/icon-github.png" usemap="#githubmap">
+        <img alt="" src="assests/images/icon-facebook.png" usemap="#facebookmap">
 
         <map name="linkedinmap">
-            <area shape="circle" target="_blank" href="https://www.linkedin.com/in/uwani-theekshani-43a00a244/" coords="0,0,50">
+            <area coords="0,0,50" href="https://www.linkedin.com/in/uwani-theekshani-43a00a244/" shape="circle"
+                  target="_blank">
         </map>
 
         <map name="githubmap">
-            <area shape="circle" target="_blank" href="https://github.com/uwanitheekshani" coords="0,0,50">
+            <area coords="0,0,50" href="https://github.com/uwanitheekshani" shape="circle" target="_blank">
         </map>
 
         <map name="facebookmap">
-            <area shape="circle" target="_blank" href="https://m.facebook.com/100068583085394/" coords="0,0,50">
+            <area coords="0,0,50" href="https://m.facebook.com/100068583085394/" shape="circle" target="_blank">
         </map>
     </aside>
 
