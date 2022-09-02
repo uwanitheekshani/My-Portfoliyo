@@ -54,14 +54,20 @@ header > section > section:nth-child(1) > nav > ul > li {
     cursor: pointer;
     padding: 10px;
     font-family: 'Poppins', Inter;
-    font-size: 17px;
+    font-size: 19px;
     color: #ECECEC;
 }
 
-main {
-    position: relative;
-    margin-top: 73px;
-}
+    header >section>section:nth-child(1)>nav>ul > li{
+        margin-left: 20px;
+    }
+
+
+
+/*main {*/
+/*    position: relative;*/
+/*    margin-top: 73px;*/
+/*}*/
 
 /* add main background image */
 header > section > section:nth-child(2) {
@@ -163,14 +169,3 @@ header > section > section:nth-child(2) > section:nth-child(5) > h3 {
 
 /*-----------------------------Start Main--------------------------------------*/
 
-/*main>section:nth-child(1){*/
-/*    position: relative;*/
-/*    background: url("../../assests/images/woman with lap.jpg");*/
-/*    opacity: 0.9;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    height: 460px;*/
-/*    z-index: 3;*/
-/*    width: 98.7vw;*/
-/*    margin: auto;*/
-/*}*/

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+}
+
+main {
+    position: relative;
+    /*margin-top: 460px;*/
+
+}
+
+main>section:nth-child(1){
+    position: relative;
+    background: url("../../assests/images/trnasback.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 0px;
+    left: 0;
+    height: 700px;
+    z-index: 3;
+    width: 98.7vw;
+    /*margin: auto;*/
+}
+
+main > section:nth-child(1)>div:nth-child(1){
+    position: absolute;
+    background: #283641;
+    opacity: 0.8;
+    z-index: 4;
+    height: 700px;
+    width: 98.7vw;
+    margin: auto;
+}
+
+main > section:nth-child(1) > aside:nth-child(2)>div{
+    position: absolute;
+    width: 300px;
+    height: 579px;
+    border: 3px solid #F3BF06;
+    left: 40px;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    background:url("../../assests/images/my image 2.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 5;
+}
+
+main>section:nth-child(1)>section:nth-child(3){
+    position: absolute;
+    left: 420px;
+    top: 200px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+}
+
+
+main>section:nth-child(1)>section:nth-child(3)>section:nth-child(1)>h3{
+    position: absolute;
+    font-size: 30px;
+    top: -200px;
+    color: #F3BF06;
+
+}
+
+main>section:nth-child(1)>section:nth-child(3)>section:nth-child(1)>h2{
+    position: absolute;
+    font-size: 35px;
+    top: -163px;
+    color: #FFFFFF;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>article:nth-child(2){
+    position: absolute;
+    left: 0;
+    top: -68px;
+    width: 922px;
+    height: 300px;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>article:nth-child(2)>p{
+    font-size: 20px;
+    width: 600px;
+    height: 450px;
+    right: 5vw;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3){
+    position: absolute;
+    left: 0;
+    top: 128px;
+    width: 850px;
+    height: 300px;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3){
+    display: block;
+    padding-top: 20px;
+    list-style: none;
+    color: white;
+    font-size: 19px;
+}
