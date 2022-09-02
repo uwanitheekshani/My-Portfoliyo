@@ -90,8 +90,8 @@ main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3){
     position: absolute;
     left: 0;
     top: 94px;
-    width: 850px;
-    height: 300px;
+    width: 700px;
+    height: 260px;
     border: 2px solid #F3BF06;
 }
 
@@ -100,7 +100,43 @@ main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h3{
     font-size: 19px;
     margin-left: 12px;
 }
+
 main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h3:nth-child(1){
     margin-top: 14px;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4{
+    color: #FFFFFF;
+    font-size: 19px;
+    margin-bottom: 0;
+}
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4:nth-child(2){
+    margin-top: -40px;
+    margin-left: 100px;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4:nth-child(4){
+    margin-top: -40px;
+    margin-left: 162px;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4:nth-child(6){
+    margin-top: -40px;
+    margin-left: 139px;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4:nth-child(8){
+    margin-top: -40px;
+    margin-left: 122px;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4:nth-child(10){
+    margin-top: -40px;
+    margin-left: 117px;
+}
+
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4:nth-child(12){
+    margin-top: -40px;
+    margin-left: 117px;
 }
 
