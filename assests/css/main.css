@@ -74,7 +74,7 @@ main>section:nth-child(1)>section:nth-child(3)>section:nth-child(1)>h2{
 main>section:nth-child(1)>section:nth-child(3)>article:nth-child(2){
     position: absolute;
     left: 0;
-    top: -68px;
+    top: -94px;
     width: 922px;
     height: 300px;
 }
@@ -89,15 +89,18 @@ main>section:nth-child(1)>section:nth-child(3)>article:nth-child(2)>p{
 main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3){
     position: absolute;
     left: 0;
-    top: 128px;
+    top: 94px;
     width: 850px;
     height: 300px;
+    border: 2px solid #F3BF06;
 }
 
-main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3){
-    display: block;
-    padding-top: 20px;
-    list-style: none;
-    color: white;
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h3{
+    color: #F3BF06;
     font-size: 19px;
+    margin-left: 12px;
 }
+main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h3:nth-child(1){
+    margin-top: 14px;
+}
+
