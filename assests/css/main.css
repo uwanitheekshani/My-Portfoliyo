@@ -258,6 +258,15 @@ main > section:nth-child(3)>section:nth-child(3)>div:nth-child(4){
     background-position: center;
 }
 
+main > section:nth-child(3)>section:nth-child(3)>div:nth-child(5){
+    position: absolute;
+    left: 755px;
+    top: 316px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #F3BF06;
+}
+
 main > section:nth-child(3)>div:nth-child(4){
     position: absolute;
     left: 86px;
