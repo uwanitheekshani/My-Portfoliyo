@@ -258,3 +258,45 @@ main > section:nth-child(3)>section:nth-child(3)>div:nth-child(4){
     background-position: center;
 }
 
+main > section:nth-child(3)>div:nth-child(4){
+    position: absolute;
+    left: 86px;
+    top: 507px;
+    font-size: 30px;
+    color: #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(3)>section:nth-child(5){
+    position: absolute;
+    top: 553px;
+    left: 85px;
+    height: 107px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    z-index: 6;
+}
+
+main > section:nth-child(3)>section:nth-child(5)>img{
+    width: 80px;
+    height: 100px;
+}
+
+main > section:nth-child(3)>section:nth-child(5)>img:nth-child(1){
+    order: 2;
+}
+
+main > section:nth-child(3)>section:nth-child(5)>img:nth-child(2){
+    order: 3;
+}
+
+main > section:nth-child(3)>section:nth-child(5)>img:nth-child(3){
+    order: 1;
+}
+
+main > section:nth-child(3)>section:nth-child(5)>img:nth-child(4){
+    order: 4;
+}
