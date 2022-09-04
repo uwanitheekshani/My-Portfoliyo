@@ -1,0 +1,72 @@
+/*--------------------Contact Me-------------------------*/
+
+main>section:nth-child(13){
+    position: relative;
+    background: url("../../assests/images/trnasback.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 1px;
+    left: 0;
+    height: 750px;
+    z-index: 3;
+    width: 98.7vw;
+}
+
+main > section:nth-child(13)>div:nth-child(1){
+    position: absolute;
+    background: #283641;
+    opacity: 0.8;
+    z-index: 4;
+    height: 750px;
+    width: 98.7vw;
+    margin: auto;
+}
+
+main > section:nth-child(13)>section:nth-child(2){
+    position: absolute;
+    left:41px;
+    top: 400px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+}
+
+main > section:nth-child(13)>section:nth-child(2)>h1{
+    position: absolute;
+    font-size: 35px;
+    top: -396px;
+    color: #FFFFFF;
+}
+
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
+    position: absolute;
+    left:41px;
+    top: 254px;
+    z-index: 5;
+}
+
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1)>div:nth-child(1){
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: url("../../assests/images/user.png");
+    background-size: cover;
+    background-position: center;
+}
+
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1)>h3:nth-child(2){
+    position: absolute;
+    margin-left: 107px;
+    margin-top: 10px;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1)>h3:nth-child(3){
+    position: absolute;
+    margin-left: 107px;
+    margin-top: 50px;
+    font-size: 17px;
+    width: 213px;
+    color: #FFFFFF;
+}
