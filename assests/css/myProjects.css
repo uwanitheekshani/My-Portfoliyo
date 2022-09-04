@@ -108,6 +108,71 @@ main > section:nth-child(9)>section:nth-child(4)>div:nth-child(1){
     top: 327px;
     width: 256px;
     height:181px;
+    background: url("../../assests/images/pro 1.png");
+    background-size: cover;
+    background-position: center;
     border: 1px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(4)>div:nth-child(2){
+    position: absolute;
+    left:260px;
+    top: 368px;
+    width: 256px;
+    height:181px;
+    background: url("../../assests/images/pro 2.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(4)>div:nth-child(3){
+    position: absolute;
+    left:493px;
+    top: 393px;
+    width: 256px;
+    height:181px;
+    background: url("../../assests/images/pro 3.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(4)>div:nth-child(4){
+    position: absolute;
+    left:737px;
+    top: 368px;
+    width: 256px;
+    height:181px;
+    background: url("../../assests/images/pro 4.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(4)>div:nth-child(5){
+    position: absolute;
+    left:933px;
+    top: 327px;
+    width: 256px;
+    height:181px;
+    background: url("../../assests/images/pro 5.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>div:nth-child(5){
+    position: absolute;
+    left: 1089px;
+    top: 654px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #F3BF06;
     z-index: 5;
 }
