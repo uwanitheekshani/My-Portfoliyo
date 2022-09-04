@@ -8,31 +8,47 @@
 
     <style>
         div{
-            width: 200px;
-            height: 90px;
+            width: 150px;
+            height: 75px;
             border: 2px solid black;
             background-color: black;
-            border-radius: 20px;
+            border-radius: 10px;
             animation-name: my-animation;
-            animation-duration: 10s;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
             /*animation-play-state: paused;*/
         }
 
         @keyframes my-animation {
             0%{
+                left: 0;
+                top: 0;
                 background: yellow;
             }
             25%{
+                left: 87vw;
+                top: 0;
+                transform: rotate(90deg);
                 background: blue;
             }
             50%{
+                left: 87vw;
+                top: 550px;
+                transform: rotate(180deg);
                 background: orangered;
             }
             75%{
+                left: 0;
+                top: 550px;
+                transform: rotate(270deg);
                 background: red;
             }
             100%{
+                left: 0;
+                top: 0;
+                transform: rotate(360deg);
                 background: deeppink;
             }
         }
