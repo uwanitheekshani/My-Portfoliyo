@@ -49,7 +49,7 @@ main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){
     position: absolute;
     left: 41px;
     top: 210px;
-    width: 343px;
+    width: 367px;
     height: 380px;
     z-index: 5;
     border: 3px solid #F3BF06;
@@ -57,7 +57,7 @@ main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){
 
 main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
     position: absolute;
-    left: 3px;
+    left: 2px;
     top: 1px;
     width: 125px;
     height: 100px;
@@ -68,7 +68,7 @@ main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
 
 main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(2){
     position: absolute;
-    left: 123px;
+    left: 132px;
     top: 32px;
     font-size: 23px;
     color: #FFFFFF;
@@ -82,31 +82,76 @@ main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>p:nth-child
     color: #FFFFFF;
 }
 
-/*main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){*/
+main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2){
+    position: absolute;
+    left: 492px;
+    top: 210px;
+    width: 367px;
+    height: 380px;
+    z-index: 5;
+    border: 3px solid #F3BF06;
+}
+
+main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
+    position: absolute;
+    left: -11px;
+    top: 1px;
+    width: 125px;
+    height: 100px;
+    background: url("../../assests/images/software.png");
+    background-size: cover;
+    background-position: center;
+}
+
+main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
+    position: absolute;
+    left: 93px;
+    top: 32px;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>p:nth-child(3){
+    position: absolute;
+    left: 13px;
+    top: 101px;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+/*main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2){*/
 /*    position: absolute;*/
-/*    left: 41px;*/
+/*    left: 492px;*/
 /*    top: 210px;*/
-/*    width: 355px;*/
+/*    width: 367px;*/
 /*    height: 380px;*/
 /*    z-index: 5;*/
 /*    border: 3px solid #F3BF06;*/
 /*}*/
 
-/*main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){*/
+/*main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){*/
 /*    position: absolute;*/
-/*    left: 3px;*/
+/*    left: -11px;*/
 /*    top: 1px;*/
 /*    width: 125px;*/
 /*    height: 100px;*/
-/*    background: url("../../assests/images/uiux.png");*/
+/*    background: url("../../assests/images/software.png");*/
 /*    background-size: cover;*/
 /*    background-position: center;*/
 /*}*/
 
-/*main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(2){*/
+/*main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2){*/
 /*    position: absolute;*/
-/*    left: 123px;*/
+/*    left: 93px;*/
 /*    top: 32px;*/
 /*    font-size: 23px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+/*main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>p:nth-child(3){*/
+/*    position: absolute;*/
+/*    left: 13px;*/
+/*    top: 101px;*/
+/*    font-size: 19px;*/
 /*    color: #FFFFFF;*/
 /*}*/
