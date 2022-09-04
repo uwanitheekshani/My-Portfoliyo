@@ -114,3 +114,41 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     width: 213px;
     color: #FFFFFF;
 }
+
+/*-------------------------------------------*/
+
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(3){
+    position: absolute;
+    left:41px;
+    top: 514px;
+    z-index: 5;
+}
+
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(3)>div:nth-child(1){
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: url("../../assests/images/phone.png");
+    background-size: cover;
+    background-position: center;
+}
+
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(3)>h3:nth-child(2){
+    position: absolute;
+    margin-left: 107px;
+    margin-top: 0px;
+    font-size: 23px;
+    width: 213px;
+    color: #FFFFFF;
+}
+
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(3)>h3:nth-child(3){
+    position: absolute;
+    margin-left: 107px;
+    margin-top: 43px;
+    font-size: 17px;
+    width: 213px;
+    color: #FFFFFF;
+}
+
+
