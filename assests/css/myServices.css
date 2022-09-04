@@ -157,3 +157,9 @@ main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>p:nth-child
     width:269px ;
     color: #FFFFFF;
 }
+
+main>hr:nth-child(12){
+    top: -18px;
+    box-shadow: 3px 2px 5px 1px #D0C4C4;
+    margin: 0;
+}
