@@ -176,3 +176,9 @@ main > section:nth-child(9)>div:nth-child(5){
     color: #F3BF06;
     z-index: 5;
 }
+
+main>hr:nth-child(10){
+    top: -18px;
+    box-shadow: 3px 2px 5px 1px #D0C4C4;
+    margin: 0;
+}
