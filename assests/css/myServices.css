@@ -1,0 +1,112 @@
+/*--------------------My Services-------------------------*/
+
+main>section:nth-child(11){
+    position: relative;
+    background: url("../../assests/images/trnasback.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 1px;
+    left: 0;
+    height: 700px;
+    z-index: 3;
+    width: 98.7vw;
+}
+
+main > section:nth-child(11)>div:nth-child(1){
+    position: absolute;
+    background: #283641;
+    opacity: 0.8;
+    z-index: 4;
+    height: 700px;
+    width: 98.7vw;
+    margin: auto;
+}
+
+main > section:nth-child(11)>section:nth-child(2){
+    position: absolute;
+    left:41px;
+    top: 400px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+}
+
+main > section:nth-child(11)>section:nth-child(2)>div{
+    position: absolute;
+    font-size: 25px;
+    top: -378px;
+    color: #F3BF06;
+}
+
+main > section:nth-child(11)>section:nth-child(2)>h1{
+    position: absolute;
+    font-size: 35px;
+    top: -362px;
+    color: #FFFFFF;
+}
+
+main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){
+    position: absolute;
+    left: 41px;
+    top: 210px;
+    width: 343px;
+    height: 380px;
+    z-index: 5;
+    border: 3px solid #F3BF06;
+}
+
+main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    width: 125px;
+    height: 100px;
+    background: url("../../assests/images/uiux.png");
+    background-size: cover;
+    background-position: center;
+}
+
+main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(2){
+    position: absolute;
+    left: 123px;
+    top: 32px;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>p:nth-child(3){
+    position: absolute;
+    left: 13px;
+    top: 101px;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+/*main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){*/
+/*    position: absolute;*/
+/*    left: 41px;*/
+/*    top: 210px;*/
+/*    width: 355px;*/
+/*    height: 380px;*/
+/*    z-index: 5;*/
+/*    border: 3px solid #F3BF06;*/
+/*}*/
+
+/*main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){*/
+/*    position: absolute;*/
+/*    left: 3px;*/
+/*    top: 1px;*/
+/*    width: 125px;*/
+/*    height: 100px;*/
+/*    background: url("../../assests/images/uiux.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+/*main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(2){*/
+/*    position: absolute;*/
+/*    left: 123px;*/
+/*    top: 32px;*/
+/*    font-size: 23px;*/
+/*    color: #FFFFFF;*/
+/*}*/
