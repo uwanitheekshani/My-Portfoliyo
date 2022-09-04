@@ -1,0 +1,113 @@
+/*--------------------My Projects-------------------------*/
+
+main>section:nth-child(9){
+    position: relative;
+    background: url("../../assests/images/trnasback.jpg");
+    background-size: cover;
+    background-position: center;
+    top: 1px;
+    left: 0;
+    height: 700px;
+    z-index: 3;
+    width: 98.7vw;
+}
+
+main > section:nth-child(9)>div:nth-child(1){
+    position: absolute;
+    background: #283641;
+    opacity: 0.8;
+    z-index: 4;
+    height: 700px;
+    width: 98.7vw;
+    margin: auto;
+}
+
+main > section:nth-child(9)>section:nth-child(2){
+    position: absolute;
+    left:41px;
+    top: 400px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(2)>h1{
+    position: absolute;
+    font-size: 35px;
+    top: -396px;
+    color: #FFFFFF;
+}
+
+main > section:nth-child(9)>section:nth-child(2)>div{
+    position: absolute;
+    font-size: 25px;
+    top: -290px;
+    color: #F3BF06;
+}
+
+main > section:nth-child(9)>section:nth-child(3)>div:nth-child(1){
+    position: absolute;
+    left:216px;
+    top: 175px;
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(3)>div:nth-child(1)>h3{
+    position: absolute;
+    font-size: 25px;
+    color: #FFFFFF;
+    left:73px;
+    top: -18px;
+}
+
+main > section:nth-child(9)>section:nth-child(3)>div:nth-child(2){
+    position: absolute;
+    left:530px;
+    top: 175px;
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(3)>div:nth-child(2)>h3{
+    position: absolute;
+    font-size: 25px;
+    color: #FFFFFF;
+    left:118px;
+    top: -18px;
+}
+
+main > section:nth-child(9)>section:nth-child(3)>div:nth-child(3){
+    position: absolute;
+    left:846px;
+    top: 175px;
+    width: 300px;
+    height: 45px;
+    border-radius: 10px;
+    border: 2px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(3)>div:nth-child(3)>h3{
+    position: absolute;
+    font-size: 25px;
+    color: #FFFFFF;
+    left:106px;
+    top: -18px;
+}
+
+main > section:nth-child(9)>section:nth-child(4)>div:nth-child(1){
+    position: absolute;
+    left:82px;
+    top: 327px;
+    width: 256px;
+    height:181px;
+    border: 1px solid #F3BF06;
+    z-index: 5;
+}
