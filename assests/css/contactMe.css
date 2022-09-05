@@ -156,35 +156,36 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
 main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(4){
     position: absolute;
     left:41px;
-    top: 514px;
+    top: 644px;
     z-index: 5;
 }
 
-main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(3)>div:nth-child(1){
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(4)>div:nth-child(1){
     position: absolute;
     width: 75px;
     height: 75px;
-    background: url("../../assests/images/phone.png");
+    background: url("../../assests/images/email.png");
     background-size: cover;
     background-position: center;
 }
 
-main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(3)>h3:nth-child(2){
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(4)>h3:nth-child(2){
     position: absolute;
     margin-left: 107px;
-    margin-top: 0px;
+    margin-top: 3px;
     font-size: 23px;
     width: 213px;
     color: #FFFFFF;
 }
 
-main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(3)>h3:nth-child(3){
+main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(4)>h3:nth-child(3){
     position: absolute;
     margin-left: 107px;
-    margin-top: 43px;
+    margin-top: 48px;
     font-size: 17px;
     width: 213px;
     color: #FFFFFF;
 }
+
 
 
