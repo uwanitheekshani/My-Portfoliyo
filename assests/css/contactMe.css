@@ -281,14 +281,14 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
 
 main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:nth-child(2)>form:nth-child(2)>button:nth-child(5){
     position: absolute;
-    left:285px;
+    left:247px;
     top: 357px;
     background-color: #283641;
     opacity: 0.8;
     font-size: 21px;
     border: 2px solid #F3BF06;
     color: #FFFFFF;
-    height: 50px;
+    height: 37px;
     width: 150px;
 }
 
