@@ -62,14 +62,6 @@ header > section > section:nth-child(1) > nav > ul > li {
         margin-left: 20px;
     }
 
-
-
-/*main {*/
-/*    position: relative;*/
-/*    margin-top: 73px;*/
-/*}*/
-
-/* add main background image */
 header > section > section:nth-child(2) {
     position: absolute;
     background: url("../../assests/images/woman with lap.jpg");
