@@ -9,47 +9,39 @@
     <style>
         div{
             width: 150px;
-            height: 75px;
+            height: 70px;
             border: 2px solid black;
             background-color: black;
-            border-radius: 10px;
+            border-radius: 15px;
             animation-name: my-animation;
-            animation-duration: 5s;
+            animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
-            position: relative;
-            /*animation-play-state: paused;*/
+
         }
 
         @keyframes my-animation {
             0%{
-                left: 0;
-                top: 0;
-                background: yellow;
+                transform: rotate(0deg);
+                background: #6f88e8;
+                margin: 0 0 0 0; /*top,right,bottom,left*/
             }
             25%{
-                left: 87vw;
-                top: 0;
-                transform: rotate(90deg);
+                transform: rotate(360deg);
                 background: blue;
+                margin:0 0 0 1200px;
             }
             50%{
-                left: 87vw;
-                top: 550px;
-                transform: rotate(180deg);
-                background: orangered;
+                background: #d2e011;
+                margin:500px 0 0 1200px;
             }
             75%{
-                left: 0;
-                top: 550px;
-                transform: rotate(270deg);
                 background: red;
+                margin:500px 0 0 0;
             }
             100%{
-                left: 0;
-                top: 0;
-                transform: rotate(360deg);
-                background: deeppink;
+                background: #088d12;
+                margin:0 0 0 0;
             }
         }
 
