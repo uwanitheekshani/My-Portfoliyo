@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
 /*--------------------Contact Me-------------------------*/
 main>section:nth-child(13){
     position: relative;
@@ -37,6 +37,18 @@ main > section:nth-child(13)>section:nth-child(2)>h1{
     font-size: 35px;
     top: -396px;
     color: #FFFFFF;
+}
+
+main > section:nth-child(13)>section:nth-child(2)>div:nth-child(2){
+    position: absolute;
+    background: url("../../assests/images/under.png");
+    background-size: cover;
+    background-position: center;
+    top: -325px;
+    left: 1px;
+    z-index: 6;
+    width: 69px;
+    height: 3px;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){

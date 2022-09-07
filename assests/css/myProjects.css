@@ -31,15 +31,27 @@ main > section:nth-child(9)>section:nth-child(2){
     z-index: 5;
 }
 
-main > section:nth-child(9)>section:nth-child(2)>h1{
+main > section:nth-child(9)>section:nth-child(2)>h1:nth-child(1){
     position: absolute;
     font-size: 35px;
     top: -396px;
     color: #FFFFFF;
     width: 478px;
 }
+main > section:nth-child(9)>section:nth-child(2)>section:nth-child(3){
+    position: absolute;
+    background: url("../../assests/images/under.png");
+    background-size: cover;
+    background-position: center;
+    top: -318px;
+    left: 1px;
+    z-index: 6;
+    width: 69px;
+    height: 3px;
+}
 
-main > section:nth-child(9)>section:nth-child(2)>div{
+
+main > section:nth-child(9)>section:nth-child(2)>div:nth-child(2){
     position: absolute;
     font-size: 25px;
     top: -290px;

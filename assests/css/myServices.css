@@ -45,6 +45,18 @@ main > section:nth-child(11)>section:nth-child(2)>h1{
     color: #FFFFFF;
 }
 
+main > section:nth-child(11)>section:nth-child(2)>div:nth-child(3){
+    position: absolute;
+    background: url("../../assests/images/under.png");
+    background-size: cover;
+    background-position: center;
+    top: -286px;
+    left: 1px;
+    z-index: 6;
+    width: 69px;
+    height: 3px;
+}
+
 main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){
     position: absolute;
     left: 41px;

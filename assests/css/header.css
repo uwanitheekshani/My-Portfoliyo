@@ -145,16 +145,29 @@ header > section > section:nth-child(2) > section:nth-child(4) > img {
     padding-right: 8px;
 }
 
-/* add scroll down bar path in header */
-header > section > section:nth-child(2) > div:nth-child(5) {
+header > section > section:nth-child(2) > div:nth-child(5){
     position: absolute;
-    left: 20px;
+    background: url("../../assests/images/scroll 1.png");
+    background-size: cover;
+    background-position: center;
+    top: 441px;
+    left: 28px;
+    z-index: 6;
+    width: 49px;
+    height: 1px;
+    /*margin: auto;*/
+}
+
+/* add scroll down bar path in header */
+header > section > section:nth-child(2) > div:nth-child(6) {
+    position: absolute;
+    left: 87px;
     top: 410px;
     z-index: 5;
 }
 
 /* add h3 in header */
-header > section > section:nth-child(2) > section:nth-child(5) > h3 {
+header > section > section:nth-child(2) > section:nth-child(6) > h3 {
     /*position: absolute;*/
     font-family:  'Poppins', Inter;
 }
