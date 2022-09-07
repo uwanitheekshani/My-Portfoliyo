@@ -7,7 +7,7 @@ main>section:nth-child(9){
     background-position: center;
     top: 1px;
     left: 0;
-    height: 700px;
+    height: 1000px;
     z-index: 3;
     width: 98.7vw;
 }
@@ -17,7 +17,7 @@ main > section:nth-child(9)>div:nth-child(1){
     background: #283641;
     opacity: 0.8;
     z-index: 4;
-    height: 700px;
+    height: 1000px;
     width: 98.7vw;
     margin: auto;
 }
@@ -36,6 +36,7 @@ main > section:nth-child(9)>section:nth-child(2)>h1{
     font-size: 35px;
     top: -396px;
     color: #FFFFFF;
+    width: 478px;
 }
 
 main > section:nth-child(9)>section:nth-child(2)>div{
@@ -170,10 +171,65 @@ main > section:nth-child(9)>section:nth-child(4)>div:nth-child(5){
 main > section:nth-child(9)>div:nth-child(5){
     position: absolute;
     left: 1089px;
-    top: 654px;
+    top: 577px;
     font-size: 20px;
     text-decoration: underline;
     color: #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(6){
+    position: absolute;
+    left:41px;
+    top: 700px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(6)>h1{
+    position: absolute;
+    font-size: 35px;
+    top: -86px;
+    color: #FFFFFF;
+}
+
+main > section:nth-child(9)>section:nth-child(7)>div:nth-child(1){
+    position: absolute;
+    left:82px;
+    top: 327px;
+    width: 256px;
+    height:181px;
+    background: url("../../assests/images/pro 1.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(7)>div:nth-child(2){
+    position: absolute;
+    left:260px;
+    top: 368px;
+    width: 256px;
+    height:181px;
+    background: url("../../assests/images/pro 2.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #F3BF06;
+    z-index: 5;
+}
+
+main > section:nth-child(9)>section:nth-child(7)>div:nth-child(3){
+    position: absolute;
+    left:493px;
+    top: 393px;
+    width: 256px;
+    height:181px;
+    background: url("../../assests/images/pro 3.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #F3BF06;
     z-index: 5;
 }
 
