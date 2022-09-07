@@ -197,10 +197,10 @@ main > section:nth-child(9)>section:nth-child(6)>h1{
 main > section:nth-child(9)>section:nth-child(7)>div:nth-child(1){
     position: absolute;
     left:82px;
-    top: 327px;
+    top: 729px;
     width: 256px;
     height:181px;
-    background: url("../../assests/images/pro 1.png");
+    background: url("../../assests/images/c1.png");
     background-size: cover;
     background-position: center;
     border: 1px solid #F3BF06;
@@ -209,11 +209,11 @@ main > section:nth-child(9)>section:nth-child(7)>div:nth-child(1){
 
 main > section:nth-child(9)>section:nth-child(7)>div:nth-child(2){
     position: absolute;
-    left:260px;
-    top: 368px;
+    left:401px;
+    top: 729px;
     width: 256px;
     height:181px;
-    background: url("../../assests/images/pro 2.png");
+    background: url("../../assests/images/c2.png");
     background-size: cover;
     background-position: center;
     border: 1px solid #F3BF06;
@@ -222,15 +222,29 @@ main > section:nth-child(9)>section:nth-child(7)>div:nth-child(2){
 
 main > section:nth-child(9)>section:nth-child(7)>div:nth-child(3){
     position: absolute;
-    left:493px;
-    top: 393px;
+    left:717px;
+    top: 729px;
     width: 256px;
     height:181px;
-    background: url("../../assests/images/pro 3.png");
+    background: url("../../assests/images/c3.png");
     background-size: cover;
     background-position: center;
     border: 1px solid #F3BF06;
     z-index: 5;
+}
+
+main > section:nth-child(9)>button:nth-child(8){
+    position: absolute;
+    left:488px;
+    top: 937px;
+    width: 117px;
+    height: 34px;
+    border-radius: 10px;
+    border: 2px solid #F3BF06;
+    background-color: #283641;
+    color: #F3BF06;
+    z-index: 5;
+
 }
 
 main>hr:nth-child(10){
