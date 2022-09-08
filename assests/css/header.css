@@ -178,12 +178,10 @@ header > section > section:nth-child(2) > section:nth-child(6) > h3 {
     @media all and (max-width: 320px){
         header{
             height:192px ;
-            /*width: 320px;*/
         }
 
         /* add header background colour*/
         header > section > section:nth-child(1) {
-            /*width: 320px;*/
             top: 0;
             height: 42px;
             /*z-index: 5;*/
