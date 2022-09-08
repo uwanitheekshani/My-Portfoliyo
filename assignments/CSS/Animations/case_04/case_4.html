@@ -6,84 +6,142 @@
     <meta content="width=device-width initial-scale=1" name="viewport">
     <link href="../../../../assests/css/normalize.css" rel="stylesheet">
     <style>
-        main {
-            width: 900px;
-            height: 480px;
-            /*box-shadow: 1px 3px 5px 1px #736060;*/
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            overflow: hidden;
-
-
-        }
-
-        main > section {
-            height: 100%;
-            width: 400%;
-            /*display: flex;*/
-            animation-name: car-animation;
-            animation-duration: 10s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: linear;
-
-        }
-
-        main > section > div {
-            height: 100%;
-            width: 100%;
-        }
 
         main>section>div:nth-child(1){
-            background: url("../../../../assests/images/p10.jpg");
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: url("../../../../assests/images/sky.jpg");
             background-size: cover;
             background-position: center;
+            /*background-repeat: no-repeat;*/
+            overflow: hidden;
         }
 
         main>section>div:nth-child(2){
-            background: url("../../../../assests/images/p6.jpg");
-            background-size: cover;
-            background-position: center;
+            position: absolute;
+            width: 500%;
+            height: 250px;
+            background: url("../../../../assests/images/city.png");
+            /*background-size: cover;*/
+            /*background-position: center;*/
+            display: block;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            bottom: 200px;
+            background-repeat:repeat-x;
+            /*top: 247px;*/
+            animation: city 5s linear infinite;
         }
 
         main>section>div:nth-child(3){
-            background: url("../../../../assests/images/p1.jpg");
-            background-size: cover;
-            background-position: center;
+            position: absolute;
+            width: 500%;
+            height: 200px;
+            display: block;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url("../../../../assests/images/road.jpg");
+            /*background-size: cover;*/
+            /*background-position: center;*/
+            z-index: 1;
+            background-repeat:repeat-x;
+            /*top: 482px;*/
+            /*animation-name: trackanimation;*/
+            animation: trackanimation 5s linear infinite;
         }
 
         main>section>div:nth-child(4){
-            background: url("../../../../assests/images/p11.jpg");
+            width: 377px;
+            height: 148px;
+            position: absolute;
+            bottom: 100px;
+            left: 37%;
+            /*top: 451px;*/
+            background: url("../../../../assests/images/car.png");
             background-size: cover;
             background-position: center;
-        }
-
-        @keyframes car-animation {
-            0%,15% {
-                transform: translateX(0);
-            }
-            25% ,40%{
-                transform: translateX(-25%);
-            }
-            50% ,65%{
-                transform: translateX(-50%);
-            }
-            75%,100% {
-                transform: translateX(-75%);
-            }
+            /*background-repeat: no-repeat;*/
+            z-index: 2;
+            transform: translateX(-50%);
+            animation: car 1s linear infinite;
 
         }
 
+        main>section>div:nth-child(5){
+            position: absolute;
+            width: 72px;
+            height: 72px;
+            bottom: 100px;
+            left: 557px;
+            /*transform: translateX(-50%);*/
+            background: url("../../../../assests/images/wheel.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: wheel 1s linear infinite;
+            z-index: 2;
+        }
+
+        main>section>div:nth-child(6){
+            position: absolute;
+            width: 72px;
+            height: 72px;
+            bottom: 100px;
+            left: 789px;
+            /*transform: translateX(-50%);*/
+            background: url("../../../../assests/images/wheel.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: wheel 1s linear infinite;
+            z-index: 2;
+        }
+
+        @keyframes trackanimation {
+               100% {
+                    transform: translateX(-3400px);
+                }
+        }
+
+        @keyframes city {
+            100% {
+                transform: translateX(-1400px);
+            }
+        }
+
+        @keyframes car {
+            100% {
+                transform: translateY(-1px);
+            }
+            50% {
+                transform: translateY(-1px);
+            }
+            0% {
+                transform: translateY(-1px);
+            }
+        }
+
+        @keyframes wheel {
+            0% {
+                transform: rotate(0);
+            }
+            60% {
+                transform: rotate(500deg);
+            }
+            100% {
+                transform: rotate(-410deg);
+            }
+        }
 
     </style>
 </head>
 <body>
 <main>
     <section>
+        <div></div>
         <div></div>
         <div></div>
         <div></div>
