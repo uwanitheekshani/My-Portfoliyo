@@ -190,7 +190,7 @@ main > section:nth-child(9)>div:nth-child(5){
     z-index: 5;
 }
 
-a{
+main > section:nth-child(9)>div:nth-child(5)>a{
     color: #F3BF06;
    text-decoration: none;
 }
@@ -262,6 +262,11 @@ main > section:nth-child(9)>button:nth-child(8){
     color: #F3BF06;
     z-index: 5;
 
+}
+
+main > section:nth-child(9)>button:nth-child(8)>a{
+    color: #F3BF06;
+    text-decoration: none;
 }
 
 main>hr:nth-child(10){
