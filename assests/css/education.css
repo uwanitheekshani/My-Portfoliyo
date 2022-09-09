@@ -592,3 +592,579 @@ main>hr:nth-child(6){
     box-shadow: 3px 2px 5px 1px #D0C4C4;
     margin: 0;
 }
+
+/*================================== 320->Mobile -S ==================================*/
+@media all and (max-width: 320px){
+    main>section:nth-child(5){
+        top: 1px;
+        left: 0;
+        height: 250px;
+    }
+
+    main > section:nth-child(5)>div:nth-child(1){
+        height: 250px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(2){
+        left:11px;
+        top: 377px;
+        width: 85px;
+        height: 10px;
+    }
+
+/*    main > section:nth-child(5)>section:nth-child(2)>h1{*/
+/*        position: absolute;*/
+/*        font-size: 35px;*/
+/*        top: -396px;*/
+/*        color: #FFFFFF;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(2)>div{*/
+/*        position: absolute;*/
+/*        background: url("../../assests/images/under.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        top: -327px;*/
+/*        left: 1px;*/
+/*        z-index: 6;*/
+/*        width: 69px;*/
+/*        height: 3px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4){*/
+/*        position: absolute;*/
+/*        margin-top: 42px;*/
+/*        top: 0;*/
+/*        right: 0;*/
+/*        bottom: 0;*/
+/*        left: 660px;*/
+/*        z-index: 5;*/
+/*        height: 616px;*/
+/*        width: 35px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(1){*/
+/*        margin-left: 0px;*/
+/*        background: url("../../assests/images/graduat Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 35px;*/
+/*        width: 35px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(2){*/
+/*        margin-left: 16px;*/
+/*        background: url("../../assests/images/small Line.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 80px;*/
+/*        width: 4px;*/
+/*    }*/
+/*    !*--------------------------------IJSE---------------------------------*!*/
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(3){*/
+/*        margin-left: 6px;*/
+/*        background: url("../../assests/images/border Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 23px;*/
+/*        width: 23px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(4){*/
+/*        margin-left: 15px;*/
+/*        margin-top: -15px;*/
+/*        background: url("../../assests/images/small Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 6px;*/
+/*        width: 6px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1){*/
+/*        position: absolute;*/
+/*        left: 731px;*/
+/*        top: 109px;*/
+/*        width: 436px;*/
+/*        height: 131px;*/
+/*        z-index: 5;*/
+/*        border: 2px solid #F3BF06;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>img:nth-child(1){*/
+/*        position: absolute;*/
+/*        border-radius: 100%;*/
+/*        right: 378px;*/
+/*        top: 8px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(2){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 127px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(3){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 147px;*/
+/*        top: 31px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(4){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 14px;*/
+/*        top: 84px;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    !*--------------------------------Britishway---------------------------------*!*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(5){*/
+/*        margin-left: 16px;*/
+/*        margin-top: 7px;*/
+/*        background: url("../../assests/images/big Line.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 139px;*/
+/*        width: 4px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(6){*/
+/*        margin-left: 6px;*/
+/*        background: url("../../assests/images/border Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 23px;*/
+/*        width: 23px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(7){*/
+/*        margin-left: 15px;*/
+/*        margin-top: -15px;*/
+/*        background: url("../../assests/images/small Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 6px;*/
+/*        width: 6px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1){*/
+/*        position: absolute;*/
+/*        left: 186px;*/
+/*        top: 260px;*/
+/*        width: 436px;*/
+/*        height: 131px;*/
+/*        z-index: 5;*/
+/*        border: 2px solid #F3BF06;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>img:nth-child(1){*/
+/*        position: absolute;*/
+/*        border-radius: 100%;*/
+/*        right: 377px;*/
+/*        top: 8px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(2){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 112px;*/
+/*        top: 1px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(3){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 192px;*/
+/*        top: 33px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(4){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 59px;*/
+/*        top: 63px;*/
+/*    }*/
+
+/*    !*--------------------------------A/L Exam---------------------------------*!*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(8){*/
+/*        margin-left: 16px;*/
+/*        margin-top: 7px;*/
+/*        background: url("../../assests/images/big Line.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 139px;*/
+/*        width: 4px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(9){*/
+/*        margin-left: 6px;*/
+/*        background: url("../../assests/images/border Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 23px;*/
+/*        width: 23px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(10){*/
+/*        margin-left: 15px;*/
+/*        margin-top: -15px;*/
+/*        background: url("../../assests/images/small Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 6px;*/
+/*        width: 6px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2){*/
+/*        position: absolute;*/
+/*        left: 731px;*/
+/*        top: 417px;*/
+/*        width: 436px;*/
+/*        height: 131px;*/
+/*        z-index: 5;*/
+/*        border: 2px solid #F3BF06;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>img:nth-child(1){*/
+/*        position: absolute;*/
+/*        border-radius: 100%;*/
+/*        right: 378px;*/
+/*        top: 8px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(2){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 65px;*/
+/*        top: -9px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 151px;*/
+/*        top: 16px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 154px;*/
+/*        top: 62px;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 9px;*/
+/*        top: 88px;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    !*--------------------------------Kannangara---------------------------------*!*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(11){*/
+/*        margin-left: 16px;*/
+/*        margin-top: 7px;*/
+/*        background: url("../../assests/images/big Line.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 139px;*/
+/*        width: 4px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(12){*/
+/*        margin-left: 6px;*/
+/*        background: url("../../assests/images/border Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 23px;*/
+/*        width: 23px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(13){*/
+/*        margin-left: 15px;*/
+/*        margin-top: -15px;*/
+/*        background: url("../../assests/images/small Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 6px;*/
+/*        width: 6px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2){*/
+/*        position: absolute;*/
+/*        left: 186px;*/
+/*        top: 579px;*/
+/*        width: 436px;*/
+/*        height: 131px;*/
+/*        z-index: 5;*/
+/*        border: 2px solid #F3BF06;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>img:nth-child(1){*/
+/*        position: absolute;*/
+/*        border-radius: 100%;*/
+/*        right: 377px;*/
+/*        top: 8px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(2){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 112px;*/
+/*        top: 4px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(3){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 170px;*/
+/*        top: 35px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(4){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 2px;*/
+/*        top: 63px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(8){*/
+/*        margin-left: 16px;*/
+/*        margin-top: 7px;*/
+/*        background: url("../../assests/images/big Line.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 139px;*/
+/*        width: 4px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(9){*/
+/*        margin-left: 6px;*/
+/*        background: url("../../assests/images/border Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 23px;*/
+/*        width: 23px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(10){*/
+/*        margin-left: 15px;*/
+/*        margin-top: -15px;*/
+/*        background: url("../../assests/images/small Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 6px;*/
+/*        width: 6px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2){*/
+/*        position: absolute;*/
+/*        left: 731px;*/
+/*        top: 417px;*/
+/*        width: 436px;*/
+/*        height: 131px;*/
+/*        z-index: 5;*/
+/*        border: 2px solid #F3BF06;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>img:nth-child(1){*/
+/*        position: absolute;*/
+/*        border-radius: 100%;*/
+/*        right: 378px;*/
+/*        top: 8px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(2){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 65px;*/
+/*        top: -9px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 151px;*/
+/*        top: 16px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 154px;*/
+/*        top: 62px;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 9px;*/
+/*        top: 88px;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    !*--------------------------------O/L Exam---------------------------------*!*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(14){*/
+/*        margin-left: 16px;*/
+/*        margin-top: 7px;*/
+/*        background: url("../../assests/images/big Line.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 139px;*/
+/*        width: 4px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(15){*/
+/*        margin-left: 6px;*/
+/*        background: url("../../assests/images/border Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 23px;*/
+/*        width: 23px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(16){*/
+/*        margin-left: 15px;*/
+/*        margin-top: -15px;*/
+/*        background: url("../../assests/images/small Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 6px;*/
+/*        width: 6px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3){*/
+/*        position: absolute;*/
+/*        left: 731px;*/
+/*        top: 740px;*/
+/*        width: 436px;*/
+/*        height: 131px;*/
+/*        z-index: 5;*/
+/*        border: 2px solid #F3BF06;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>img:nth-child(1){*/
+/*        position: absolute;*/
+/*        border-radius: 100%;*/
+/*        right: 378px;*/
+/*        top: 8px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(2){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 10px;*/
+/*        top: 6px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(3){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 171px;*/
+/*        top: 36px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(4){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 72px;*/
+/*        top: 86px;*/
+/*        margin: 0;*/
+/*    }*/
+
+/*    !*--------------------------------Primary---------------------------------*!*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(17){*/
+/*        margin-left: 16px;*/
+/*        margin-top: 7px;*/
+/*        background: url("../../assests/images/big Line.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 139px;*/
+/*        width: 4px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(18){*/
+/*        margin-left: 6px;*/
+/*        background: url("../../assests/images/border Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 23px;*/
+/*        width: 23px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(19){*/
+/*        margin-left: 15px;*/
+/*        margin-top: -15px;*/
+/*        background: url("../../assests/images/small Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 6px;*/
+/*        width: 6px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3){*/
+/*        position: absolute;*/
+/*        left: 186px;*/
+/*        top: 901px;*/
+/*        width: 436px;*/
+/*        height: 131px;*/
+/*        z-index: 5;*/
+/*        border: 2px solid #F3BF06;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>img:nth-child(1){*/
+/*        position: absolute;*/
+/*        border-radius: 100%;*/
+/*        right: 377px;*/
+/*        top: 8px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(2){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 108px;*/
+/*        top: 0px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(3){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 149px;*/
+/*        top: 35px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(4){*/
+/*        position: absolute;*/
+/*        color: #FFFFFF;*/
+/*        right: 65px;*/
+/*        top: 64px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(20){*/
+/*        margin-left: 16px;*/
+/*        margin-top: 7px;*/
+/*        background: url("../../assests/images/big Line.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 110px;*/
+/*        width: 4px;*/
+/*    }*/
+
+/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(21){*/
+/*        margin-left: 11px;*/
+/*        background: url("../../assests/images/small Ellipse.png");*/
+/*        background-size: cover;*/
+/*        background-position: center;*/
+/*        height: 15px;*/
+/*        width: 15px;*/
+/*    }*/
+}
