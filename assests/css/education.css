@@ -185,6 +185,8 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>img:nth-child(1)
     border-radius: 100%;
     right: 377px;
     top: 8px;
+    width: 50px;
+    height: 50px;
 }
 
 main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(2){
@@ -600,11 +602,11 @@ main>hr:nth-child(6){
     main>section:nth-child(5){
         top: 1px;
         left: 0;
-        height: 250px;
+        height: 460px;
     }
 
     main > section:nth-child(5)>div:nth-child(1){
-        height: 250px;
+        height: 460px;
     }
 
     main > section:nth-child(5)>section:nth-child(2){
@@ -696,451 +698,308 @@ main>hr:nth-child(6){
 
 /*    !*--------------------------------Britishway---------------------------------*!*/
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(5){*/
-/*        margin-left: 16px;*/
-/*        margin-top: 7px;*/
-/*        background: url("../../assests/images/big Line.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 139px;*/
-/*        width: 4px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(5){
+        margin-left: 17px;
+        margin-top: 4px;
+        height: 50px;
+        width: 2px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(6){*/
-/*        margin-left: 6px;*/
-/*        background: url("../../assests/images/border Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 23px;*/
-/*        width: 23px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(6){
+        margin-left: 11px;
+        height: 14px;
+        width: 14px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(7){*/
-/*        margin-left: 15px;*/
-/*        margin-top: -15px;*/
-/*        background: url("../../assests/images/small Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 6px;*/
-/*        width: 6px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(7){
+        margin-left: 17px;
+        margin-top: -9px;
+        height: 3px;
+        width: 3px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1){*/
-/*        position: absolute;*/
-/*        left: 186px;*/
-/*        top: 260px;*/
-/*        width: 436px;*/
-/*        height: 131px;*/
-/*        z-index: 5;*/
-/*        border: 2px solid #F3BF06;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1){
+        left: 28px;
+        top: 122px;
+        width: 108px;
+        height: 57px;
+        border: 1px solid #F3BF06;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>img:nth-child(1){*/
-/*        position: absolute;*/
-/*        border-radius: 100%;*/
-/*        right: 377px;*/
-/*        top: 8px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>img:nth-child(1){
+        width: 15px;
+        height: 15px;
+        right: 90px;
+        top: 4px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(2){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 112px;*/
-/*        top: 1px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(2){
+        right: 7px;
+        top: -2px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(3){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 192px;*/
-/*        top: 33px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(3){
+        right: 41px;
+        top: 9px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(4){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 59px;*/
-/*        top: 63px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(4){
+        right: 27px;
+        top: 20px;
+        font-size: 8px;
+        margin-left: 24px;
+    }
 
 /*    !*--------------------------------A/L Exam---------------------------------*!*/
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(8){*/
-/*        margin-left: 16px;*/
-/*        margin-top: 7px;*/
-/*        background: url("../../assests/images/big Line.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 139px;*/
-/*        width: 4px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(8){
+        margin-left: 17px;
+        margin-top: 4px;
+        height: 50px;
+        width: 2px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(9){*/
-/*        margin-left: 6px;*/
-/*        background: url("../../assests/images/border Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 23px;*/
-/*        width: 23px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(9){
+        margin-left: 11px;
+        height: 14px;
+        width: 14px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(10){*/
-/*        margin-left: 15px;*/
-/*        margin-top: -15px;*/
-/*        background: url("../../assests/images/small Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 6px;*/
-/*        width: 6px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(10){
+        margin-left: 17px;
+        margin-top: -9px;
+        height: 3px;
+        width: 3px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2){*/
-/*        position: absolute;*/
-/*        left: 731px;*/
-/*        top: 417px;*/
-/*        width: 436px;*/
-/*        height: 131px;*/
-/*        z-index: 5;*/
-/*        border: 2px solid #F3BF06;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2){
+        left: 165px;
+        top: 183px;
+        width: 108px;
+        height: 59px;
+        border: 1px solid #F3BF06;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>img:nth-child(1){*/
-/*        position: absolute;*/
-/*        border-radius: 100%;*/
-/*        right: 378px;*/
-/*        top: 8px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>img:nth-child(1){
+        width: 15px;
+        height: 15px;
+        right: 91px;
+        top: 4px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(2){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 65px;*/
-/*        top: -9px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(2){
+        right: 2px;
+        font-size: 8px;
+        top: -2px;
+        margin-left: 22px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 151px;*/
-/*        top: 16px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){
+        right: 32px;
+        top: 17px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 154px;*/
-/*        top: 62px;*/
-/*        margin: 0;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){
+        right: 35px;
+        top: 34px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 9px;*/
-/*        top: 88px;*/
-/*        margin: 0;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){
+        right: -20px;
+        top: 41px;
+        font-size: 8px;
+        margin-left: 6px;
+    }
 
 /*    !*--------------------------------Kannangara---------------------------------*!*/
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(11){*/
-/*        margin-left: 16px;*/
-/*        margin-top: 7px;*/
-/*        background: url("../../assests/images/big Line.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 139px;*/
-/*        width: 4px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(11){
+        margin-left: 17px;
+        margin-top: 4px;
+        height: 50px;
+        width: 2px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(12){*/
-/*        margin-left: 6px;*/
-/*        background: url("../../assests/images/border Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 23px;*/
-/*        width: 23px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(12){
+        margin-left: 11px;
+        height: 14px;
+        width: 14px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(13){*/
-/*        margin-left: 15px;*/
-/*        margin-top: -15px;*/
-/*        background: url("../../assests/images/small Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 6px;*/
-/*        width: 6px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(13){
+        margin-left: 17px;
+        margin-top: -9px;
+        height: 3px;
+        width: 3px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2){*/
-/*        position: absolute;*/
-/*        left: 186px;*/
-/*        top: 579px;*/
-/*        width: 436px;*/
-/*        height: 131px;*/
-/*        z-index: 5;*/
-/*        border: 2px solid #F3BF06;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2){
+        left: 28px;
+        top: 249px;
+        width: 108px;
+        height: 62px;
+        border: 1px solid #F3BF06;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>img:nth-child(1){*/
-/*        position: absolute;*/
-/*        border-radius: 100%;*/
-/*        right: 377px;*/
-/*        top: 8px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>img:nth-child(1){
+        width: 15px;
+        height: 15px;
+        right: 90px;
+        top: 4px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(2){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 112px;*/
-/*        top: 4px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(2){
+        right: 2px;
+        top: -2px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(3){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 170px;*/
-/*        top: 35px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(3){
+        right: 34px;
+        top: 9px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(4){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 2px;*/
-/*        top: 63px;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(8){*/
-/*        margin-left: 16px;*/
-/*        margin-top: 7px;*/
-/*        background: url("../../assests/images/big Line.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 139px;*/
-/*        width: 4px;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(9){*/
-/*        margin-left: 6px;*/
-/*        background: url("../../assests/images/border Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 23px;*/
-/*        width: 23px;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(10){*/
-/*        margin-left: 15px;*/
-/*        margin-top: -15px;*/
-/*        background: url("../../assests/images/small Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 6px;*/
-/*        width: 6px;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2){*/
-/*        position: absolute;*/
-/*        left: 731px;*/
-/*        top: 417px;*/
-/*        width: 436px;*/
-/*        height: 131px;*/
-/*        z-index: 5;*/
-/*        border: 2px solid #F3BF06;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>img:nth-child(1){*/
-/*        position: absolute;*/
-/*        border-radius: 100%;*/
-/*        right: 378px;*/
-/*        top: 8px;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(2){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 65px;*/
-/*        top: -9px;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 151px;*/
-/*        top: 16px;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 154px;*/
-/*        top: 62px;*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 9px;*/
-/*        top: 88px;*/
-/*        margin: 0;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(4){
+        right: 27px;
+        top: 16px;
+        font-size: 8px;
+        margin-left: 24px;
+    }
 
 /*    !*--------------------------------O/L Exam---------------------------------*!*/
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(14){*/
-/*        margin-left: 16px;*/
-/*        margin-top: 7px;*/
-/*        background: url("../../assests/images/big Line.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 139px;*/
-/*        width: 4px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(14){
+        margin-left: 17px;
+        margin-top: 4px;
+        height: 50px;
+        width: 2px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(15){*/
-/*        margin-left: 6px;*/
-/*        background: url("../../assests/images/border Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 23px;*/
-/*        width: 23px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(15){
+        margin-left: 11px;
+        height: 14px;
+        width: 14px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(16){*/
-/*        margin-left: 15px;*/
-/*        margin-top: -15px;*/
-/*        background: url("../../assests/images/small Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 6px;*/
-/*        width: 6px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(16){
+        margin-left: 17px;
+        margin-top: -9px;
+        height: 3px;
+        width: 3px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3){*/
-/*        position: absolute;*/
-/*        left: 731px;*/
-/*        top: 740px;*/
-/*        width: 436px;*/
-/*        height: 131px;*/
-/*        z-index: 5;*/
-/*        border: 2px solid #F3BF06;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3){
+        left: 165px;
+        top: 312px;
+        width: 108px;
+        height: 59px;
+        border: 1px solid #F3BF06;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>img:nth-child(1){*/
-/*        position: absolute;*/
-/*        border-radius: 100%;*/
-/*        right: 378px;*/
-/*        top: 8px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>img:nth-child(1){
+        width: 15px;
+        height: 15px;
+        right: 91px;
+        top: 4px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(2){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 10px;*/
-/*        top: 6px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(2){
+        right: 2px;
+        font-size: 8px;
+        top: -2px;
+        margin-left: 22px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(3){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 171px;*/
-/*        top: 36px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(3){
+        right: 48px;
+        top: 25px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(4){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 72px;*/
-/*        top: 86px;*/
-/*        margin: 0;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(4){
+        right: 0px;
+        margin-left: 22px;
+        top: 41px;
+        font-size: 8px;
+    }
 
-/*    !*--------------------------------Primary---------------------------------*!*/
+    /*--------------------------------Primary---------------------------------*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(17){
+        margin-left: 17px;
+        margin-top: 4px;
+        height: 50px;
+        width: 2px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(17){*/
-/*        margin-left: 16px;*/
-/*        margin-top: 7px;*/
-/*        background: url("../../assests/images/big Line.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 139px;*/
-/*        width: 4px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(18){
+        margin-left: 11px;
+        height: 14px;
+        width: 14px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(18){*/
-/*        margin-left: 6px;*/
-/*        background: url("../../assests/images/border Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 23px;*/
-/*        width: 23px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(19){
+        margin-left: 17px;
+        margin-top: -9px;
+        height: 3px;
+        width: 3px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(19){*/
-/*        margin-left: 15px;*/
-/*        margin-top: -15px;*/
-/*        background: url("../../assests/images/small Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 6px;*/
-/*        width: 6px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3){
+        left: 28px;
+        top: 377px;
+        width: 108px;
+        height: 51px;
+        border: 1px solid #F3BF06;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3){*/
-/*        position: absolute;*/
-/*        left: 186px;*/
-/*        top: 901px;*/
-/*        width: 436px;*/
-/*        height: 131px;*/
-/*        z-index: 5;*/
-/*        border: 2px solid #F3BF06;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>img:nth-child(1){
+        width: 15px;
+        height: 15px;
+        right: 90px;
+        top: 4px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>img:nth-child(1){*/
-/*        position: absolute;*/
-/*        border-radius: 100%;*/
-/*        right: 377px;*/
-/*        top: 8px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(2){
+        right: 9px;
+        top: -2px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(2){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 108px;*/
-/*        top: 0px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(3){
+        right: 34px;
+        top: 9px;
+        font-size: 8px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(3){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 149px;*/
-/*        top: 35px;*/
-/*    }*/
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(4){
+        right: 0px;
+        top: 19px;
+        font-size: 8px;
+        margin-left: 24px;
+    }
 
-/*    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(4){*/
-/*        position: absolute;*/
-/*        color: #FFFFFF;*/
-/*        right: 65px;*/
-/*        top: 64px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(20){
+        margin-left: 17px;
+        margin-top: 4px;
+        height: 50px;
+        width: 2px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(20){*/
-/*        margin-left: 16px;*/
-/*        margin-top: 7px;*/
-/*        background: url("../../assests/images/big Line.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 110px;*/
-/*        width: 4px;*/
-/*    }*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(21){
+        margin-left: 13px;
+        height: 10px;
+        width: 10px;
+    }
 
-/*    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(21){*/
-/*        margin-left: 11px;*/
-/*        background: url("../../assests/images/small Ellipse.png");*/
-/*        background-size: cover;*/
-/*        background-position: center;*/
-/*        height: 15px;*/
-/*        width: 15px;*/
-/*    }*/
+    main>hr:nth-child(2){
+        margin-top: -54px;
+        box-shadow: 3px 2px 5px 1px #D0C4C4;
+        width: 320px;
+    }
+
 }
