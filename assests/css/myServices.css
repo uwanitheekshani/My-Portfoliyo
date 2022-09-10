@@ -175,3 +175,129 @@ main>hr:nth-child(12){
     box-shadow: 3px 2px 5px 1px #D0C4C4;
     margin: 0;
 }
+
+/*================================== 320->Mobile -S ==================================*/
+@media all and (max-width: 320px){
+    main>section:nth-child(11){
+        top: 1px;
+        left: 0;
+        height: 530px;
+    }
+
+    main > section:nth-child(11)>div:nth-child(1){
+        height: 530px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(2){
+        left:11px;
+        top: 377px;
+        width: 100px;
+        height: 50px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(2)>div{
+        font-size: 12px;
+        top: -374px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(2)>h1{
+        font-size: 13px;
+        top: -368px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(2)>div:nth-child(3){
+        top: -342px;
+        left: 1px;
+        width: 26px;
+        height: 2px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){
+        left: 62px;
+        top: 43px;
+        width: 158px;
+        height: 143px;
+        border: 2px solid #F3BF06;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
+        left: -7px;
+        top: 1px;
+        width: 65px;
+        height: 45px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(2){
+        left: 62px;
+        top: 14px;
+        font-size: 11px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>p:nth-child(3){
+        left: 8px;
+        top: 40px;
+        font-size: 9px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2){
+        left: 62px;
+        top: 203px;
+        width: 158px;
+        height: 143px;
+        border: 2px solid #F3BF06;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
+        left: -7px;
+        top: 1px;
+        width: 65px;
+        height: 45px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
+        left: 63px;
+        top: 6px;
+        font-size: 11px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>p:nth-child(3){
+        left: 8px;
+        top: 33px;
+        font-size: 9px;
+        width:150px ;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3){
+        left: 62px;
+        top: 364px;
+        width: 158px;
+        height: 143px;
+        border: 2px solid #F3BF06;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(1){
+        left: -7px;
+        top: 1px;
+        width: 65px;
+        height: 45px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(2){
+        left: 50px;
+        top: 16px;
+        font-size: 11px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>p:nth-child(3){
+        left: 8px;
+        top: 39px;
+        font-size: 9px;
+        width:150px ;
+    }
+
+    main>hr:nth-child(2){
+        margin-top: -54px;
+        box-shadow: 3px 2px 5px 1px #D0C4C4;
+        width: 320px;
+    }
+}
