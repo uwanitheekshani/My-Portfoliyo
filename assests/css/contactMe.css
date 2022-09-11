@@ -311,10 +311,12 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
         top: 1px;
         left: 0;
         height: 460px;
+        width: 320px;
     }
 
     main > section:nth-child(13)>div:nth-child(1){
         height: 460px;
+        width: 320px;
     }
 
     main > section:nth-child(13)>section:nth-child(2){

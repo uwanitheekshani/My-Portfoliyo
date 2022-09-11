@@ -46,19 +46,70 @@ footer>aside:nth-child(2){
     z-index: 6;
 }
 
-main > aside:nth-child(2)>img{
+footer > aside:nth-child(2)>img{
     width: 50px;
     height: 50px;
 }
 
-main >aside:nth-child(2)>img:nth-child(1){
+footer >aside:nth-child(2)>img:nth-child(1){
     order: 1;
 }
 
-main > aside:nth-child(2)>img:nth-child(2){
+footer > aside:nth-child(2)>img:nth-child(2){
     order: 2;
 }
 
-main > aside:nth-child(2)>img:nth-child(3){
+footer > aside:nth-child(2)>img:nth-child(3){
     order: 3;
+}
+
+/*================================== 320->Mobile -S ==================================*/
+@media all and (max-width: 320px){
+    footer{
+        height: 40px;
+        width: 320px;
+    }
+    footer>address:nth-child(1){
+        width: 100px;
+        height: 20px;
+        top: 2px;
+    }
+
+    footer>address:nth-child(1)>small:nth-child(1)>h4{
+        padding-left:2px;
+        padding-top: 15px;
+        margin-top: 0;
+        font-size: 8px;
+    }
+
+    footer>address:nth-child(1)>small:nth-child(2)>h4{
+        padding-left:86px;
+        padding-top: 15px;
+        margin-top: 0;
+        font-size: 8px;
+    }
+
+    footer>aside:nth-child(2){
+        top: 10px;
+        left: 231px;
+        width: 60px;
+        height: 20px;
+    }
+
+    footer > aside:nth-child(2)>img{
+        width: 15px;
+        height: 15px;
+    }
+
+    /*main >aside:nth-child(2)>img:nth-child(1){*/
+    /*    order: 1;*/
+    /*}*/
+
+    /*main > aside:nth-child(2)>img:nth-child(2){*/
+    /*    order: 2;*/
+    /*}*/
+
+    /*main > aside:nth-child(2)>img:nth-child(3){*/
+    /*    order: 3;*/
+    /*} */
 }

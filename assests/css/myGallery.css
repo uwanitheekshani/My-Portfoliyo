@@ -168,10 +168,12 @@ main>hr:nth-child(4){
         top: 1px;
         left: 0;
         height: 210px;
+        width: 320px;
     }
 
     main > section:nth-child(3)>div:nth-child(1){
         height: 210px;
+        width: 320px;
     }
 
     main > section:nth-child(3)>section:nth-child(2){
@@ -257,7 +259,7 @@ main>hr:nth-child(4){
     main>hr:nth-child(2){
         margin-top: -54px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
-        width: 320px;
+        width: 308px;
     }
 
 }
