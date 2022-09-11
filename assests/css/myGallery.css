@@ -259,7 +259,107 @@ main>hr:nth-child(4){
     main>hr:nth-child(2){
         margin-top: -54px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
-        width: 308px;
+        /*width: 308px;*/
+    }
+}
+
+/*================================== 375 ->Mobile -M ==================================*/
+@media all and (min-width: 321px) and (max-width: 375px){
+    main>section:nth-child(3){
+        top: 0px;
+        left: 0;
+        height: 245px;
+        width: 375px;
     }
 
+    main > section:nth-child(3)>div:nth-child(1){
+        height: 245px;
+        width: 375px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(2){
+        left:11px;
+        top: 377px;
+        width: 85px;
+        height: 10px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(2)>h1{
+        font-size: 15px;
+        top: -381px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
+        top: -350px;
+        left: 1px;
+        width: 28px;
+        height: 2px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3){
+        left: 42px;
+        top: 37px;
+        width: 269px;
+        height: 120px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(1){
+        left: 9px;
+        top: 5px;
+        font-size: 13px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(2){
+        left: 9px;
+        top: 32px;
+        width: 65px;
+        height: 65px;
+        border-radius: 5px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(3){
+        left: 92px;
+        top: 24px;
+        width: 80px;
+        height: 80px;
+        border-radius: 5px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(4){
+        left: 189px;
+        top: 32px;
+        border-radius: 5px;
+        width: 65px;
+        height: 65px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(5){
+        left: 200px;
+        top: 101px;
+        font-size: 10px;
+    }
+
+    main > section:nth-child(3)>div:nth-child(4){
+        left: 40px;
+        top: 170px;
+        font-size: 13px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(5){
+        top: 184px;
+        left: 34px;
+        height: 45px;
+        width: 195px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(5)>img{
+        width: 42px;
+        height: 40px;
+    }
+
+    main>hr:nth-child(2){
+        margin-top: -32px;
+        box-shadow: 3px 2px 5px 1px #D0C4C4;
+        /*width: 308px;*/
+    }
 }

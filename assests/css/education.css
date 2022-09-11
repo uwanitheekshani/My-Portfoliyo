@@ -1001,7 +1001,7 @@ main>hr:nth-child(6){
     main>hr:nth-child(2){
         margin-top: -54px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
-        width: 308px;
+        /*width: 308px;*/
     }
 
 }
