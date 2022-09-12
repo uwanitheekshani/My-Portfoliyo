@@ -1,13 +1,18 @@
 body {
     margin: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
+/*::-webkit-scrollbar{*/
+/*    width: 0px;*/
+/*}*/
 
 main {
     position: relative;
     /*margin-top: 460px;*/
 
 }
+
+
 /*--------------------About Me-------------------------*/
 main>section:nth-child(1){
     position: relative;

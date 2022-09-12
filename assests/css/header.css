@@ -269,7 +269,7 @@ header > section > section:nth-child(2) > section:nth-child(6) > h3 {
 
         /* add icons path */
         header > section > section:nth-child(2) > section:nth-child(4) {
-            right: 16px;
+            right: 30px;
             top: 120px;
         }
 
