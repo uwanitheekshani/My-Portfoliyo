@@ -68,6 +68,7 @@ footer > aside:nth-child(2)>img:nth-child(3){
     footer{
         height: 40px;
         width: 320px;
+        /*left: 10px;*/
     }
     footer>address:nth-child(1){
         /*position: absolute;*/

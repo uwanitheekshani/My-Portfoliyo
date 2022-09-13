@@ -389,3 +389,111 @@ header > section > section:nth-child(2) > section:nth-child(6) > h3 {
     }
 }
 
+ /*================================== 425->Mobile -L ================================== */
+ @media all and (min-width: 376px) and (max-width: 425px){
+     header{
+         height:192px ;
+         width: 98.7vw;
+     }
+
+     /* add header background colour*/
+     header > section > section:nth-child(1) {
+         top: 0;
+         height: 42px;
+         width: 98.7vw;
+         /*z-index: 5;*/
+     }
+
+     /* add header name */
+     header > section > section:nth-child(1) > div {
+         font-size: 17px;
+         top: 2px;
+         left: 184px;
+     }
+
+     /*nav of header*/
+     header > section > section:nth-child(1) > nav {
+         top: 4px;
+         left: 0;
+         right: 0;
+         margin-left: 13px;
+         width: max-content;
+         height: 30px;
+     }
+
+     /*!*header nav links*!*/
+     header > section > section:nth-child(1) > nav > ul > li {
+         padding: 0;
+         font-size: 12px;
+         margin-left: 1px;
+     }
+
+     header > section > section:nth-child(1) > nav > ul{
+         padding-left: 0;
+     }
+
+
+     header > section > section:nth-child(2) {
+         height: 182px;
+         overflow: hidden;
+         width: 98.7vw;
+         /*width: 320px;*/
+     }
+
+     /*!* add 2nd background image *!*/
+     header > section > section:nth-child(2)>div:nth-child(1) {
+         top: 0;
+         left: 0;
+         height: 182px;
+         width: 98.7vw;
+         margin: auto;
+         overflow: hidden;
+     }
+
+
+     /*!* add my pic for header image *!*/
+     header > section > section:nth-child(2) > section:nth-child(2) > div {
+         border-radius: 50%;
+         border: 2px solid #C7A47B;
+         right: 0;
+         left: 0;
+         bottom: 0;
+         top: 0;
+         overflow: hidden;
+         width: 16vw;
+         height: 16vw;
+     }
+
+     /*!* add h1 in header *!*/
+     header > section > section:nth-child(2) > section:nth-child(3) > h1 {
+         right: 0;
+         left: 24px;
+         top: 117px;
+         font-size: 18px;
+         width: 351px;
+     }
+
+     /*!* add h2 in header *!*/
+     header > section > section:nth-child(2) > section:nth-child(3) > h2 {
+         right: 0;
+         left: 26px;
+         top: 135px;
+         font-size: 14px;
+         width: 349px;
+     }
+
+     /*!* add icons path *!*/
+     header > section > section:nth-child(2) > section:nth-child(4) {
+         right: 30px;
+         top: 152px;
+     }
+
+     /*!* add icons in header *!*/
+     header > section > section:nth-child(2) > section:nth-child(4) > img {
+         /*position: absolute;*/
+         height: 20px;
+         width: 20px;
+         padding-right: 2px;
+     }
+    }
+
