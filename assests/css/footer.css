@@ -188,3 +188,45 @@ footer > aside:nth-child(2)>img:nth-child(3){
         height: 22px;
     }
 }
+
+/*================================== 768->Tablet ================================== */
+@media all and (min-width: 426px) and (max-width: 768px){
+    footer{
+        height: 60px;
+        left: -1px;
+        width: 98.8vw;
+    }
+    footer>address:nth-child(1){
+        /*position: absolute;*/
+        width: 98.7vw;
+        height: 20px;
+        top: 2px;
+        /*left: 5px;*/
+    }
+
+    footer>address:nth-child(1)>small:nth-child(1)>h4{
+        padding-left:2px;
+        padding-top: 19px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    footer>address:nth-child(1)>small:nth-child(2)>h4{
+        padding-left:148px;
+        padding-top: 21px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    footer>aside:nth-child(2){
+        top: 13px;
+        left: 565px;
+        width: 19vw;
+        height: 20px;
+    }
+
+    footer > aside:nth-child(2)>img{
+        width: 4vw;
+        height: 30px;
+    }
+}
