@@ -557,5 +557,6 @@ main>hr:nth-child(12){
         margin-top: -12px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 320px;*/
+        width: 98.7vw;
     }
 }

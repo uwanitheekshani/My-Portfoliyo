@@ -146,3 +146,45 @@ footer > aside:nth-child(2)>img:nth-child(3){
         height: 20px;
     }
 }
+
+/*================================== 425->Mobile -L ================================== */
+@media all and (min-width: 376px) and (max-width: 425px){
+    footer{
+        height: 50px;
+        left: -1px;
+        width: 98.8vw;
+    }
+    footer>address:nth-child(1){
+        /*position: absolute;*/
+        width: 98.7vw;
+        height: 20px;
+        top: 2px;
+        /*left: 5px;*/
+    }
+
+    footer>address:nth-child(1)>small:nth-child(1)>h4{
+        padding-left:2px;
+        padding-top: 19px;
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    footer>address:nth-child(1)>small:nth-child(2)>h4{
+        padding-left:129px;
+        padding-top: 19px;
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    footer>aside:nth-child(2){
+        top: 13px;
+        left: 309px;
+        width: 19vw;
+        height: 24px;
+    }
+
+    footer > aside:nth-child(2)>img{
+        width: 5vw;
+        height: 22px;
+    }
+}
