@@ -431,3 +431,131 @@ main>hr:nth-child(12){
         /*width: 320px;*/
     }
 }
+
+/*================================== 425->Mobile -L ================================== */
+@media all and (min-width: 376px) and (max-width: 425px){
+    main>section:nth-child(11){
+        top: 1px;
+        left: 0;
+        height: 600px;
+        width: 98.7vw;
+    }
+
+    main > section:nth-child(11)>div:nth-child(1){
+        height: 600px;
+        width: 98.7vw;
+    }
+
+    main > section:nth-child(11)>section:nth-child(2){
+        left:11px;
+        top: 377px;
+        width: 100px;
+        height: 50px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(2)>div{
+        font-size: 14px;
+        top: -374px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(2)>h1{
+        font-size: 15px;
+        top: -370px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(2)>div:nth-child(3){
+        top: -338px;
+        left: 1px;
+        width: 29px;
+        height: 3px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){
+        left: 96px;
+        top: 53px;
+        width: 51vw;
+        height: 170px;
+        border: 2px solid #F3BF06;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
+        left: -7px;
+        top: 1px;
+        width: 73px;
+        height: 50px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(2){
+        left: 62px;
+        top: 14px;
+        font-size: 13px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>p:nth-child(3){
+        left: 4px;
+        top: 43px;
+        font-size: 12px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2){
+        left: 96px;
+        top: 234px;
+        width: 51vw;
+        height: 170px;
+        border: 2px solid #F3BF06;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
+        left: -7px;
+        top: 1px;
+        width: 73px;
+        height: 50px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
+        left: 62px;
+        top: 14px;
+        font-size: 13px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>p:nth-child(3){
+        left: 4px;
+        top: 40px;
+        font-size: 12px;
+        width: 201px ;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3){
+        left: 96px;
+        top: 415px;
+        width: 51vw;
+        height: 170px;
+        border: 2px solid #F3BF06;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(1){
+        left: -7px;
+        top: 1px;
+        width: 73px;
+        height: 50px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(2){
+        left: 62px;
+        top: 14px;
+        font-size: 13px;
+    }
+
+    main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>p:nth-child(3){
+        left: 4px;
+        top: 40px;
+        font-size: 12px;
+        width:204px ;
+    }
+
+    main>hr:nth-child(2){
+        margin-top: -12px;
+        box-shadow: 3px 2px 5px 1px #D0C4C4;
+        /*width: 320px;*/
+    }
+}
