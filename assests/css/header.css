@@ -583,7 +583,7 @@ header > section > section:nth-child(2) > section:nth-child(6) > h3 {
      /* add icons path */
      header > section > section:nth-child(2) > section:nth-child(4) {
          right: 15px;
-         top: 410px;
+         top: 397px;
      }
 
      /* add icons in header */
@@ -594,7 +594,7 @@ header > section > section:nth-child(2) > section:nth-child(6) > h3 {
      }
 
      header > section > section:nth-child(2) > div:nth-child(5){
-         top: 441px;
+         top: 425px;
          left: 28px;
          width: 49px;
          height: 1px;
@@ -603,7 +603,7 @@ header > section > section:nth-child(2) > section:nth-child(6) > h3 {
      /* add scroll down bar path in header */
      header > section > section:nth-child(2) > div:nth-child(6) {
          left: 87px;
-         top: 410px;
+         top: 397px;
      }
 }
 
