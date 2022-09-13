@@ -465,3 +465,105 @@ main>hr:nth-child(4){
         width: 98.7vw;
     }
 }
+
+/*================================== 768->Tablet ================================== */
+@media all and (min-width: 426px) and (max-width: 768px){
+    main>section:nth-child(3){
+        top: 0px;
+        left: 0;
+        height: 425px;
+        width: 98.7vw;
+    }
+
+    main > section:nth-child(3)>div:nth-child(1){
+        height: 425px;
+        width: 98.7vw;
+    }
+
+    main > section:nth-child(3)>section:nth-child(2){
+        left:11px;
+        top: 377px;
+        width: 24vw;
+        height: 10px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(2)>h1{
+        font-size: 22px;
+        top: -381px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
+        top: -336px;
+        left: 1px;
+        width: 42px;
+        height: 3px;;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3){
+        left: 42px;
+        top: 69px;
+        width: 75vw;
+        height: 208px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(1){
+        left: 9px;
+        top: 5px;
+        font-size: 16px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(2){
+        left: 9px;
+        top: 41px;
+        width: 19vw;
+        height: 129px;
+        border-radius: 5px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(3){
+        left: 173px;
+        top: 29px;
+        width: 23vw;
+        height: 152px;
+        border-radius: 5px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(4){
+        left: 371px;
+        top: 41px;
+        border-radius: 5px;
+        width: 19vw;
+        height: 129px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(3)>div:nth-child(5){
+        left: 495px;
+        top: 184px;
+        font-size: 14px;
+    }
+
+    main > section:nth-child(3)>div:nth-child(4){
+        left: 42px;
+        top: 307px;
+        font-size: 16px;
+    }
+
+    main > section:nth-child(3)>section:nth-child(5){
+        top: 336px;
+        left: 41px;
+        height: 49px;
+        width: 45vw;
+    }
+
+    main > section:nth-child(3)>section:nth-child(5)>img{
+        width: 10vw;
+        height: 63px;
+    }
+
+    main>hr:nth-child(2){
+        margin-top: -12px;
+        box-shadow: 3px 2px 5px 1px #D0C4C4;
+        /*width: 308px;*/
+        width: 98.7vw;
+    }
+}
