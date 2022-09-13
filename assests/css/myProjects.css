@@ -642,3 +642,187 @@ main>hr:nth-child(10){
         /*width: 308px;*/
     }
 }
+
+/*================================== 425->Mobile -L ================================== */
+@media all and (min-width: 376px) and (max-width: 425px){
+    main>section:nth-child(9){
+        top: 1px;
+        left: 0;
+        height: 300px;
+        width: 98.7vw;
+    }
+
+    main > section:nth-child(9)>div:nth-child(1){
+        height: 300px;
+        width: 98.7vw;
+    }
+
+    main > section:nth-child(9)>section:nth-child(2){
+        left:11px;
+        top: 377px;
+        width: 85px;
+        height: 10px;
+    }
+
+    main > section:nth-child(9)>section:nth-child(2)>h1:nth-child(1){
+        font-size: 15px;
+        top: -381px;
+        width: 210px;
+    }
+    main > section:nth-child(9)>section:nth-child(2)>section:nth-child(3){
+        top: -349px;
+        left: 1px;
+        width: 29px;
+        height: 3px;
+    }
+
+
+    main > section:nth-child(9)>section:nth-child(2)>div:nth-child(2){
+        font-size: 14px;
+        top: -344px;
+        width: 107px;
+    }
+
+    main > section:nth-child(9)>section:nth-child(3)>div:nth-child(1){
+        left:52px;
+        top: 63px;
+        width: 21vw;
+        height: 21px;
+        border-radius: 4px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(3)>div:nth-child(1)>h3{
+        font-size:12px;
+        left:9px;
+        top: -9px;
+    }
+
+    main > section:nth-child(9)>section:nth-child(3)>div:nth-child(2){
+        left:156px;
+        top: 63px;
+        width: 21vw;
+        height: 21px;
+        border-radius: 4px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(3)>div:nth-child(2)>h3{
+        font-size:12px;
+        left:31px;
+        top: -8px;
+    }
+
+    main > section:nth-child(9)>section:nth-child(3)>div:nth-child(3){
+        left:264px;
+        top: 63px;
+        width: 21vw;
+        height: 21px;
+        border-radius: 4px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(3)>div:nth-child(3)>h3{
+        font-size:12px;
+        left:23px;
+        top: -9px;
+    }
+
+    main > section:nth-child(9)>section:nth-child(4)>div:nth-child(1){
+        left:44px;
+        top: 103px;
+        width: 70px;
+        height:50px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(4)>div:nth-child(2){
+        left:96px;
+        top: 118px;
+        width: 70px;
+        height:50px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(4)>div:nth-child(3){
+        left:159px;
+        top: 136px;
+        width: 70px;
+        height:50px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(4)>div:nth-child(4){
+        left:223px;
+        top: 118px;
+        width: 70px;
+        height:50px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(4)>div:nth-child(5){
+        left:287px;
+        top: 103px;
+        width: 70px;
+        height:50px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>div:nth-child(5){
+        left: 303px;
+        top: 172px;
+        font-size: 11px;
+    }
+
+    main > section:nth-child(9)>section:nth-child(6){
+        left:11px;
+        top: 130px;
+        width: 95px;
+        height: 25px;
+    }
+
+    main > section:nth-child(9)>section:nth-child(6)>h1{
+        font-size: 14px;
+        top: 57px;
+    }
+
+    main > section:nth-child(9)>section:nth-child(7)>div:nth-child(1){
+        left:22px;
+        top: 225px;
+        width: 18vw;
+        height:51px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(7)>div:nth-child(2){
+        left:120px;
+        top: 225px;
+        width: 18vw;
+        height:51px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>section:nth-child(7)>div:nth-child(3){
+        left:220px;
+        top: 225px;
+        width: 18vw;
+        height:51px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(9)>button:nth-child(8){
+        left:315px;
+        top: 257px;
+        width: 18vw;
+        height: 19px;
+        border-radius: 5px;
+        border: 1px solid #F3BF06;
+        font-size: 11px;
+    }
+
+    main>hr:nth-child(2){
+        margin-top: -12px;
+        box-shadow: 3px 2px 5px 1px #D0C4C4;
+        /*width: 308px;*/
+    }
+}
