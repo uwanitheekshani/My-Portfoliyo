@@ -230,3 +230,45 @@ footer > aside:nth-child(2)>img:nth-child(3){
         height: 30px;
     }
 }
+
+/*================================== 1024->Laptop ================================== */
+@media all and (min-width: 769px) and (max-width: 1024px){
+    footer{
+        height: 60px;
+        left: -1px;
+        width: 98.8vw;
+    }
+    footer>address:nth-child(1){
+        /*position: absolute;*/
+        width: 98.7vw;
+        height: 20px;
+        top: 2px;
+        /*left: 5px;*/
+    }
+
+    footer>address:nth-child(1)>small:nth-child(1)>h4{
+        padding-left:2px;
+        padding-top: 19px;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    footer>address:nth-child(1)>small:nth-child(2)>h4{
+        padding-left: 160px;
+        padding-top: 20px;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+    footer>aside:nth-child(2){
+        top: 11px;
+        left: 749px;
+        width: 20vw;
+        height: 40px;
+    }
+
+    footer > aside:nth-child(2)>img{
+        width: 4vw;
+        height: 40px;
+    }
+}
