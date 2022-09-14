@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 body {
     margin: 0;
     overflow-x: hidden;
@@ -76,6 +78,7 @@ main>section:nth-child(1)>section:nth-child(3)>section:nth-child(1)>h2{
     font-size: 35px;
     top: -163px;
     color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 main>section:nth-child(1)>section:nth-child(3)>section:nth-child(1)>div:nth-child(3){
@@ -103,6 +106,8 @@ main>section:nth-child(1)>section:nth-child(3)>article:nth-child(2)>p{
     width: 600px;
     height: 450px;
     right: 5vw;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3){
@@ -128,6 +133,7 @@ main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4{
     color: #FFFFFF;
     font-size: 19px;
     margin-bottom: 0;
+    font-family: 'Inter', sans-serif;
 }
 main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h4:nth-child(2){
     margin-top: -40px;
@@ -172,6 +178,7 @@ main>section:nth-child(1)>section:nth-child(3)>div:last-child>button{
     height: 42px;
     width: 155px;
     margin-top: 2px;
+    font-family: 'Inter', sans-serif;
 }
 
 main>hr:nth-child(2){
@@ -260,6 +267,7 @@ main>hr:nth-child(2){
         font-size: 8px;
         margin-left: 2px;
         margin-top: 2px;
+        font-family: 'Inter', sans-serif;
     }
 
     main>section:nth-child(1)>section:nth-child(3)>address:nth-child(3)>h3:nth-child(1){
