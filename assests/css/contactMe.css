@@ -308,7 +308,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
 /*================================== 320->Mobile -S ==================================*/
 @media all and (max-width: 320px){
     main>section:nth-child(13){
-        top: 1px;
+        top:0px;
         left: 0;
         height: 460px;
         width: 320px;
@@ -527,7 +527,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px){
     main>section:nth-child(13){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 520px;
         width: 375px;
@@ -747,7 +747,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
     main>section:nth-child(13){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 540px;
         width: 98.7vw;
@@ -967,7 +967,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
     main>section:nth-child(13){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 620px;
         width: 98.7vw;

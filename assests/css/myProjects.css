@@ -280,7 +280,7 @@ main>hr:nth-child(10){
 /*================================== 320->Mobile -S ==================================*/
 @media all and (max-width: 320px){
     main>section:nth-child(9){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 235px;
         width: 320px;
@@ -453,8 +453,8 @@ main>hr:nth-child(10){
         font-size: 8px;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -54px;
+    main>hr:nth-child(10){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 308px;*/
     }
@@ -463,7 +463,7 @@ main>hr:nth-child(10){
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px){
     main>section:nth-child(9){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 260px;
         width: 375px;
@@ -636,8 +636,8 @@ main>hr:nth-child(10){
         font-size: 9px;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -32px;
+    main>hr:nth-child(10){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 308px;*/
     }
@@ -646,7 +646,7 @@ main>hr:nth-child(10){
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
     main>section:nth-child(9){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 300px;
         width: 98.7vw;
@@ -820,8 +820,8 @@ main>hr:nth-child(10){
         font-size: 11px;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -12px;
+    main>hr:nth-child(10){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 308px;*/
         width: 98.7vw;
@@ -831,7 +831,7 @@ main>hr:nth-child(10){
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
     main>section:nth-child(9){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 500px;
         width: 98.7vw;
@@ -1005,8 +1005,8 @@ main>hr:nth-child(10){
         font-size: 14px;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -12px;
+    main>hr:nth-child(10){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 308px;*/
         width: 98.7vw;

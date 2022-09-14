@@ -600,7 +600,7 @@ main>hr:nth-child(6){
 /*================================== 320->Mobile -S ==================================*/
 @media all and (max-width: 320px){
     main>section:nth-child(5){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 460px;
         width: 320px;
@@ -998,8 +998,8 @@ main>hr:nth-child(6){
         width: 10px;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -54px;
+    main>hr:nth-child(6){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 308px;*/
     }
@@ -1408,8 +1408,8 @@ main>hr:nth-child(6){
         width: 12px;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -32px;
+    main>hr:nth-child(6){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
     }
 }
@@ -1816,8 +1816,8 @@ main>hr:nth-child(6){
         width: 12px;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -12px;
+    main>hr:nth-child(6){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         width: 98.7vw;
     }
@@ -2219,8 +2219,8 @@ main>hr:nth-child(6){
         width: 14px;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -12px;
+    main>hr:nth-child(6){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         width: 98.7vw;
     }

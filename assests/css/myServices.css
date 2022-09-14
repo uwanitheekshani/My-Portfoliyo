@@ -179,7 +179,7 @@ main>hr:nth-child(12){
 /*================================== 320->Mobile -S ==================================*/
 @media all and (max-width: 320px){
     main>section:nth-child(11){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 530px;
         width: 320px;
@@ -297,8 +297,8 @@ main>hr:nth-child(12){
         width:150px ;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -54px;
+    main>hr:nth-child(12){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 320px;*/
     }
@@ -307,7 +307,7 @@ main>hr:nth-child(12){
 /*================================== 375 ->Mobile -M ==================================*/
 @media all and (min-width: 321px) and (max-width: 375px){
     main>section:nth-child(11){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 600px;
         width: 375px;
@@ -425,8 +425,8 @@ main>hr:nth-child(12){
         width:150px ;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -32px;
+    main>hr:nth-child(12){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 320px;*/
     }
@@ -435,7 +435,7 @@ main>hr:nth-child(12){
 /*================================== 425->Mobile -L ================================== */
 @media all and (min-width: 376px) and (max-width: 425px){
     main>section:nth-child(11){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 600px;
         width: 98.7vw;
@@ -553,8 +553,8 @@ main>hr:nth-child(12){
         width:204px ;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -12px;
+    main>hr:nth-child(12){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         /*width: 320px;*/
         width: 98.7vw;
@@ -564,7 +564,7 @@ main>hr:nth-child(12){
 /*================================== 768->Tablet ================================== */
 @media all and (min-width: 426px) and (max-width: 768px){
     main>section:nth-child(11){
-        top: 1px;
+        top: 0px;
         left: 0;
         height: 672px;
         width: 98.7vw;
@@ -682,8 +682,8 @@ main>hr:nth-child(12){
         width:391px ;
     }
 
-    main>hr:nth-child(2){
-        margin-top: -12px;
+    main>hr:nth-child(12){
+        margin-top: 1px;
         box-shadow: 3px 2px 5px 1px #D0C4C4;
         width: 98.7vw;
     }
