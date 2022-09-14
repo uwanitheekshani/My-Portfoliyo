@@ -2225,3 +2225,406 @@ main>hr:nth-child(6){
         width: 98.7vw;
     }
 }
+
+/*================================== 1024->Laptop ================================== */
+@media all and (min-width: 769px) and (max-width: 1024px){
+    main>section:nth-child(5){
+        top: 0px;
+        left: 0;
+        height: 1009px;
+        width: 98.7vw;
+    }
+
+    main > section:nth-child(5)>div:nth-child(1){
+        height: 1009px;
+        width: 98.7vw;
+    }
+
+    main > section:nth-child(5)>section:nth-child(2){
+        left:11px;
+        top: 377px;
+        width: 24vw;
+        height: 10px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(2)>h1{
+        font-size: 27px;
+        top: -381px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(2)>div{
+        top: -330px;
+        left: 1px;
+        width: 55px;
+        height: 4px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4){
+        margin-top: 42px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 281px;
+        height: 300px;
+        width: 35px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(1){
+        margin-left: 201px;
+        height: 32px;
+        width: 32px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(2){
+        margin-left: 215px;
+        height: 120px;
+        width: 3px;
+    }
+    /*!*    !*--------------------------------IJSE---------------------------------*!*!*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(3){
+        margin-left: 206px;
+        height: 21px;
+        width: 21px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(4){
+        margin-left: 213px;
+        margin-top: -13px;
+        height: 6px;
+        width: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1){
+        left: 516px;
+        top: 148px;
+        width: 40vw;
+        height: 110px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>img:nth-child(1){
+        width: 35px;
+        height: 35px;
+        right: 368px;
+        top: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(2){
+        right: 124px;
+        font-size: 17px;
+        top: -7px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(3){
+        right: 140px;
+        top: 16px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(4){
+        right: 19px;
+        top: 57px;
+        font-size: 17px;
+        margin-left: 10px;
+    }
+
+    /*!*    !*--------------------------------Britishway---------------------------------*!*!*/
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(5){
+        margin-left: 215px;
+        height: 120px;
+        width: 3px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(6){
+        margin-left: 206px;
+        height: 21px;
+        width: 21px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(7){
+        margin-left: 213px;
+        margin-top: -13px;
+        height: 6px;
+        width: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1){
+        left: 64px;
+        top: 298px;
+        width: 40vw;
+        height: 110px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>img:nth-child(1){
+        width: 35px;
+        height: 35px;
+        right: 368px;
+        top: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(2){
+        right: 113px;
+        font-size: 17px;
+        top: -1px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(3){
+        right: 178px;
+        top: 22px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(4){
+        right: 70px;
+        top: 45px;
+        font-size: 17px;
+        margin-left: 29px;
+    }
+
+    /*!*    !*--------------------------------A/L Exam---------------------------------*!*!*/
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(8){
+        margin-left: 215px;
+        height: 120px;
+        width: 3px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(9){
+        margin-left: 206px;
+        height: 21px;
+        width: 21px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(10){
+        margin-left: 213px;
+        margin-top: -13px;
+        height: 6px;
+        width: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2){
+        left: 516px;
+        top: 435px;
+        width: 40vw;
+        height: 110px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>img:nth-child(1){
+        width: 35px;
+        height: 35px;
+        right: 368px;
+        top: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(2){
+        right: 72px;
+        font-size: 17px;
+        top: -2px;
+        margin-left: 45px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){
+        right: 149px;
+        top: 20px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){
+        right: 151px;
+        top: 57px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){
+        right: 5px;
+        top: 77px;
+        font-size: 17px;
+        margin-left: 6px;
+    }
+
+    /*!*    !*--------------------------------Kannangara---------------------------------*!*!*/
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(11){
+        margin-left: 215px;
+        height: 120px;
+        width: 3px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(12){
+        margin-left: 206px;
+        height: 21px;
+        width: 21px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(13){
+        margin-left: 213px;
+        margin-top: -13px;
+        height: 6px;
+        width: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2){
+        left: 64px;
+        top: 581px;
+        width: 40vw;
+        height: 110px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>img:nth-child(1){
+        width: 35px;
+        height: 35px;
+        right: 368px;
+        top: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(2){
+        right: 112px;
+        top: -5px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(3){
+        right: 159px;
+        top: 20px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(4){
+        right: 3px;
+        top: 42px;
+        font-size: 17px;
+        margin-left: 29px;
+    }
+
+    /*!*    !*--------------------------------O/L Exam---------------------------------*!*!*/
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(14){
+        margin-left: 215px;
+        height: 120px;
+        width: 3px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(15){
+        margin-left: 206px;
+        height: 21px;
+        width: 21px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(16){
+        margin-left: 213px;
+        margin-top: -13px;
+        height: 6px;
+        width: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3){
+        left: 516px;
+        top: 716px;
+        width: 40vw;
+        height: 110px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>img:nth-child(1){
+        width: 35px;
+        height: 35px;
+        right: 368px;
+        top: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(2){
+        right: 22px;
+        font-size: 17px;
+        top: -3px;
+        margin-left: 32px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(3){
+        right: 151px;
+        top: 21px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(4){
+        right: 65px;
+        top: 57px;
+        font-size: 17px;
+        margin-left: 22px;
+    }
+
+    /*!*--------------------------------Primary---------------------------------*!*/
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(17){
+        margin-left: 215px;
+        height: 120px;
+        width: 3px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(18){
+        margin-left: 206px;
+        height: 21px;
+        width: 21px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(19){
+        margin-left: 213px;
+        margin-top: -13px;
+        height: 6px;
+        width: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3){
+        left: 64px;
+        top: 850px;
+        width: 40vw;
+        height: 110px;
+        border: 1px solid #F3BF06;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>img:nth-child(1){
+        width: 35px;
+        height: 35px;
+        right: 368px;
+        top: 6px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(2){
+        right: 135px;
+        top: -3px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(3){
+        right: 170px;
+        top: 22px;
+        font-size: 17px;
+    }
+
+    main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(4){
+        right: 85px;
+        top: 42px;
+        font-size: 17px;
+        margin-left: 33px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(20){
+        margin-left: 215px;
+        height: 64px;
+        width: 3px;
+    }
+
+    main > section:nth-child(5)>section:nth-child(4)>div:nth-child(21){
+        margin-left: 210px;
+        height: 14px;
+        width: 14px;
+    }
+
+    main>hr:nth-child(6){
+        margin-top: 1px;
+        box-shadow: 3px 2px 5px 1px #D0C4C4;
+        width: 98.7vw;
+    }
+}
