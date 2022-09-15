@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 /*--------------------My Skills-------------------------*/
 
 main>section:nth-child(7){
@@ -36,6 +39,7 @@ main > section:nth-child(7)>section:nth-child(2)>h1{
     font-size: 35px;
     top: -396px;
     color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(7)>section:nth-child(2)>div{
@@ -69,6 +73,7 @@ main > section:nth-child(7)>section:nth-child(3)>div:nth-child(2){
     font-size: 28px;
     color: #F3BF06;
     z-index: 5;
+    font-family: 'Sanchez', serif;
 }
 
 main > section:nth-child(7)>section:nth-child(3)>div:nth-child(3){
@@ -78,6 +83,7 @@ main > section:nth-child(7)>section:nth-child(3)>div:nth-child(3){
     font-size: 28px;
     color: #FFFFFF;
     z-index: 5;
+    font-family: 'Sanchez', serif;
 }
 
 main > section:nth-child(7)>section:nth-child(3)>div:nth-child(4){
@@ -159,6 +165,7 @@ main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(1){
     top: 136px;
     left: 482px;
     z-index: 6;
+    font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(2){
@@ -168,6 +175,7 @@ main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(2){
     top: 286px;
     left: 482px;
     z-index: 6;
+    font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(3){
@@ -177,6 +185,7 @@ main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(3){
     top: 425px;
     left: 482px;
     z-index: 6;
+    font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(4){
@@ -186,6 +195,7 @@ main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(4){
     top: 136px;
     left: 928px;
     z-index: 6;
+    font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(5){
@@ -195,6 +205,7 @@ main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(5){
     top: 286px;
     left: 928px;
     z-index: 6;
+    font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(6){
@@ -204,6 +215,7 @@ main > section:nth-child(7)>div:nth-child(6)>h3:nth-child(6){
     top: 425px;
     left: 928px;
     z-index: 6;
+    font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 main > section:nth-child(7)>section:nth-child(7)>div:nth-child(1){
@@ -213,6 +225,7 @@ main > section:nth-child(7)>section:nth-child(7)>div:nth-child(1){
     font-size: 27px;
     color: #F3BF06;
     z-index: 6;
+    font-family: 'Rye', cursive;
 }
 
 main > section:nth-child(7)>section:nth-child(7)>div:nth-child(2){
