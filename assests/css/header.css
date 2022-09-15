@@ -200,7 +200,7 @@ header > section > section:nth-child(2) > div:nth-child(6) {
             top: 2px;
             left: 0;
             right: 0;
-            margin-left: 1px;
+            margin-left: 13px;
             width: max-content;
             height: 30px;
         }
@@ -309,7 +309,7 @@ header > section > section:nth-child(2) > div:nth-child(6) {
         top: 2px;
         left: 0;
         right: 0;
-        margin-left: 1px;
+        margin-left: 17px;
         width: max-content;
         height: 30px;
     }
@@ -415,7 +415,7 @@ header > section > section:nth-child(2) > div:nth-child(6) {
          top: 4px;
          left: 0;
          right: 0;
-         margin-left: 13px;
+         margin-left: 22px;
          width: max-content;
          height: 30px;
      }
