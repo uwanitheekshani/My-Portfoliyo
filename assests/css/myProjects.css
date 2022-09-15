@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poly&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Neuton&display=swap');
 /*--------------------My Projects-------------------------*/
 
 main>section:nth-child(9){
@@ -37,6 +41,7 @@ main > section:nth-child(9)>section:nth-child(2)>h1:nth-child(1){
     top: -396px;
     color: #FFFFFF;
     width: 478px;
+    font-family: 'Inter', sans-serif;
 }
 main > section:nth-child(9)>section:nth-child(2)>section:nth-child(3){
     position: absolute;
@@ -56,6 +61,7 @@ main > section:nth-child(9)>section:nth-child(2)>div:nth-child(2){
     font-size: 25px;
     top: -290px;
     color: #F3BF06;
+    font-family: 'Sanchez', serif;
 }
 
 main > section:nth-child(9)>section:nth-child(3)>div:nth-child(1){
@@ -75,6 +81,7 @@ main > section:nth-child(9)>section:nth-child(3)>div:nth-child(1)>h3{
     color: #FFFFFF;
     left:73px;
     top: -18px;
+    font-family: 'Poly', serif;
 }
 
 main > section:nth-child(9)>section:nth-child(3)>div:nth-child(2){
@@ -94,6 +101,7 @@ main > section:nth-child(9)>section:nth-child(3)>div:nth-child(2)>h3{
     color: #FFFFFF;
     left:118px;
     top: -18px;
+    font-family: 'Poly', serif;
 }
 
 main > section:nth-child(9)>section:nth-child(3)>div:nth-child(3){
@@ -113,6 +121,7 @@ main > section:nth-child(9)>section:nth-child(3)>div:nth-child(3)>h3{
     color: #FFFFFF;
     left:106px;
     top: -18px;
+    font-family: 'Poly', serif;
 }
 
 main > section:nth-child(9)>section:nth-child(4)>div:nth-child(1){
@@ -192,7 +201,8 @@ main > section:nth-child(9)>div:nth-child(5){
 
 main > section:nth-child(9)>div:nth-child(5)>a{
     color: #F3BF06;
-   text-decoration: none;
+    font-family: 'Neuton', serif;
+   /*text-decoration: none;*/
 }
 
 main > section:nth-child(9)>section:nth-child(6){
@@ -209,6 +219,7 @@ main > section:nth-child(9)>section:nth-child(6)>h1{
     font-size: 35px;
     top: -86px;
     color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(9)>section:nth-child(7)>div:nth-child(1){
@@ -266,7 +277,8 @@ main > section:nth-child(9)>button:nth-child(8){
 
 main > section:nth-child(9)>button:nth-child(8)>a{
     color: #F3BF06;
-    text-decoration: none;
+    /*text-decoration: none;*/
+    font-family: 'Neuton', serif;
 }
 
 main>hr:nth-child(10){
