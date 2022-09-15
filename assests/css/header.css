@@ -52,6 +52,10 @@ header > section > section:nth-child(1) > nav {
 
 }
 
+header>section > section:nth-child(1) >nav> ul > li:hover {
+    color: #fff200;
+}
+
 /*header nav links*/
 header > section > section:nth-child(1) > nav > ul > li {
     display: inline-block;
@@ -60,6 +64,7 @@ header > section > section:nth-child(1) > nav > ul > li {
     font-family: 'Inter', sans-serif;
     font-size: 19px;
     color: #ECECEC;
+
 }
 
     header >section>section:nth-child(1)>nav>ul > li{

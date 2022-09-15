@@ -285,8 +285,6 @@ main>hr:nth-child(10){
     top: -18px;
     box-shadow: 3px 2px 5px 1px #D0C4C4;
     margin: 0;
-    /*backdrop-filter: blur(5px);*/
-    /*-webkit-backdrop-filter: blur(5px);*/
 }
 
 /*================================== 320->Mobile -S ==================================*/
