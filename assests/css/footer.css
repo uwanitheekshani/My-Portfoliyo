@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 /*--------------------Footer-------------------------*/
 
 footer{
@@ -21,6 +22,7 @@ footer>address:nth-child(1)>small:nth-child(1)>h4{
     margin-top: 0;
     font-size: 20px;
     color: #F3BF06;
+    font-family: 'Inter', sans-serif;
 }
 
 footer>address:nth-child(1)>small:nth-child(2)>h4{
@@ -31,6 +33,7 @@ footer>address:nth-child(1)>small:nth-child(2)>h4{
     margin-top: 0;
     font-size: 20px;
     color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 footer>aside:nth-child(2){
