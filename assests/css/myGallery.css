@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Neuton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika&family=Inknut+Antiqua&family=Neuton&display=swap');
 /*--------------------My Gallery-------------------------*/
 
 main>section:nth-child(3){
@@ -36,6 +40,7 @@ main > section:nth-child(3)>section:nth-child(2)>h1{
     font-size: 35px;
     top: -396px;
     color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(3)>section:nth-child(2)>div:nth-child(2){
@@ -66,6 +71,7 @@ main > section:nth-child(3)>section:nth-child(3)>div:nth-child(1){
     top: 17px;
     font-size: 20px;
     color: #FFFFFF;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 main > section:nth-child(3)>section:nth-child(3)>div:nth-child(2){
@@ -111,6 +117,7 @@ main > section:nth-child(3)>section:nth-child(3)>div:nth-child(5){
     font-size: 20px;
     text-decoration: underline;
     color: #F3BF06;
+    font-family: 'Neuton', serif;
 }
 
 main > section:nth-child(3)>div:nth-child(4){
@@ -120,6 +127,7 @@ main > section:nth-child(3)>div:nth-child(4){
     font-size: 30px;
     color: #F3BF06;
     z-index: 5;
+    font-family: 'Inknut Antiqua', serif;
 }
 
 main > section:nth-child(3)>section:nth-child(5){

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /*--------------------Education-------------------------*/
 
 main>section:nth-child(5){
@@ -36,6 +38,7 @@ main > section:nth-child(5)>section:nth-child(2)>h1{
     font-size: 35px;
     top: -396px;
     color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>section:nth-child(2)>div{
@@ -122,6 +125,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(2){
     position: absolute;
     color: #FFFFFF;
     right: 127px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(3){
@@ -129,6 +133,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(3){
     color: #FFFFFF;
     right: 147px;
     top: 31px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(4){
@@ -137,6 +142,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(1)>h3:nth-child(4){
     right: 14px;
     top: 84px;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 /*--------------------------------Britishway---------------------------------*/
@@ -194,6 +200,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(2){
     color: #FFFFFF;
     right: 112px;
     top: 1px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(3){
@@ -201,6 +208,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(3){
     color: #FFFFFF;
     right: 192px;
     top: 33px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(4){
@@ -208,6 +216,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(1)>h3:nth-child(4){
     color: #FFFFFF;
     right: 59px;
     top: 63px;
+    font-family: 'Inter', sans-serif;
 }
 
 /*--------------------------------A/L Exam---------------------------------*/
@@ -263,6 +272,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(2){
     color: #FFFFFF;
     right: 65px;
     top: -9px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){
@@ -270,6 +280,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){
     color: #FFFFFF;
     right: 151px;
     top: 16px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){
@@ -278,6 +289,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){
     right: 154px;
     top: 62px;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){
@@ -286,6 +298,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){
     right: 9px;
     top: 88px;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 /*--------------------------------Kannangara---------------------------------*/
@@ -341,6 +354,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(2){
     color: #FFFFFF;
     right: 112px;
     top: 4px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(3){
@@ -348,6 +362,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(3){
     color: #FFFFFF;
     right: 170px;
     top: 35px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(4){
@@ -355,6 +370,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(2)>h3:nth-child(4){
     color: #FFFFFF;
     right: 2px;
     top: 63px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>section:nth-child(4)>div:nth-child(8){
@@ -408,6 +424,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(2){
     color: #FFFFFF;
     right: 65px;
     top: -9px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){
@@ -415,6 +432,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(3){
     color: #FFFFFF;
     right: 151px;
     top: 16px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){
@@ -423,6 +441,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(4){
     right: 154px;
     top: 62px;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){
@@ -431,6 +450,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(2)>h3:nth-child(5){
     right: 9px;
     top: 88px;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 /*--------------------------------O/L Exam---------------------------------*/
@@ -486,6 +506,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(2){
     color: #FFFFFF;
     right: 10px;
     top: 6px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(3){
@@ -493,6 +514,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(3){
     color: #FFFFFF;
     right: 171px;
     top: 36px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(4){
@@ -501,6 +523,7 @@ main > section:nth-child(5)>aside:nth-child(5)>div:nth-child(3)>h3:nth-child(4){
     right: 72px;
     top: 86px;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 /*--------------------------------Primary---------------------------------*/
@@ -556,6 +579,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(2){
     color: #FFFFFF;
     right: 108px;
     top: 0px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(3){
@@ -563,6 +587,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(3){
     color: #FFFFFF;
     right: 149px;
     top: 35px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(4){
@@ -570,6 +595,7 @@ main > section:nth-child(5)>aside:nth-child(3)>div:nth-child(3)>h3:nth-child(4){
     color: #FFFFFF;
     right: 65px;
     top: 64px;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(5)>section:nth-child(4)>div:nth-child(20){
