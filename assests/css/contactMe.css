@@ -1,5 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
 /*--------------------Contact Me-------------------------*/
 main>section:nth-child(13){
     position: relative;
@@ -37,6 +40,7 @@ main > section:nth-child(13)>section:nth-child(2)>h1{
     font-size: 35px;
     top: -396px;
     color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
 }
 
 main > section:nth-child(13)>section:nth-child(2)>div:nth-child(2){
@@ -73,6 +77,7 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     margin-top: 10px;
     font-size: 23px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1)>h3:nth-child(3){
@@ -82,6 +87,8 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     font-size: 17px;
     width: 213px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
+
 }
 
 /*-------------------------------------------*/
@@ -108,6 +115,7 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     margin-top: -10px;
     font-size: 23px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(2)>h3:nth-child(3){
@@ -117,6 +125,7 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     font-size: 17px;
     width: 213px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(2)>h3:nth-child(4){
@@ -126,6 +135,7 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     font-size: 17px;
     width: 213px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
 }
 
 /*-------------------------------------------*/
@@ -153,6 +163,7 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     font-size: 23px;
     width: 213px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(3)>h3:nth-child(3){
@@ -162,6 +173,7 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     font-size: 17px;
     width: 213px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
 }
 
 /*-------------------------------------------*/
@@ -189,6 +201,7 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     font-size: 23px;
     width: 213px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(4)>h3:nth-child(3){
@@ -198,6 +211,7 @@ main > section:nth-child(13)>section:nth-child(3)>aside:nth-child(1)>div:nth-chi
     font-size: 17px;
     width: 213px;
     color: #FFFFFF;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>article:nth-child(1){
@@ -214,6 +228,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>article:n
     left: -112px;
     font-size: 21px;
     color: #FFFFFF;
+    font-family: 'Sanchez', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>article:nth-child(1)>p:nth-child(2){
@@ -223,6 +238,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>article:n
     font-size: 21px;
     width:824px ;
     color: #FFFFFF;
+    font-family: 'Sanchez', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:nth-child(2){
@@ -257,6 +273,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
     color: #FFFFFF;
     box-shadow: -1px -3px 6px 0px #D0C4C4;
     width: 687px;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:nth-child(2)>form:nth-child(2)>input:nth-child(2){
@@ -268,6 +285,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
     color: #FFFFFF;
     box-shadow: -1px -3px 6px 0px #D0C4C4;
     width: 687px;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:nth-child(2)>form:nth-child(2)>input:nth-child(3){
@@ -279,6 +297,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
     color: #FFFFFF;
     box-shadow: -1px -3px 6px 0px #D0C4C4;
     width: 687px;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:nth-child(2)>form:nth-child(2)>textarea:nth-child(4){
@@ -290,6 +309,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
     color: #FFFFFF;
     box-shadow: -1px -3px 6px 0px #D0C4C4;
     width: 687px;
+    font-family: 'Crimson Text', serif;
 }
 
 main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:nth-child(2)>form:nth-child(2)>button:nth-child(5){
@@ -303,6 +323,7 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
     color: #FFFFFF;
     height: 37px;
     width: 150px;
+    font-family: 'Crimson Text', serif;
 }
 
 /*================================== 320->Mobile -S ==================================*/
