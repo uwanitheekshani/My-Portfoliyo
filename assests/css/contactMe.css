@@ -318,12 +318,22 @@ main > section:nth-child(13)>section:nth-child(3)>section:nth-child(2)>section:n
     top: 357px;
     background-color: #283641;
     opacity: 0.8;
-    font-size: 21px;
+    /*font-size: 21px;*/
     border: 2px solid #F3BF06;
     color: #FFFFFF;
     height: 37px;
     width: 150px;
     font-family: 'Crimson Text', serif;
+}
+
+.btn:hover {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(223, 233, 245, 0.4), 0 17px 50px 0 rgba(223, 233, 245, 0.4);
 }
 
 /*================================== 320->Mobile -S ==================================*/

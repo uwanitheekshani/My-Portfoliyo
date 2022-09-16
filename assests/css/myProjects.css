@@ -205,6 +205,16 @@ main > section:nth-child(9)>div:nth-child(5)>a{
    /*text-decoration: none;*/
 }
 
+.btn:hover {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #F3BF06;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(223, 233, 245, 0.4), 0 17px 50px 0 rgba(223, 233, 245, 0.4);
+}
+
 main > section:nth-child(9)>section:nth-child(6){
     position: absolute;
     left:41px;
@@ -221,6 +231,8 @@ main > section:nth-child(9)>section:nth-child(6)>h1{
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
 }
+
+
 
 main > section:nth-child(9)>section:nth-child(7)>div:nth-child(1){
     position: absolute;
@@ -279,6 +291,15 @@ main > section:nth-child(9)>button:nth-child(8)>a{
     color: #F3BF06;
     /*text-decoration: none;*/
     font-family: 'Neuton', serif;
+}
+
+.btn1:hover {
+    background-color: #283641;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(223, 233, 245, 0.4), 0 17px 50px 0 rgba(223, 233, 245, 0.4);
 }
 
 main>hr:nth-child(10){
