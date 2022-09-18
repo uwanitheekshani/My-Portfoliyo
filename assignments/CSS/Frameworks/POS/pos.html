@@ -3,8 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <title>POS System</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--link Bootstrap Framework-->
+    <link href="../../../../assignments/CSS/Frameworks/asserts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+        .navbar-brand {
+            color: #144A81;
+            font-family: 'El Messiri', sans-serif;
+        }
+
+        #navbarSupportedContent {
+            margin-left: 16rem;
+        }
+
+        .nav-link {
+            color: black;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /*#logOutSign{*/
+        /*    margin-left: 20rem;*/
+        /*}*/
+
+        /*.navbar-text{*/
+        /*    margin-left: 21rem;*/
+        /*}*/
+
+        .navbar-text{
+            color: #6C5CE7;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .navbar-text2{
+            color: #6C5CE7;
+            font-family: 'Inter', sans-serif;
+        }
+
+    </style>
+
 </head>
 <body>
+<header>
+    <nav class="navbar navbar-expand-lg" id="nav1" style="background-color: #ECF0F1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo" class="d-inline-block align-text-top" height="50" src="../../../../assests/images/pos%20icon.png"
+                     width="50">
+            </a>
+
+            <a class="navbar-brand" href="#">UWANI POS SYSTEM</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           role="button">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Delete Order</a></li>
+                            <li><a class="dropdown-item" href="#">Update Order</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+<!--            <div class="collapse navbar-collapse" id="logOutSign">-->
+                <a class="sign-up" href="#">
+                    <img alt="signUpLogo" class="d-inline-block align-text-top" height="25" src="../../../../assests/images/sign-up.png"
+                         width="25">
+                </a>
+                <span class="navbar-text">
+             Sign Up
+          </span>
+                <a class="log-out" href="#" style="padding-left: 0.5rem;">
+                    <img alt="logOutLogo" class="d-inline-block align-text-top" height="25" src="../../../../assests/images/sign-out-option.png"
+                         width="25">
+                </a>
+                <span class="navbar-text2">
+             Log Out
+          </span>
+<!--            </div>-->
+
+        </div>
+    </nav>
+</header>
+
+
+<main class="container-fluid">
+
+
+</main>
+
+
+<script src="../../../../assignments/CSS/Frameworks/asserts/bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>
