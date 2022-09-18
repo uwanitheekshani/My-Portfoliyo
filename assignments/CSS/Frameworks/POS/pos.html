@@ -6,12 +6,14 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <!--link Bootstrap Framework-->
     <link href="../../../../assignments/CSS/Frameworks/asserts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../assests/fonts/css/all.min.css" rel="stylesheet">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Inter&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
         body{
             height: 100vh;
@@ -52,6 +54,10 @@
             height: 600px;
             border: 1px solid black;
             background-color: #DFF9FB;
+        }
+
+        #customer{
+
         }
 
     </style>
@@ -108,20 +114,20 @@
             </div>
 
 <!--            <div class="collapse navbar-collapse" id="logOutSign">-->
-                <a class="sign-up" href="#" style="margin: auto">
-                    <img alt="signUpLogo" class="d-inline-block align-text-top" height="20" src="../../../../assests/images/sign-up.png"
-                         width="20">
-                </a>
-                <span class="navbar-text">
-             Sign Up
-          </span>
-                <a class="log-out" href="#" style="margin: auto">
-                    <img alt="logOutLogo" class="d-inline-block align-text-top" height="20" src="../../../../assests/images/sign-out-option.png"
-                         width="20">
-                </a>
-                <span class="navbar-text2">
-             Log Out
-          </span>
+<!--                <a class="sign-up" href="#" style="margin: auto">-->
+<!--                    <img alt="signUpLogo" class="d-inline-block align-text-top" height="20" src="../../../../assests/images/sign-up.png"-->
+<!--                         width="20">-->
+<!--                </a>-->
+<!--                <span class="navbar-text">-->
+<!--             Sign Up-->
+<!--          </span>-->
+<!--                <a class="log-out" href="#" style="margin: auto">-->
+<!--                    <img alt="logOutLogo" class="d-inline-block align-text-top" height="20" src="../../../../assests/images/sign-out-option.png"-->
+<!--                         width="20">-->
+<!--                </a>-->
+<!--                <span class="navbar-text2">-->
+<!--             Log Out-->
+<!--          </span>-->
 <!--            </div>-->
 
         </div>
@@ -132,27 +138,306 @@
 <main class="container">
     <br>
     <div class="col">
+        <i class="fa-solid fa-users fa-xl"></i>
 <!--            <img style="top: 5rem" src="../../../../assests/images/customer%202.png" alt="Logo" width="60" height="60">-->
-        <h3 style="font-family: 'Inika', serif;">Customer</h3>
+        <h3 class=" ms-2" style="font-family: 'Inika', serif; display: inline-block">Customer</h3>
     </div>
 
     <section class="row align-self-start">
         <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB ">
             <div class="d-inline-flex p-2" style="background-color: #144A81; color: white; width: 12rem;
-                   margin-top: 1.5rem">Customer Search</div>
+                   margin-top: 1.5rem; font-family: 'Inter', sans-serif;">Customer Search</div>
 
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Input ID/Name Here" aria-label="Search"
-                       style="margin-top: 1rem">
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;">
             </form>
 
-            <button type="button" class="btn btn-success"  style="margin-top: 1rem">Search</button>
+            <button type="button" class="btn btn-success"  style="margin-top: 1rem;
+                 font-family: 'Inter', sans-serif;">Search</button>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="margin-top: 1rem; background-color: white; color: black; border: 1px solid black;
+                        font-family: 'Inter', sans-serif;">
+                    Name
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Nimal</a></li>
+                    <li><a class="dropdown-item" href="#">Kamal</a></li>
+                    <li><a class="dropdown-item" href="#">Amal</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Pasan</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group2" id="customer" role="group" aria-label="Basic mixed styles example" style="margin-top: 1rem">
+                <button type="button" class="btn btn-danger" style="background-color: #E74C3C; color: white;
+                              font-family: 'Inter', sans-serif;">Delete</button>
+                <button type="button" class="btn btn-warning" style="background-color: #0F6B59; color: white;
+                              font-family: 'Inter', sans-serif;">Update</button>
+                <button type="button" class="btn btn-success" style="background-color: #6F1E51; color: white;
+                              font-family: 'Inter', sans-serif;">Clear</button>
+            </div>
+        </div>
+
+<!--    =============add customer and view===========-->
+
+          <!--        add customer-->
+        <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB justify-content-end mt-4" style="align-items: end">
+<!--             <div class="row mt-4" style=" width: 40%">-->
+                 <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button"
+                         style="background-color: #0F6B59; color: white;  font-family: 'Inter', sans-serif;">
+                     +New Customer
+                 </button>
+
+                 <!-- Modal -->
+                 <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+                     <div class="modal-dialog">
+                         <div class="modal-content">
+                             <div class="modal-header" style="background-color: #144A81">
+                                 <h5 class="modal-title" id="exampleModalLabel" style="color: white">New Customer</h5>
+                                 <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                             </div>
+                             <div class="modal-body">
+                                 <section style="height: 25rem; border: 1px solid white; background-color: white">
+                                     <div class="mb-3">
+                                         <label class="form-label" for="formFile">Customer ID</label>
+                                         <input class="form-control" id="formFile" type="text">
+                                     </div>
+                                     <div class="mb-3">
+                                         <label class="form-label" for="formFileMultiple">Customer Name</label>
+                                         <input class="form-control" id="formFileMultiple" multiple type="text">
+                                     </div>
+                                     <div class="mb-3">
+                                         <label class="form-label" for="formFileDisabled">Customer Address</label>
+                                         <input class="form-control" id="formFileDisabled" type="text">
+                                     </div>
+                                     <div class="mb-3">
+                                         <label class="form-label" for="formFileLi">Customer Phone</label>
+                                         <input class="form-control form-control-sm" id="formFileLi" type="text">
+                                     </div>
+
+                                     <div aria-label="Basic mixed styles example" class="btn-group" role="group">
+                                         <button class="btn btn-danger" type="button">Save</button>
+                                         <button class="btn btn-warning" type="button">Renew</button>
+                                         <button class="btn btn-success" type="button">Close</button>
+                                     </div>
+                                 </section>
+                             </div>
+
+                         </div>
+                     </div>
+                 </div>
+
+
+
+                 <button type="button" class="btn" style="background-color: #F3BF06; color: black;
+                              font-family: 'Inter', sans-serif;">View All Customers</button>
+             </div>
+
+             </div>
+
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-#DFF9FB">
+
+            <!--All Customer Details Table-->
+            <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar">
+                <table class="table table-hover table-borderless table-striped" style="border: 1px solid black">
+                    <thead class="text-light " style="background-color: #26AEBC; border: 1px solid black">
+                    <tr>
+                        <th scope="col" style="border: 1px solid black">Customer ID</th>
+                        <th scope="col" style="border: 1px solid black">Customer Name</th>
+                        <th scope="col" style="border: 1px solid black">Address</th>
+                        <th scope="col" style="border: 1px solid black">Phone Number</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Uwani</td>
+                        <td>Kaluthra</td>
+                        <td>0715336845</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Samantha</td>
+                        <td>Badulle</td>
+                        <td>0778752345</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>piyal</td>
+                        <td>Panadura</td>
+                        <td>0713778905</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Sirimath</td>
+                        <td>Bandaragama</td>
+                        <td>0723987462</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+
+<!--    =============================Items=====================================-->
+
+    <br>
+    <br>
+    <div class="col">
+        <i class="fa-solid fa-boxes-stacked fa-xl"></i>
+        <!--            <img style="top: 5rem" src="../../../../assests/images/customer%202.png" alt="Logo" width="60" height="60">-->
+        <h3 class=" ms-2" style="font-family: 'Inika', serif; display: inline-block">Item</h3>
+    </div>
+
+    <section class="row align-self-start">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB ">
+            <div class="d-inline-flex p-2" style="background-color: #144A81; color: white; width: 12rem;
+                   margin-top: 1.5rem; font-family: 'Inter', sans-serif;">Item Search</div>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Input ID/Name Here" aria-label="Search"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;">
+            </form>
+
+            <button type="button" class="btn btn-success"  style="margin-top: 1rem;
+                 font-family: 'Inter', sans-serif;">Search</button>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="margin-top: 1rem; background-color: white; color: black; border: 1px solid black;
+                        font-family: 'Inter', sans-serif;">
+                    Name
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Cake</a></li>
+                    <li><a class="dropdown-item" href="#">Buiscut</a></li>
+                    <li><a class="dropdown-item" href="#">Banana</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Milk</a></li>
+                </ul>
+            </div>
+
+            <div class="btn-group2" id="item" role="group" aria-label="Basic mixed styles example" style="margin-top: 1rem">
+                <button type="button" class="btn btn-danger" style="background-color: #E74C3C; color: white;
+                              font-family: 'Inter', sans-serif;">Delete</button>
+                <button type="button" class="btn btn-warning" style="background-color: #0F6B59; color: white;
+                              font-family: 'Inter', sans-serif;">Update</button>
+                <button type="button" class="btn btn-success" style="background-color: #6F1E51; color: white;
+                              font-family: 'Inter', sans-serif;">Clear</button>
+            </div>
+        </div>
+
+        <!--    =============add customer and view===========-->
+
+        <!--        add customer-->
+        <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB justify-content-end mt-4" style="align-items: end">
+            <!--             <div class="row mt-4" style=" width: 40%">-->
+            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button"
+                    style="background-color: #0F6B59; color: white;  font-family: 'Inter', sans-serif;">
+                +New Item
+            </button>
+
+            <!-- Modal -->
+            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleMod" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #144A81">
+                            <h5 class="modal-title" id="exampleMo" style="color: white">New Item</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+                            <section style="height: 25rem; border: 1px solid white; background-color: white">
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFile">Customer ID</label>
+                                    <input class="form-control" id="formFile" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFileMultiple">Customer Name</label>
+                                    <input class="form-control" id="formFileMultiple" multiple type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFileDisabled">Customer Address</label>
+                                    <input class="form-control" id="formFileDisabled" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="formFileLi">Customer Phone</label>
+                                    <input class="form-control form-control-sm" id="formFileLi" type="text">
+                                </div>
+
+                                <div aria-label="Basic mixed styles example" class="btn-group" role="group">
+                                    <button class="btn btn-danger" type="button">Save</button>
+                                    <button class="btn btn-warning" type="button">Renew</button>
+                                    <button class="btn btn-success" type="button">Close</button>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button type="button" class="btn" style="background-color: #F3BF06; color: black;
+                              font-family: 'Inter', sans-serif;">View All Customers</button>
+        </div>
+
         </div>
 
 
-        <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB "></div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-#DFF9FB"></div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-#DFF9FB">
+
+            <!--All Customer Details Table-->
+            <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar">
+                <table class="table table-hover table-borderless table-striped" style="border: 1px solid black">
+                    <thead class="text-light " style="background-color: #26AEBC; border: 1px solid black">
+                    <tr>
+                        <th scope="col" style="border: 1px solid black">Customer ID</th>
+                        <th scope="col" style="border: 1px solid black">Customer Name</th>
+                        <th scope="col" style="border: 1px solid black">Address</th>
+                        <th scope="col" style="border: 1px solid black">Phone Number</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Uwani</td>
+                        <td>Kaluthra</td>
+                        <td>0715336845</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Samantha</td>
+                        <td>Badulle</td>
+                        <td>0778752345</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>piyal</td>
+                        <td>Panadura</td>
+                        <td>0713778905</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Sirimath</td>
+                        <td>Bandaragama</td>
+                        <td>0723987462</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
     </section>
+
 
 </main>
 
