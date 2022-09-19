@@ -1,3 +1,3 @@
--👩 Mock-Up --->: [Click Here]([https://www.figma.com/proto/eNR1Tzv0XvYc5TpjtO85ar/HL-POS-System?node-id=3%3A2&scaling=min-zoom&page-id=0%3A1](https://www.figma.com/file/wn8Hq2yQgkxy0rS1llZA9U/Untitled?node-id=0%3A1))
+-👩 Mock-Up --->: [Click Here](https://www.figma.com/file/wn8Hq2yQgkxy0rS1llZA9U/Untitled?node-id=0%3A1)
 - 👩 Wireframe -->: [Click Here](https://wireframe.cc/kuEwjR)
 - 👩 Site Map  ---->: [Click Here](https://www.gloomaps.com/jEnnPFHyCp)
