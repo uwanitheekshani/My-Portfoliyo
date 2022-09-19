@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--link Bootstrap Framework-->
+    <link href="../../../../assignments/CSS/Frameworks/asserts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../assests/fonts/css/all.min.css" rel="stylesheet">
+    <link href="../../../../assignments/CSS/Frameworks/asserts/stylesheet/pos_css.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+        .navbar-brand {
+            color: #144A81;
+            font-family: 'El Messiri', sans-serif;
+        }
+
+        #navbarSupportedContent {
+            margin-left: 16rem;
+        }
+
+        .nav-link {
+            color: black;
+            font-family: 'Inter', sans-serif;
+        }
+
+
+        section {
+            border: 1px solid black;
+            background-color: #DFF9FB;
+        }
+
+    </style>
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg" id="nav1" style="background-color: #ECF0F1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo" class="d-inline-block align-text-top" height="50"
+                     src="../../../../assests/images/pos%20icon.png"
+                     width="50">
+            </a>
+
+            <a class="navbar-brand" href="#">UWANI POS SYSTEM</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="item.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Orders</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           role="button">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Delete Order</a></li>
+                            <li><a class="dropdown-item" href="#">Update Order</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+            <!--            <div class="collapse navbar-collapse" id="logOutSign">-->
+            <!--                <a class="sign-up" href="#" style="margin: auto">-->
+            <!--                    <img alt="signUpLogo" class="d-inline-block align-text-top" height="20" src="../../../../assests/images/sign-up.png"-->
+            <!--                         width="20">-->
+            <!--                </a>-->
+            <!--                <span class="navbar-text">-->
+            <!--             Sign Up-->
+            <!--          </span>-->
+            <!--                <a class="log-out" href="#" style="margin: auto">-->
+            <!--                    <img alt="logOutLogo" class="d-inline-block align-text-top" height="20" src="../../../../assests/images/sign-out-option.png"-->
+            <!--                         width="20">-->
+            <!--                </a>-->
+            <!--                <span class="navbar-text2">-->
+            <!--             Log Out-->
+            <!--          </span>-->
+            <!--            </div>-->
+
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+    <!--    =============================Items=====================================-->
+<main class="container">
+    <br>
+    <br>
+    <div class="col">
+        <i class="fa-solid fa-boxes-stacked fa-xl"></i>
+        <!--            <img style="top: 5rem" src="../../../../assests/images/customer%202.png" alt="Logo" width="60" height="60">-->
+        <h3 class=" ms-2" style="font-family: 'Inika', serif; display: inline-block">Item</h3>
+    </div>
+
+    <section class="row align-self-start">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB ">
+            <div class="d-inline-flex p-2" style="background-color: #144A81; color: white; width: 12rem;
+                   margin-top: 1.5rem; font-family: 'Inter', sans-serif;">Item Search
+            </div>
+
+            <form class="d-flex" role="search">
+                <input aria-label="Search" class="form-control me-2" placeholder="Input ID/Name Here" style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+            </form>
+
+            <button class="btn btn-success" style="margin-top: 1rem;
+                 font-family: 'Inter', sans-serif;" type="button">Search
+            </button>
+
+            <div class="btn-group">
+                <button aria-expanded="false" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
+                        style="margin-top: 1rem; background-color: white; color: black; border: 1px solid black;
+                        font-family: 'Inter', sans-serif;"
+                        type="button">
+                    Name
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Cake</a></li>
+                    <li><a class="dropdown-item" href="#">Buiscut</a></li>
+                    <li><a class="dropdown-item" href="#">Banana</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Milk</a></li>
+                </ul>
+            </div>
+
+            <div aria-label="Basic mixed styles example" class="btn-group2" id="item" role="group"
+                 style="margin-top: 1rem">
+                <button class="btn btn-danger" style="background-color: #E74C3C; color: white;
+                              font-family: 'Inter', sans-serif;" type="button">Delete
+                </button>
+                <button class="btn btn-warning" style="background-color: #0F6B59; color: white;
+                              font-family: 'Inter', sans-serif;" type="button">Update
+                </button>
+                <button class="btn btn-success" style="background-color: #6F1E51; color: white;
+                              font-family: 'Inter', sans-serif;" type="button">Clear
+                </button>
+            </div>
+        </div>
+
+        <!--    =============add Item and view===========-->
+
+        <!--        add item-->
+        <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB justify-content-end mt-4">
+            <!--             <div class="row mt-4" style=" width: 40%">-->
+<!--            <button class="btn btn-primary"-->
+<!--                    data-bs-target="#addItemModal"-->
+<!--                    data-bs-toggle="modal;"-->
+<!--                    type="button">-->
+<!--                +New Item-->
+<!--            </button>-->
+
+            <!-- Modal -->
+<!--            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"-->
+<!--                 tabindex="-1">-->
+<!--                <div class="modal-dialog">-->
+<!--                    <div class="modal-content">-->
+<!--                        <div class="modal-header" style="background-color: #144A81">-->
+<!--                            <h5 class="modal-title" id="exampleModalLabel" style="color: white">New Customer</h5>-->
+<!--                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>-->
+<!--                        </div>-->
+<!--                        <div class="modal-body">-->
+<!--                            <section style="height: 25rem; border: 1px solid white; background-color: white">-->
+<!--                                <div class="mb-3">-->
+<!--                                    <label class="form-label" for="formFile">Customer ID</label>-->
+<!--                                    <input class="form-control" id="formFile" type="text">-->
+<!--                                </div>-->
+<!--                                <div class="mb-3">-->
+<!--                                    <label class="form-label" for="formFileMultiple">Customer Name</label>-->
+<!--                                    <input class="form-control" id="formFileMultiple" multiple type="text">-->
+<!--                                </div>-->
+<!--                                <div class="mb-3">-->
+<!--                                    <label class="form-label" for="formFileDisabled">Customer Address</label>-->
+<!--                                    <input class="form-control" id="formFileDisabled" type="text">-->
+<!--                                </div>-->
+<!--                                <div class="mb-3">-->
+<!--                                    <label class="form-label" for="formFileLi">Customer Phone</label>-->
+<!--                                    <input class="form-control form-control-sm" id="formFileLi" type="text">-->
+<!--                                </div>-->
+
+<!--                                <div aria-label="Basic mixed styles example" class="btn-group" role="group">-->
+<!--                                    <button class="btn btn-danger" type="button">Save</button>-->
+<!--                                    <button class="btn btn-warning" type="button">Renew</button>-->
+<!--                                    <button class="btn btn-success" type="button">Close</button>-->
+<!--                                </div>-->
+<!--                            </section>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!--Button-->
+<!--            <button class="btn btn-primary d-grid  col-6 col-md-4 col-sm-6 mx-auto ms-5"-->
+<!--                    data-bs-target="#addItemModal"-->
+<!--                    data-bs-toggle="modal"-->
+<!--                    type="button">+New Item-->
+<!--            </button>-->
+
+            <button class="btn btn-primary mt-4 d-grid  col-6 col-md-4 col-sm-6 mx-auto ms-5"
+                    data-bs-target="#addItemModal"
+                    data-bs-toggle="modal"
+                    type="button">+Add Item
+            </button>
+
+            <!--Fade Container-->
+            <div aria-hidden="true" aria-labelledby="addItemModalLabel" class="modal fade" id="addItemModal"
+                 tabindex="-1">
+
+                <div class="modal-dialog-centered modal-dialog">
+
+                    <!--Main Message Container-->
+                    <div class="modal-content">
+
+                        <!--Message Container-->
+                        <div class="modal-header bg-primary text-light">
+                            <h5 class="modal-title " id="addItemModalLabel">Add New Item</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                    type="button"></button>
+                        </div>
+
+                        <!--Message/Modal Body-->
+                        <div class="modal-body">
+                            <form>
+                                <div>
+                                    <label class="col-form-label" for="item-id">Item Code:</label>
+                                    <input class="form-control" id="item-id" type="text">
+                                </div>
+                                <div>
+                                    <label class="col-form-label" for="item-name">Item Name:</label>
+                                    <input class="form-control" id="item-name" type="text">
+                                </div>
+                                <div>
+                                    <label class="col-form-label" for="item-address">Item Price:</label>
+                                    <input class="form-control" id="item-address" type="text">
+                                </div>
+                                <div>
+                                    <label class="col-form-label" for="item-salary">Item Quantity:</label>
+                                    <input class="form-control" id="item-salary" type="number">
+                                </div>
+                            </form>
+                        </div>
+
+                        <!--Message Footer/Button-->
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" type="button">Save</button>
+                            <button class="btn btn-warning" type="button">Renew</button>
+                            <button class="btn btn-success" type="button">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <button class="btn ms-5 mt-2 col-md-4" style="background-color: #F3BF06; color: black;
+                              font-family: 'Inter', sans-serif;" type="button">View All Items
+            </button>
+        </div>
+
+<!--        </div>-->
+
+
+<!--        </div>-->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-#DFF9FB">
+
+            <!--All Items Details Table-->
+            <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar">
+                <table class="table table-hover table-borderless table-striped" style="border: 1px solid black">
+                    <thead class="text-light " style="background-color: #26AEBC; border: 1px solid black">
+                    <tr>
+                        <th scope="col" style="border: 1px solid black">Item ID</th>
+                        <th scope="col" style="border: 1px solid black">Item Name</th>
+                        <th scope="col" style="border: 1px solid black">Price</th>
+                        <th scope="col" style="border: 1px solid black">Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Cake</td>
+                        <td>600</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Soap</td>
+                        <td>100</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Butter</td>
+                        <td>400</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Buiscut</td>
+                        <td>200</td>
+                        <td>400</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+
+</body>
+</html>

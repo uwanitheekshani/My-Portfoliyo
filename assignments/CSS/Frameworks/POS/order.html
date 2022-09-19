@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>orders</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <!--link Bootstrap Framework-->
+  <link href="../../../../assignments/CSS/Frameworks/asserts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../../../assests/fonts/css/all.min.css" rel="stylesheet">
+  <link href="../../../../assignments/CSS/Frameworks/asserts/stylesheet/pos_css.css" rel="stylesheet">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Inter&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+
+    .navbar-brand {
+      color: #144A81;
+      font-family: 'El Messiri', sans-serif;
+    }
+
+    #navbarSupportedContent {
+      margin-left: 16rem;
+    }
+
+    .nav-link {
+      color: black;
+      font-family: 'Inter', sans-serif;
+    }
+
+
+    section {
+      border: 1px solid black;
+      background-color: #DFF9FB;
+    }
+
+  </style>
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg" id="nav1" style="background-color: #ECF0F1;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img alt="Logo" class="d-inline-block align-text-top" height="50"
+             src="../../../../assests/images/pos%20icon.png"
+             width="50">
+      </a>
+
+      <a class="navbar-brand" href="#">UWANI POS SYSTEM</a>
+      <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+              class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+              data-bs-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a aria-current="page" class="nav-link active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="item.html">Items</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Orders</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+               role="button">
+              Others
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Delete Order</a></li>
+              <li><a class="dropdown-item" href="#">Update Order</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+      <!--            <div class="collapse navbar-collapse" id="logOutSign">-->
+      <!--                <a class="sign-up" href="#" style="margin: auto">-->
+      <!--                    <img alt="signUpLogo" class="d-inline-block align-text-top" height="20" src="../../../../assests/images/sign-up.png"-->
+      <!--                         width="20">-->
+      <!--                </a>-->
+      <!--                <span class="navbar-text">-->
+      <!--             Sign Up-->
+      <!--          </span>-->
+      <!--                <a class="log-out" href="#" style="margin: auto">-->
+      <!--                    <img alt="logOutLogo" class="d-inline-block align-text-top" height="20" src="../../../../assests/images/sign-out-option.png"-->
+      <!--                         width="20">-->
+      <!--                </a>-->
+      <!--                <span class="navbar-text2">-->
+      <!--             Log Out-->
+      <!--          </span>-->
+      <!--            </div>-->
+
+    </div>
+  </nav>
+</header>
+<main class="container">
+<!--    =============================Orders=====================================-->
+<div class="col">
+  <i class="fa-solid fa-chart-line"></i>
+  <!--            <img style="top: 5rem" src="../../../../assests/images/customer%202.png" alt="Logo" width="60" height="60">-->
+  <h3 class=" ms-2" style="font-family: 'Inika', serif; display: inline-block">Orders</h3>
+</div>
+
+
+<section class="row align-self-start">
+  <div class="col-4 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4bg-#DFF9FB">
+    <!--            <div class="row-cols-4"></div>-->
+    <div class="modal-header mt-1" style="background-color: #144A81">
+      <label class="form-label" for="exampleInputOrderId" style="margin-left: 7rem">Invoice Details</label>
+    </div>
+    <form>
+      <div class="mb-1 w-30">
+        <label class="form-label" for="exampleInputOrderId">Order ID</label>
+        <input aria-describedby="idHelp" class="form-control" id="exampleInputOrderId" type="text">
+        <div class="form-text" id="idHelp"></div>
+      </div>
+      <div class="mb-1">
+        <label class="form-label" for="exampleInputDate">Date</label>
+        <input class="form-control" id="exampleInputDate" type="text">
+      </div>
+
+      <div class="mb-1">
+        <label class="form-label" for="customerId">Customer ID</label>
+        <select aria-label=".form-select-lg example" class="form-select form-select-ls" id="customerId">
+          <option selected>C001</option>
+        </select>
+      </div>
+
+      <div class="mb-1">
+        <label class="form-label" for="exampleInputName">Name</label>
+        <input class="form-control" id="exampleInputName" type="text">
+      </div>
+      <div class="mb-1">
+        <label class="form-label" for="exampleInputPhone">Phone</label>
+        <input class="form-control" id="exampleInputPhone" type="number">
+      </div>
+      <div class="mb-1">
+        <label class="form-label" for="exampleInputAddress">Address</label>
+        <input class="form-control" id="exampleInputAddress" type="text">
+      </div>
+    </form>
+
+  </div>
+  <div class="col-4 col-sm-12 col-md-4 col-lg-12 col-xl-4 col-xxl-4 bg-#DFF9FB"></div>
+  <div class="col-4 col-sm-12 col-md-4 col-lg-12 col-xl-4 col-xxl-4 bg-#DFF9FB"></div>
+  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-#DFF9FB"></div>
+</section>
+
+
+</main>
+
+
+<script src="../../../../assignments/CSS/Frameworks/asserts/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+
+
+
