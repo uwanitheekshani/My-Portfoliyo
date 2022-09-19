@@ -7,6 +7,7 @@
     <!--link Bootstrap Framework-->
     <link href="../../../../assignments/CSS/Frameworks/asserts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../../../assests/fonts/css/all.min.css" rel="stylesheet">
+    <link href="../../../../assignments/CSS/Frameworks/asserts/stylesheet/pos_css.css" rel="stylesheet">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
@@ -17,7 +18,9 @@
 
         body{
             height: 100vh;
+            /*overflow-x: hidden;*/
         }
+
 
 
         .navbar-brand {
@@ -280,7 +283,7 @@
                     </tr>
                     </tbody>
                 </table>
-            </div>
+<!--            </div>-->
 
         </div>
     </section>
@@ -334,18 +337,30 @@
             </div>
         </div>
 
-        <!--    =============add customer and view===========-->
+        <!--    =============add Item and view===========-->
 
         <!--        add customer-->
         <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB justify-content-end mt-4" style="align-items: end">
             <!--             <div class="row mt-4" style=" width: 40%">-->
-            <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button"
-                    style="background-color: #0F6B59; color: white;  font-family: 'Inter', sans-serif;">
-                +New Item
+<!--            <button class="btn btn-primary" data-bs-target="#addItemModal" data-bs-toggle="modal" type="button"-->
+<!--                    style="background-color: #0F6B59; color: white;  font-family: 'Inter', sans-serif;">-->
+<!--                +New Item-->
+<!--            </button>-->
+
+            <!--Button-->
+            <button class="btn btn-primary mt-4 d-grid  col-6 col-md-12 col-sm-6 mx-auto"
+                    data-bs-target="#addItemModal"
+                    data-bs-toggle="modal"
+                    type="button" style="background-color: #0F6B59; color: white;  font-family: 'Inter', sans-serif; width: 10rem">+New Item
             </button>
 
+<!--            <button class="btn btn-primary" data-bs-target="#addItemModal" data-bs-toggle="modal" type="button"-->
+<!--                    style="background-color: #0F6B59; color: white;  font-family: 'Inter', sans-serif;">-->
+<!--                +New Item-->
+<!--            </button>-->
+
             <!-- Modal -->
-            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleMod" tabindex="-1">
+            <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="addItemModal" tabindex="-1">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header" style="background-color: #144A81">
@@ -355,20 +370,20 @@
                         <div class="modal-body">
                             <section style="height: 25rem; border: 1px solid white; background-color: white">
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFile">Customer ID</label>
-                                    <input class="form-control" id="formFile" type="text">
+                                    <label class="form-label" for="formFile1">Item ID</label>
+                                    <input class="form-control" id="formFile1" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileMultiple">Customer Name</label>
-                                    <input class="form-control" id="formFileMultiple" multiple type="text">
+                                    <label class="form-label" for="formFileMultiple1">Item Name</label>
+                                    <input class="form-control" id="formFileMultiple1" multiple type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileDisabled">Customer Address</label>
-                                    <input class="form-control" id="formFileDisabled" type="text">
+                                    <label class="form-label" for="formFileDisabled1">Item Price</label>
+                                    <input class="form-control" id="formFileDisabled1" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileLi">Customer Phone</label>
-                                    <input class="form-control form-control-sm" id="formFileLi" type="text">
+                                    <label class="form-label" for="formFileLi1">Item Quantity</label>
+                                    <input class="form-control form-control-sm" id="formFileLi1" type="text">
                                 </div>
 
                                 <div aria-label="Basic mixed styles example" class="btn-group" role="group">
@@ -385,8 +400,8 @@
 
 
 
-            <button type="button" class="btn" style="background-color: #F3BF06; color: black;
-                              font-family: 'Inter', sans-serif;">View All Customers</button>
+            <button type="button" class="btn mt-0" style="background-color: #F3BF06; color: black;
+                              font-family: 'Inter', sans-serif;">View All Items</button>
         </div>
 
         </div>
@@ -395,41 +410,41 @@
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-#DFF9FB">
 
-            <!--All Customer Details Table-->
+            <!--All Items Details Table-->
             <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar">
                 <table class="table table-hover table-borderless table-striped" style="border: 1px solid black">
                     <thead class="text-light " style="background-color: #26AEBC; border: 1px solid black">
                     <tr>
-                        <th scope="col" style="border: 1px solid black">Customer ID</th>
-                        <th scope="col" style="border: 1px solid black">Customer Name</th>
-                        <th scope="col" style="border: 1px solid black">Address</th>
-                        <th scope="col" style="border: 1px solid black">Phone Number</th>
+                        <th scope="col" style="border: 1px solid black">Item ID</th>
+                        <th scope="col" style="border: 1px solid black">Item Name</th>
+                        <th scope="col" style="border: 1px solid black">Price</th>
+                        <th scope="col" style="border: 1px solid black">Quantity</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Uwani</td>
-                        <td>Kaluthra</td>
-                        <td>0715336845</td>
+                        <td>Cake</td>
+                        <td>600</td>
+                        <td>100</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>Samantha</td>
-                        <td>Badulle</td>
-                        <td>0778752345</td>
+                        <td>Soap</td>
+                        <td>100</td>
+                        <td>400</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td>piyal</td>
-                        <td>Panadura</td>
-                        <td>0713778905</td>
+                        <td>Butter</td>
+                        <td>400</td>
+                        <td>100</td>
                     </tr>
                     <tr>
                         <th scope="row">4</th>
-                        <td>Sirimath</td>
-                        <td>Bandaragama</td>
-                        <td>0723987462</td>
+                        <td>Buiscut</td>
+                        <td>200</td>
+                        <td>400</td>
                     </tr>
                     </tbody>
                 </table>
