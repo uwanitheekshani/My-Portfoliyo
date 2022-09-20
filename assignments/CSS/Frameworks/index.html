@@ -3,312 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <!--link Bootstrap Framework-->
-  <link href="../../../assignments/CSS/Frameworks/asserts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../../assests/fonts/css/all.min.css" rel="stylesheet">
-  <link href="../../../assignments/CSS/Frameworks/asserts/stylesheet/pos_css.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--link Bootstrap Framework-->
+    <link href="../../../assignments/CSS/Frameworks/asserts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../assests/fonts/css/all.min.css" rel="stylesheet">
+    <link href="../../../assignments/CSS/Frameworks/asserts/stylesheet/pos_css.css" rel="stylesheet">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Inter&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 
-  </style>
+    </style>
 
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-lg" id="nav1" style="background-color: #ECF0F1;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img alt="Logo" class="d-inline-block align-text-top" height="50"
-             src="../../../assests/images/pos%20icon.png"
-             width="50">
-      </a>
-
-      <a class="navbar-brand" href="#" style="color: #144A81;font-family: 'El Messiri', sans-serif;">UWANI POS SYSTEM</a>
-      <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-              class="navbar-toggler" data-bs-target="#navbarSupportedContent"
-              data-bs-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse " id="navbarSupportedContent"  >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-relative" style="right: -40vw; color: black; font-family: 'Inter', sans-serif;">
-          <li class="nav-item">
-            <a aria-current="page" class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Frameworks/POS/customer.html">Customers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Frameworks/POS/item.html">Items</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Frameworks/POS/order.html">Orders</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
-               role="button">
-              Others
+    <nav class="navbar navbar-expand-lg" id="nav1" style="background-color: #ECF0F1;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo" class="d-inline-block align-text-top" height="50"
+                     src="../../../assests/images/pos%20icon.png"
+                     width="50">
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Delete Order</a></li>
-              <li><a class="dropdown-item" href="#">Update Order</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
 
-        </ul>
+            <a class="navbar-brand" href="#" style="color: #144A81;font-family: 'El Messiri', sans-serif;">UWANI POS
+                SYSTEM</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-relative"
+                    style="right: -40vw; color: black; font-family: 'Inter', sans-serif;">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Frameworks/POS/customer.html">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Frameworks/POS/item.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Frameworks/POS/order.html">Orders</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           role="button">
+                            Others
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Delete Order</a></li>
+                            <li><a class="dropdown-item" href="#">Update Order</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
 
 
-      </div>
+            </div>
 
 
-    </div>
-  </nav>
+        </div>
+    </nav>
 </header>
 
-<!--<main class="container">-->
-<!--  <br>-->
-<!--  <div class="col">-->
-<!--    <i class="fa-solid fa-users fa-xl"></i>-->
-<!--    <h3 class=" ms-2" style="font-family: 'Inika', serif; display: inline-block">Customer</h3>-->
-<!--  </div>-->
 
-<!--  <section class="row align-self-start" style="border: 1px solid black;background-color: #DFF9FB;">-->
-<!--    <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB ">-->
-<!--      <div class="d-inline-flex p-2" style="background-color: #144A81; color: white; width: 12rem;-->
-<!--                   margin-top: 1.5rem; font-family: 'Inter', sans-serif;">Customer Search-->
-<!--      </div>-->
-
-<!--      <form class="d-flex" role="search">-->
-<!--        <input aria-label="Search" class="form-control me-2" placeholder="Input ID/Name Here" style="margin-top: 1rem; font-family: 'Inter', sans-serif;"-->
-<!--               type="search">-->
-<!--      </form>-->
-
-<!--      <button class="btn btn-success" style="margin-top: 1rem;-->
-<!--                 font-family: 'Inter', sans-serif;" type="button">Search-->
-<!--      </button>-->
-
-<!--      <div class="btn-group">-->
-<!--        <button aria-expanded="false" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"-->
-<!--                style="margin-top: 1rem; background-color: white; color: black; border: 1px solid black;-->
-<!--                        font-family: 'Inter', sans-serif;"-->
-<!--                type="button">-->
-<!--          Name-->
-<!--        </button>-->
-<!--        <ul class="dropdown-menu">-->
-<!--          <li><a class="dropdown-item" href="#">Nimal</a></li>-->
-<!--          <li><a class="dropdown-item" href="#">Kamal</a></li>-->
-<!--          <li><a class="dropdown-item" href="#">Amal</a></li>-->
-<!--          <li>-->
-<!--            <hr class="dropdown-divider">-->
-<!--          </li>-->
-<!--          <li><a class="dropdown-item" href="#">Pasan</a></li>-->
-<!--        </ul>-->
-<!--      </div>-->
-
-<!--      <div aria-label="Basic mixed styles example" class="btn-group2" id="customer" role="group"-->
-<!--           style="margin-top: 1rem">-->
-<!--        <button class="btn btn-danger" style="background-color: #E74C3C; color: white;-->
-<!--                              font-family: 'Inter', sans-serif;" type="button">Delete-->
-<!--        </button>-->
-<!--        <button class="btn btn-warning" style="background-color: #0F6B59; color: white;-->
-<!--                              font-family: 'Inter', sans-serif;" type="button">Update-->
-<!--        </button>-->
-<!--        <button class="btn btn-success" style="background-color: #6F1E51; color: white;-->
-<!--                              font-family: 'Inter', sans-serif;" type="button">Clear-->
-<!--        </button>-->
-<!--      </div>-->
-<!--    </div>-->
-
-<!--    &lt;!&ndash;    =============add customer and view===========&ndash;&gt;-->
-
-<!--    &lt;!&ndash;        add customer&ndash;&gt;-->
-<!--    <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB justify-content-end mt-4"-->
-<!--         style="align-items: end">-->
-<!--      &lt;!&ndash;             <div class="row mt-4" style=" width: 40%">&ndash;&gt;-->
-<!--      <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" style="background-color: #0F6B59; color: white;  font-family: 'Inter', sans-serif;"-->
-<!--              type="button">-->
-<!--        +New Customer-->
-<!--      </button>-->
-
-<!--      &lt;!&ndash; Modal &ndash;&gt;-->
-<!--      <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"-->
-<!--           tabindex="-1">-->
-<!--        <div class="modal-dialog">-->
-<!--          <div class="modal-content">-->
-<!--            <div class="modal-header" style="background-color: #144A81">-->
-<!--              <h5 class="modal-title" id="exampleModalLabel" style="color: white">New Customer</h5>-->
-<!--              <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>-->
-<!--            </div>-->
-<!--            <div class="modal-body">-->
-<!--              <section style="height: 25rem; border: 1px solid white; background-color: white">-->
-<!--                <div class="mb-3">-->
-<!--                  <label class="form-label" for="formFile">Customer ID</label>-->
-<!--                  <input class="form-control" id="formFile" type="text">-->
-<!--                </div>-->
-<!--                <div class="mb-3">-->
-<!--                  <label class="form-label" for="formFileMultiple">Customer Name</label>-->
-<!--                  <input class="form-control" id="formFileMultiple" multiple type="text">-->
-<!--                </div>-->
-<!--                <div class="mb-3">-->
-<!--                  <label class="form-label" for="formFileDisabled">Customer Address</label>-->
-<!--                  <input class="form-control" id="formFileDisabled" type="text">-->
-<!--                </div>-->
-<!--                <div class="mb-3">-->
-<!--                  <label class="form-label" for="formFileLi">Customer Phone</label>-->
-<!--                  <input class="form-control form-control-sm" id="formFileLi" type="text">-->
-<!--                </div>-->
-
-<!--                <div aria-label="Basic mixed styles example" class="btn-group" role="group">-->
-<!--                  <button class="btn btn-danger" type="button">Save</button>-->
-<!--                  <button class="btn btn-warning" type="button">Renew</button>-->
-<!--                  <button class="btn btn-success" type="button">Close</button>-->
-<!--                </div>-->
-<!--              </section>-->
-<!--            </div>-->
-<!--&lt;!&ndash;            <div class="modal-footer">&ndash;&gt;-->
-<!--&lt;!&ndash;              <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Save</button>&ndash;&gt;-->
-<!--&lt;!&ndash;              <button class="btn btn-primary" type="button">Close</button>&ndash;&gt;-->
-<!--&lt;!&ndash;            </div>&ndash;&gt;-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
-
-<!--      <button class="btn" style="background-color: #F3BF06; color: black;-->
-<!--                              font-family: 'Inter', sans-serif;" type="button">View All Customers-->
-<!--      </button>-->
-<!--    </div>-->
-
-<!--    &lt;!&ndash;        </div>&ndash;&gt;-->
-
-
-<!--    &lt;!&ndash;        </div>&ndash;&gt;-->
-<!--    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-#DFF9FB">-->
-
-<!--      &lt;!&ndash;All Customer Details Table&ndash;&gt;-->
-<!--      <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar">-->
-<!--        <table class="table table-hover table-borderless table-striped" style="border: 1px solid black">-->
-<!--          <thead class="text-light " style="background-color: #26AEBC; border: 1px solid black">-->
-<!--          <tr>-->
-<!--            <th scope="col" style="border: 1px solid black">Customer ID</th>-->
-<!--            <th scope="col" style="border: 1px solid black">Customer Name</th>-->
-<!--            <th scope="col" style="border: 1px solid black">Address</th>-->
-<!--            <th scope="col" style="border: 1px solid black">Phone Number</th>-->
-<!--          </tr>-->
-<!--          </thead>-->
-<!--          <tbody>-->
-<!--          <tr>-->
-<!--            <th scope="row">1</th>-->
-<!--            <td>Uwani</td>-->
-<!--            <td>Kaluthra</td>-->
-<!--            <td>0715336845</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th scope="row">2</th>-->
-<!--            <td>Samantha</td>-->
-<!--            <td>Badulle</td>-->
-<!--            <td>0778752345</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th scope="row">3</th>-->
-<!--            <td>piyal</td>-->
-<!--            <td>Panadura</td>-->
-<!--            <td>0713778905</td>-->
-<!--          </tr>-->
-<!--          <tr>-->
-<!--            <th scope="row">4</th>-->
-<!--            <td>Sirimath</td>-->
-<!--            <td>Bandaragama</td>-->
-<!--            <td>0723987462</td>-->
-<!--          </tr>-->
-<!--          </tbody>-->
-<!--        </table>-->
-<!--      </div>-->
-
-<!--    </div>-->
-<!--  </section>-->
-<!--</main>-->
 <main class="container-fluid " id="dashboardContent">
-<!--  <div class="jumbotron pt-md-5">-->
-<!--    <div id="home-tiles">-->
-<!--      <div class="row ">-->
-<!--        <div class="col-lg-6 col-xl-3 mb-2">-->
-<!--          <div class="card">-->
-<!--            <div class="card-header bg-danger font-weight-bolder">Customers</div>-->
-<!--            <div class="card-body">-->
-<!--              <div class="dash-tile-icon"><i class="fas fa-users"></i></div>-->
-<!--              <div class="dash-tile-text text-right text-black-50"><h2>93</h2></div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="col-lg-6 col-xl-3 mb-2">-->
-<!--          <div class="card">-->
-<!--            <div class="card-header bg-danger font-weight-bolder">Items</div>-->
-<!--            <div class="card-body">-->
-<!--              <div class="dash-tile-icon"><i class="fas fa-cubes"></i></div>-->
-<!--              <div class="dash-tile-text text-right text-black-50"><h2>101</h2></div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--        <div class="col-lg-6 col-xl-3 mb-2">-->
-<!--          <div class="card">-->
-<!--            <div class="card-header bg-danger font-weight-bolder">My Orders</div>-->
-<!--            <div class="card-body">-->
-<!--              <div class="dash-tile-icon"><i class="fas fa-shopping-cart"></i></div>-->
-<!--              <div class="dash-tile-text text-right text-black-50"><h2>999</h2></div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
 
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-  <section>
-    <div class="container align-content-center pt-md-5">
-      <div class="row">
-        <div class="col order-1">
-          <div class="card1 shadow p-3 mb-5 bg-body rounded" style="width: 18rem; border: 1px solid black" >
-            <img src="../../../assests/images/I1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title" style="font-family: 'Inter', sans-serif;color: #d63031;">Customers</h5>
-              <h5 class="card-title">100</h5>
+    <section>
+        <div class="container align-content-center pt-md-5">
+            <div class="row">
+                <div class="col order-1">
+                    <div class="card1 shadow p-3 mb-5 bg-body rounded" style="width: 18rem; border: 1px solid black">
+                        <img alt="..." class="card-img-top" src="../../../assests/images/I1.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family: 'Inter', sans-serif;color: #d63031;">
+                                Customers</h5>
+                            <h5 class="card-title">100</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-2">
+                    <div class="card2 shadow p-3 mb-5 bg-body rounded" style="width: 18rem; border: 1px solid black">
+                        <img alt="..." class="card-img-top" src="../../../assests/images/item.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family: 'Inter', sans-serif;color: #d63031;">Items</h5>
+                            <h5 class="card-title">400</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-3">
+                    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem; border: 1px solid black">
+                        <img alt="..." class="card-img-top" src="../../../assests/images/order.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-family: 'Inter', sans-serif;color: #d63031;">Orders</h5>
+                            <h5 class="card-title">100</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col order-2">
-          <div class="card2 shadow p-3 mb-5 bg-body rounded" style="width: 18rem; border: 1px solid black" >
-            <img src="../../../assests/images/item.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title" style="font-family: 'Inter', sans-serif;color: #d63031;">Items</h5>
-              <h5 class="card-title">400</h5>
-            </div>
-          </div>
-        </div>
-        <div class="col order-3">
-          <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem; border: 1px solid black" >
-            <img src="../../../assests/images/order.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title" style="font-family: 'Inter', sans-serif;color: #d63031;">Orders</h5>
-              <h5 class="card-title">100</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--  </div>-->
-  </section>
-
+        <!--  </div>-->
+    </section>
 
 
 </main>
