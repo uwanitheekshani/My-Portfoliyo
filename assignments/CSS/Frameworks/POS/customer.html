@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>POS System</title>
+    <title>customers</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <!--link Bootstrap Framework-->
     <link href="../../../../assignments/CSS/Frameworks/asserts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,18 +16,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
-
     </style>
-
 </head>
 <body>
 <header>
     <nav class="navbar navbar-expand-lg" id="nav1" style="background-color: #ECF0F1;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"></a>
-                <img alt="Logo" class="d-inline-block align-text-top" height="50"
-                     src="../../../../assests/images/pos%20icon.png"
-                     width="50">
+            <img alt="Logo" class="d-inline-block align-text-top" height="50"
+                 src="../../../../assests/images/pos%20icon.png"
+                 width="50">
 
 
             <a class="navbar-brand" href="#" style="color: #144A81; font-family: 'El Messiri', sans-serif;">UWANI POS SYSTEM</a>
@@ -76,18 +74,17 @@
     </nav>
 </header>
 
-    <!--    =============================Items=====================================-->
 <main class="container">
     <br>
     <div class="col">
-        <i class="fa-solid fa-boxes-stacked fa-xl"></i>
-        <h3 class=" ms-2" style="font-family: 'Inika', serif; display: inline-block">Item</h3>
+        <i class="fa-solid fa-users fa-xl"></i>
+        <h3 class=" ms-2" style="font-family: 'Inika', serif; display: inline-block">Customer</h3>
     </div>
 
     <section class="row align-self-start" style="border: 1px solid black;background-color: #DFF9FB;">
         <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB ">
             <div class="d-inline-flex p-2" style="background-color: #144A81; color: white; width: 12rem;
-                   margin-top: 1.5rem; font-family: 'Inter', sans-serif;">Item Search
+                   margin-top: 1.5rem; font-family: 'Inter', sans-serif;">Customer Search
             </div>
 
             <form class="d-flex" role="search">
@@ -107,17 +104,17 @@
                     Name
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Cake</a></li>
-                    <li><a class="dropdown-item" href="#">Buiscut</a></li>
-                    <li><a class="dropdown-item" href="#">Banana</a></li>
+                    <li><a class="dropdown-item" href="#">Nimal</a></li>
+                    <li><a class="dropdown-item" href="#">Kamal</a></li>
+                    <li><a class="dropdown-item" href="#">Amal</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Milk</a></li>
+                    <li><a class="dropdown-item" href="#">Pasan</a></li>
                 </ul>
             </div>
 
-            <div aria-label="Basic mixed styles example" class="btn-group2" id="item" role="group"
+            <div aria-label="Basic mixed styles example" class="btn-group2" id="customer" role="group"
                  style="margin-top: 1rem">
                 <button class="btn btn-danger" style="background-color: #E74C3C; color: white;
                               font-family: 'Inter', sans-serif;" type="button">Delete
@@ -131,15 +128,15 @@
             </div>
         </div>
 
-        <!--    =============add Item and view===========-->
+        <!--    =============add customer and view===========-->
 
-
+        <!--        add customer-->
         <div class="col-6 col-sm-6 col-md-6 col-lg-12 col-xl-6 col-xxl-6 bg-#DFF9FB justify-content-end mt-4"
              style="align-items: end">
-
+            <!--             <div class="row mt-4" style=" width: 40%">-->
             <button class="btn btn-primary" data-bs-target="#exampleModal" data-bs-toggle="modal" style="background-color: #0F6B59; color: white;  font-family: 'Inter', sans-serif;"
                     type="button">
-                +New Item
+                +New Customer
             </button>
 
             <!-- Modal -->
@@ -148,25 +145,25 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header" style="background-color: #144A81">
-                            <h5 class="modal-title" id="exampleModalLabel" style="color: white">New Item</h5>
+                            <h5 class="modal-title" id="exampleModalLabel" style="color: white">New Customer</h5>
                             <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
                         </div>
                         <div class="modal-body">
                             <section style="height: 25rem; border: 1px solid white; background-color: white">
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFile">Item Code</label>
+                                    <label class="form-label" for="formFile">Customer ID</label>
                                     <input class="form-control" id="formFile" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileMultiple">Item Name</label>
+                                    <label class="form-label" for="formFileMultiple">Customer Name</label>
                                     <input class="form-control" id="formFileMultiple" multiple type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileDisabled">Item Price</label>
+                                    <label class="form-label" for="formFileDisabled">Customer Address</label>
                                     <input class="form-control" id="formFileDisabled" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileLi">Item Quantity</label>
+                                    <label class="form-label" for="formFileLi">Customer Phone</label>
                                     <input class="form-control form-control-sm" id="formFileLi" type="text">
                                 </div>
 
@@ -177,7 +174,10 @@
                                 </div>
                             </section>
                         </div>
-
+                        <!--            <div class="modal-footer">-->
+                        <!--              <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Save</button>-->
+                        <!--              <button class="btn btn-primary" type="button">Close</button>-->
+                        <!--            </div>-->
                     </div>
                 </div>
             </div>
@@ -188,44 +188,47 @@
             </button>
         </div>
 
+        <!--        </div>-->
 
+
+        <!--        </div>-->
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 bg-#DFF9FB">
 
-            <!--All Items Details Table-->
+            <!--All Customer Details Table-->
             <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar">
                 <table class="table table-hover table-borderless table-striped" style="border: 1px solid black">
                     <thead class="text-light " style="background-color: #26AEBC; border: 1px solid black">
                     <tr>
-                        <th scope="col" style="border: 1px solid black">Item ID</th>
-                        <th scope="col" style="border: 1px solid black">Item Name</th>
-                        <th scope="col" style="border: 1px solid black">Price</th>
-                        <th scope="col" style="border: 1px solid black">Quantity</th>
+                        <th scope="col" style="border: 1px solid black">Customer ID</th>
+                        <th scope="col" style="border: 1px solid black">Customer Name</th>
+                        <th scope="col" style="border: 1px solid black">Address</th>
+                        <th scope="col" style="border: 1px solid black">Phone Number</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Cake</td>
-                        <td>600</td>
-                        <td>100</td>
+                        <td>Uwani</td>
+                        <td>Kaluthra</td>
+                        <td>0715336845</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>Soap</td>
-                        <td>100</td>
-                        <td>400</td>
+                        <td>Samantha</td>
+                        <td>Badulle</td>
+                        <td>0778752345</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td>Butter</td>
-                        <td>400</td>
-                        <td>100</td>
+                        <td>piyal</td>
+                        <td>Panadura</td>
+                        <td>0713778905</td>
                     </tr>
                     <tr>
                         <th scope="row">4</th>
-                        <td>Buiscut</td>
-                        <td>200</td>
-                        <td>400</td>
+                        <td>Sirimath</td>
+                        <td>Bandaragama</td>
+                        <td>0723987462</td>
                     </tr>
                     </tbody>
                 </table>
@@ -234,10 +237,6 @@
         </div>
     </section>
 </main>
-
-
-
 </body>
 <script src="../../../../assignments/CSS/Frameworks/asserts/bootstrap/js/bootstrap.min.js"></script>
-
 </html>
