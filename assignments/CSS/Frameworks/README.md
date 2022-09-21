@@ -1,5 +1,5 @@
   <h1 align="center">POS SYSTEM</h1>
--👩 Mock-Up --->: [Click Here](https://www.figma.com/file/wn8Hq2yQgkxy0rS1llZA9U/Untitled?node-id=0%3A1)
+-👩 Mock-Up --->:   [Click Here](https://www.figma.com/file/wn8Hq2yQgkxy0rS1llZA9U/Untitled?node-id=0%3A1)
 
 - 👩 Wireframe -->: [Click Here](https://wireframe.cc/kuEwjR)
 
