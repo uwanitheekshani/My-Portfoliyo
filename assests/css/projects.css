@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    width: 98.7vw;
+}
+
+header{
+    position: relative;
+    height: 56px;
+    width: 98.7vw;
+    background: #3F3C42;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+}
+
+/* add header name */
+header > section > div {
+    font-size: 30px;
+    -webkit-text-fill-color: #F3BF06;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    font-family: 'Inika', serif;
+}
+
+header > section> nav {
+    position: absolute;
+    right: 20px;
+    top: -5px;
+
+}
+
+header>section >nav> ul > li:hover {
+    color: #fff200;
+}
+
+header > section> nav > ul > li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    color: #ECECEC;
+}
+
+header >section>nav>ul > li{
+    margin-left: 20px;
+}
+
+
+/*//////////////////////////////////////*/
+
+main {
+    position: relative;
+
+}
+main > section:nth-child(1){
+    position: absolute;
+    background: #283641;
+    opacity: 0.8;
+    z-index: 4;
+    height: 700px;
+    width: 98.7vw;
+    margin: auto;
+}
+main > section:nth-child(1)>div:nth-child(1)>h3{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 30px;
+    color: #F3BF06;
+    font-family: 'Inter', sans-serif;
+    left: 40rem;
+}
+
+main > section:nth-child(1)>section:nth-child(2){
+    position: absolute;
+    border: 1px solid #F3BF06;
+    z-index: 4;
+    height: 380px;
+    width: 88vw;
+    margin: auto;
+    top: 136px;
+    left: 4rem;
+}
+
+main > section:nth-child(1)>section:nth-child(2)>h3{
+    position: absolute;
+    font-size: 2rem;
+    top: 45px;
+    color: #F3BF06;
+    font-family: 'Inter', sans-serif;
+    left: 25rem;
+}
