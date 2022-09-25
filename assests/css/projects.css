@@ -73,7 +73,7 @@ main > section:nth-child(1)>div:nth-child(1)>h3{
     left: 40rem;
 }
 
-main > section:nth-child(1)>section:nth-child(2){
+main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1){
     position: absolute;
     border: 1px solid #F3BF06;
     z-index: 4;
@@ -84,11 +84,11 @@ main > section:nth-child(1)>section:nth-child(2){
     left: 4rem;
 }
 
-main > section:nth-child(1)>section:nth-child(2)>h3{
+main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
     position: absolute;
     font-size: 2rem;
-    top: 45px;
-    color: #F3BF06;
+    top: -17px;
+    color: white;
     font-family: 'Inter', sans-serif;
-    left: 25rem;
+    left: 1rem;
 }
