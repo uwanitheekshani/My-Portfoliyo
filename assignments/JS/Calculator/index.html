@@ -35,7 +35,7 @@
 
 
         <div class="col-9 ">
-            <div class="d-flex justify-content-end rounded-3 shadow-lg" id="finalResultDiv" style="background-color: #1e272e; height: 75%">
+            <div class="d-flex justify-content-end rounded-3 shadow-lg" id="finalResultDiv" style="background-color: whitesmoke; height: 75%">
 <!--                <h1 class="pt-3 pb-3 px-4" id="finalResult" style="color: white">0</h1>-->
             </div>
         </div>
@@ -139,13 +139,13 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="rounded-3 d-flex justify-content-center shadow-lg" id="btn." style="background-color: whitesmoke;cursor: pointer;
+                <div class="rounded-3 d-flex justify-content-center shadow-lg" id="btnDot" style="background-color: whitesmoke;cursor: pointer;
                 width:100%; height: 75%">
                     <h2 class="pt-2 pb-4 text-center">.</h2>
                 </div>
             </div>
             <div class="col-3">
-                <div class="rounded-3 d-flex justify-content-center shadow-lg" id="btn=" style="background-color: #0abde3;cursor: pointer;
+                <div class="rounded-3 d-flex justify-content-center shadow-lg" id="btnEqual" style="background-color: #0abde3;cursor: pointer;
                 width:100%; height: 75%">
                     <h2 class="pt-2 pb-4 text-center">=</h2>
                 </div>
@@ -165,7 +165,126 @@
 </main>
 <script src="../../../assignments/JS/SPA/asserts/bootstrap/js/jquery-3.6.1.min.js"></script>
 <script>
+    //click for clear
+    $('#btnClear').click(function () {
+        $('#finalResultDiv').text('');
 
+    });
+
+    //click for btn7
+    $('#btn7').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('7');
+        } else {
+            $('#finalResultDiv').text(finalResult + '7');
+        }
+    });
+
+    //click for btn8
+    $('#btn8').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('8');
+        } else {
+            $('#finalResultDiv').text(finalResult + '8');
+        }
+    });
+
+    //click for btn9
+    $('#btn9').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('9');
+        } else {
+            $('#finalResultDiv').text(finalResult + '9');
+        }
+    });
+
+    //click for btn4
+    $('#btn4').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('4');
+        } else {
+            $('#finalResultDiv').text(finalResult + '4');
+        }
+    });
+
+
+    //click for btn5
+    $('#btn5').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('5');
+        } else {
+            $('#finalResultDiv').text(finalResult + '5');
+        }
+    });
+
+
+    //click for btn6
+    $('#btn6').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('6');
+        } else {
+            $('#finalResultDiv').text(finalResult + '6');
+        }
+    });
+
+
+    //click for btn1
+    $('#btn1').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('1');
+        } else {
+            $('#finalResultDiv').text(finalResult + '1');
+        }
+    });
+
+
+    //click for btn2
+    $('#btn2').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('2');
+        } else {
+            $('#finalResultDiv').text(finalResult + '2');
+        }
+    });
+
+
+    //click for btn3
+    $('#btn3').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('3');
+        } else {
+            $('#finalResultDiv').text(finalResult + '3');
+        }
+    });
+
+    //click for btn3
+    $('#btn0').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        if (finalResult === '0') {
+            $('#finalResultDiv').text('0');
+        } else {
+            $('#finalResultDiv').text(finalResult + '0');
+        }
+    });
 
 </script>
 
