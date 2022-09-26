@@ -35,7 +35,8 @@
 
 
         <div class="col-9 ">
-            <div class="d-flex justify-content-end rounded-3 shadow-lg" id="finalResultDiv" style="background-color: whitesmoke; height: 75%">
+            <div class="d-flex justify-content-end rounded-3 shadow-lg" id="finalResultDiv" style="background-color: whitesmoke; height: 75%;
+            font-size: 2rem">
 <!--                <h1 class="pt-3 pb-3 px-4" id="finalResult" style="color: white">0</h1>-->
             </div>
         </div>
@@ -152,7 +153,7 @@
             </div>
 
             <div class="col-3">
-                <div class="rounded-3 d-flex justify-content-center shadow-lg" id="btnMuli" style="background-color: #f7d794;cursor: pointer;
+                <div class="rounded-3 d-flex justify-content-center shadow-lg" id="btnMulti" style="background-color: #f7d794;cursor: pointer;
                 width:100%; height: 75%">
                     <h2 class="pt-2 pb-4 text-center">*</h2>
                 </div>
@@ -285,6 +286,102 @@
             $('#finalResultDiv').text(finalResult + '0');
         }
     });
+
+    var calculation={
+        firstValue:"",
+        symbol:"",
+        secondValue:""
+    }
+
+    // click for btnDot
+    $('#btnDot').click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        $('#finalResultDiv').text(finalResult + '.');
+    });
+
+    // click for " btnDivision "
+    $("#btnDivition").click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        calculation.firstValue = finalResult;
+        calculation.symbol = "/";
+
+        $('#finalResultDiv').text('');
+    });
+
+    // click for " btnAddition "
+    $("#btnAddition").click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        calculation.firstValue = finalResult;
+        calculation.symbol = "+";
+
+        $('#finalResultDiv').text('');
+    });
+
+    // click for " btnMinus "
+    $("#btnMinus").click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        calculation.firstValue = finalResult;
+        calculation.symbol = "-";
+
+        $('#finalResultDiv').text('');
+    });
+
+    // click for " btnMultiplication "
+    $("#btnMulti").click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        calculation.firstValue = finalResult;
+        calculation.symbol = "*";
+
+        $('#finalResultDiv').text('');
+    });
+
+    // click for " btnEqual "
+    $("#btnEqual").click(function () {
+        let finalResult = $('#finalResultDiv').text();
+
+        calculation.secondValue = finalResult;
+
+        getFinalResult();
+    });
+
+    // getFinal Count
+    function getFinalResult() {
+        let finalCount = null;
+
+        if (calculation.symbol === '/') {
+            var firstNum = parseFloat(calculation.firstValue);
+            var secondNum = parseFloat(calculation.secondValue);
+            finalCount = firstNum / secondNum;
+            $('#finalResultDiv').text(finalCount);
+        }
+
+        if (calculation.symbol === '+') {
+            var firstNum = parseFloat(calculation.firstValue);
+            var secondNum = parseFloat(calculation.secondValue);
+            finalCount = firstNum + secondNum;
+            $('#finalResultDiv').text(finalCount);
+        }
+
+        if (calculation.symbol === '-') {
+            var firstNum = parseFloat(calculation.firstValue);
+            var secondNum = parseFloat(calculation.secondValue);
+            finalCount = firstNum / secondNum;
+            $('#finalResultDiv').text(finalCount);
+        }
+
+        if (calculation.symbol === '*') {
+            var firstNum = parseFloat(calculation.firstValue);
+            var secondNum = parseFloat(calculation.secondValue);
+            finalCount = firstNum * secondNum;
+            $('#finalResultDiv').text(finalCount);
+        }
+
+    }
 
 </script>
 
