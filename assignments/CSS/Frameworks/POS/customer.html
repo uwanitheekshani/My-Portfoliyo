@@ -155,19 +155,19 @@
                         <div class="modal-body">
                             <section style="height: 25rem; border: 1px solid white; background-color: white">
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFile">Customer ID</label>
+                                    <label class="form-label" id="txtCustomerID" for="formFile">Customer ID</label>
                                     <input class="form-control" id="formFile" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileMultiple">Customer Name</label>
+                                    <label class="form-label" id="txtCustomerName" for="formFileMultiple">Customer Name</label>
                                     <input class="form-control" id="formFileMultiple" multiple type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileDisabled">Customer Address</label>
+                                    <label class="form-label" id="txtCustomerAddress" for="formFileDisabled">Customer Address</label>
                                     <input class="form-control" id="formFileDisabled" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileLi">Customer Phone</label>
+                                    <label class="form-label" id="txtCustomerPhone" for="formFileLi">Customer Phone</label>
                                     <input class="form-control form-control-sm" id="formFileLi" type="text">
                                 </div>
 
@@ -187,7 +187,7 @@
             </div>
 
 
-            <button class="btn" style="background-color: #F3BF06; color: black;
+            <button class="btn" id="btnViewAllCustomers" style="background-color: #F3BF06; color: black;
                               font-family: 'Inter', sans-serif;" type="button">View All Customers
             </button>
         </div>
@@ -209,7 +209,7 @@
                         <th scope="col" style="border: 1px solid black">Phone Number</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tblCustomer">
                     <tr>
                         <th scope="row">1</th>
                         <td>Uwani</td>
@@ -242,11 +242,53 @@
     </section>
 </main>
 
-<script src="../../../../assignments/JS/SPA/asserts/bootstrap/js/jquery-3.6.1.min.js"></script>
+<script src="../../../../assignments/CSS/Frameworks/asserts/bootstrap/js/jquery-3.6.1.min.js"></script>
+<script src="../../../../assignments/CSS/Frameworks/asserts/bootstrap/js/bootstrap.min.js"></script>
+
 <script>
 
+    var customers=[]; // global scope (Store all the customer records)
+
+    $("#saveCus").click(function () {
+
+        let customerID = $("#txtCustomerID").val();
+        let customerName = $("#txtCustomerName").val();
+        let customerAddress = $("#txtCustomerAddress").val();
+        let customerPhone = $("#txtCustomerPhone").val();
+
+
+        var customerObject = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            contact: customerPhone
+        }
+
+        //add the customer object to the array
+        customers.push(customerObject);
+        console.log(customers);
+        loadAllCustomers();
+
+    });
+
+    $("#btnViewAllCustomers").click(function (){
+        loadAllCustomers();
+    });
+
+    //load all customers
+    function loadAllCustomers(){
+
+        $("#tblCustomer").empty();
+
+        for(var customer of customers){
+            console.log(customer);
+
+            var row= `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td></tr>`;
+
+            $("#tblCustomer").append(row);
+        }
+    }
 </script>
 
 </body>
-<script src="../../../../assignments/CSS/Frameworks/asserts/bootstrap/js/bootstrap.min.js"></script>
 </html>
