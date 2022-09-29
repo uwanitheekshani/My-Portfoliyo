@@ -155,33 +155,30 @@
                         <div class="modal-body">
                             <section style="height: 25rem; border: 1px solid white; background-color: white">
                                 <div class="mb-3">
-                                    <label class="form-label" id="txtCustomerID" for="formFile">Customer ID</label>
-                                    <input class="form-control" id="formFile" type="text">
+                                    <label class="form-label" for="txtCustomerID">Customer ID</label>
+                                    <input class="form-control" id="txtCustomerID" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" id="txtCustomerName" for="formFileMultiple">Customer Name</label>
-                                    <input class="form-control" id="formFileMultiple" multiple type="text">
+                                    <label class="form-label" for="txtCustomerName">Customer Name</label>
+                                    <input class="form-control" id="txtCustomerName" multiple type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" id="txtCustomerAddress" for="formFileDisabled">Customer Address</label>
-                                    <input class="form-control" id="formFileDisabled" type="text">
+                                    <label class="form-label" for="txtCustomerAddress">Customer Address</label>
+                                    <input class="form-control" id="txtCustomerAddress" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" id="txtCustomerPhone" for="formFileLi">Customer Phone</label>
-                                    <input class="form-control form-control-sm" id="formFileLi" type="text">
+                                    <label class="form-label" for="txtCustomerPhone">Customer Phone</label>
+                                    <input class="form-control form-control-sm" id="txtCustomerPhone" type="text">
                                 </div>
 
                                 <div aria-label="Basic mixed styles example" class="btn-group" role="group">
-                                    <button class="btn btn-danger" id="saveCus" type="button">Save</button>
+                                    <button class="btn btn-danger" id="btnSaveCus" type="button">Save</button>
                                     <button class="btn btn-warning" type="button">Renew</button>
                                     <button class="btn btn-success" type="button">Close</button>
                                 </div>
                             </section>
                         </div>
-                        <!--            <div class="modal-footer">-->
-                        <!--              <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Save</button>-->
-                        <!--              <button class="btn btn-primary" type="button">Close</button>-->
-                        <!--            </div>-->
+
                     </div>
                 </div>
             </div>
@@ -210,30 +207,7 @@
                     </tr>
                     </thead>
                     <tbody id="tblCustomer">
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Uwani</td>
-                        <td>Kaluthra</td>
-                        <td>0715336845</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Samantha</td>
-                        <td>Badulle</td>
-                        <td>0778752345</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>piyal</td>
-                        <td>Panadura</td>
-                        <td>0713778905</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Sirimath</td>
-                        <td>Bandaragama</td>
-                        <td>0723987462</td>
-                    </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -249,7 +223,7 @@
 
     var customers=[]; // global scope (Store all the customer records)
 
-    $("#saveCus").click(function () {
+    $("#btnSaveCus").click(function () {
 
         let customerID = $("#txtCustomerID").val();
         let customerName = $("#txtCustomerName").val();

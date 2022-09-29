@@ -158,24 +158,24 @@
                         <div class="modal-body">
                             <section style="height: 25rem; border: 1px solid white; background-color: white">
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFile">Item Code</label>
-                                    <input class="form-control" id="formFile" type="text">
+                                    <label class="form-label" for="txtItemCode">Item Code</label>
+                                    <input class="form-control" id="txtItemCode" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileMultiple">Item Name</label>
-                                    <input class="form-control" id="formFileMultiple" multiple type="text">
+                                    <label class="form-label" for="txtItemName">Item Name</label>
+                                    <input class="form-control" id="txtItemName" multiple type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileDisabled">Item Price</label>
-                                    <input class="form-control" id="formFileDisabled" type="text">
+                                    <label class="form-label" for="txtItemPrice">Item Price</label>
+                                    <input class="form-control" id="txtItemPrice" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileLi">Item Quantity</label>
-                                    <input class="form-control form-control-sm" id="formFileLi" type="text">
+                                    <label class="form-label" for="txtItemQuantity">Item Quantity</label>
+                                    <input class="form-control form-control-sm" id="txtItemQuantity" type="text">
                                 </div>
 
                                 <div aria-label="Basic mixed styles example" class="btn-group" role="group">
-                                    <button class="btn btn-danger" type="button">Save</button>
+                                    <button class="btn btn-danger" id="btnSaveItem" type="button">Save</button>
                                     <button class="btn btn-warning" type="button">Renew</button>
                                     <button class="btn btn-success" type="button">Close</button>
                                 </div>
@@ -187,8 +187,8 @@
             </div>
 
 
-            <button class="btn" style="background-color: #F3BF06; color: black;
-                              font-family: 'Inter', sans-serif;" type="button">View All Customers
+            <button class="btn" id="btnViewAllItems" style="background-color: #F3BF06; color: black;
+                              font-family: 'Inter', sans-serif;" type="button">View All Items
             </button>
         </div>
 
@@ -206,31 +206,8 @@
                         <th scope="col" style="border: 1px solid black">Quantity</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Cake</td>
-                        <td>600</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Soap</td>
-                        <td>100</td>
-                        <td>400</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Butter</td>
-                        <td>400</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Buiscut</td>
-                        <td>200</td>
-                        <td>400</td>
-                    </tr>
+                    <tbody id="tblItem">
+
                     </tbody>
                 </table>
             </div>
@@ -239,8 +216,54 @@
     </section>
 </main>
 
-
-</body>
+<script src="../../../../assignments/CSS/Frameworks/asserts/bootstrap/js/jquery-3.6.1.min.js"></script>
 <script src="../../../../assignments/CSS/Frameworks/asserts/bootstrap/js/bootstrap.min.js"></script>
 
+<script>
+
+    var items=[]; // global scope (Store all the customer records)
+
+    $("#btnSaveItem").click(function () {
+
+        let itemCode = $("#txtItemCode").val();
+        let itemName = $("#txtItemName").val();
+        let itemPrice = $("#txtItemPrice").val();
+        let itemQuantity = $("#txtItemQuantity").val();
+
+
+        var itemObject = {
+            id: itemCode,
+            name: itemName,
+            price: itemPrice,
+            quantity: itemQuantity
+        }
+
+        //add the customer object to the array
+        items.push(itemObject);
+        console.log(items);
+        loadAllItems();
+
+    });
+
+    $("#btnViewAllItems").click(function (){
+        loadAllItems();
+    });
+
+    //load all customers
+    function loadAllItems(){
+
+        $("#tblItem").empty();
+
+        for(var item of items){
+            console.log(item);
+
+            var row= `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.price}</td><td>${item.quantity}</td></tr>`;
+
+            $("#tblItem").append(row);
+        }
+    }
+</script>
+
+
+</body>
 </html>
