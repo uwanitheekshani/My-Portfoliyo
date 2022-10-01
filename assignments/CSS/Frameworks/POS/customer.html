@@ -91,7 +91,7 @@
 
             <form class="d-flex" role="search">
                 <input aria-label="Search" class="form-control me-2" placeholder="Input ID/Name Here"
-                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif; width: 50%"
                        type="search">
             </form>
 
@@ -187,6 +187,22 @@
             <button class="btn" id="btnViewAllCustomers" style="background-color: #F3BF06; color: black;
                               font-family: 'Inter', sans-serif;" type="button">View All Customers
             </button>
+
+            <form class="d-grid" role="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCusId" placeholder="Customer ID"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif; "
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCusName" placeholder="Customer Name"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCusAddress" placeholder="Customer Address"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCusPhone" placeholder="Customer Phone"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+            </form>
+
         </div>
 
         <!--        </div>-->
@@ -211,6 +227,8 @@
                     </tbody>
                 </table>
             </div>
+
+
 
         </div>
     </section>
@@ -242,7 +260,7 @@
         customers.push(customerObject);
         console.log(customers);
         loadAllCustomers();
-
+        bindRowClickEvents();
     });
 
     $("#btnViewAllCustomers").click(function (){
@@ -262,6 +280,24 @@
             $("#tblCustomer").append(row);
         }
     }
+
+    function bindRowClickEvents() {
+        $("#tblCustomer>tr").click(function () {
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let address = $(this).children(":eq(2)").text();
+            let phone = $(this).children(":eq(3)").text();
+            // console.log(id, name, address, salary);
+
+            //setting table details values to text fields
+            $('#txtCusId').val(id);
+            $('#txtCusName').val(name);
+            $('#txtCusAddress').val(address);
+            $('#txtCusPhone').val(phone);
+
+        });
+    }
+
 </script>
 
 </body>

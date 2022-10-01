@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
-    /*::-webkit-scrollbar {*/
-    /*    scrollbar-width: none;*/
-    /*}*/
+/*::-webkit-scrollbar {*/
+/*    scrollbar-width: none;*/
+/*}*/
 
 body {
     margin: 0;
@@ -16,9 +16,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header{
+header {
     position: relative;
-    height:460px ;
+    height: 460px;
     width: 98.7vw;
 }
 
@@ -52,7 +52,7 @@ header > section > section:nth-child(1) > nav {
 
 }
 
-header>section > section:nth-child(1) >nav> ul > li:hover {
+header > section > section:nth-child(1) > nav > ul > li:hover {
     color: #fff200;
 }
 
@@ -67,9 +67,9 @@ header > section > section:nth-child(1) > nav > ul > li {
 
 }
 
-    header >section>section:nth-child(1)>nav>ul > li{
-        margin-left: 20px;
-    }
+header > section > section:nth-child(1) > nav > ul > li {
+    margin-left: 20px;
+}
 
 
 header > section > section:nth-child(2) {
@@ -85,7 +85,7 @@ header > section > section:nth-child(2) {
 }
 
 /* add 2nd background image */
-header > section > section:nth-child(2)>div:nth-child(1) {
+header > section > section:nth-child(2) > div:nth-child(1) {
     position: relative;
     background: url("../../assests/images/dark brown.jpg");
     opacity: 0.8;
@@ -98,37 +98,38 @@ header > section > section:nth-child(2)>div:nth-child(1) {
     width: 98.7vw;
     margin: auto;
 }
-  /*======================================*/
-.box{
+
+/*======================================*/
+.box {
     position: absolute;
     top: 0;
     left: 0;
-    width:98.7vw ;
+    width: 98.7vw;
     height: 30rem;
     overflow: hidden;
 }
 
-.box li{
+.box li {
     position: absolute;
     display: block;
     list-style: none;
     width: 25px;
     height: 25px;
     background: rgba(255, 255, 255, 0.2);
-    border: 3px solid #F3BF06;
+    border: 2px solid #F3BF06;
     animation: animate 20s linear infinite;
     bottom: -150px;
     border-radius: 50%;
 }
 
-.box li:nth-child(1){
+.box li:nth-child(1) {
     left: 86%;
     width: 80px;
     height: 80px;
     animation-delay: 0s;
 }
 
-.box li:nth-child(2){
+.box li:nth-child(2) {
     left: 12%;
     width: 30px;
     height: 30px;
@@ -136,14 +137,14 @@ header > section > section:nth-child(2)>div:nth-child(1) {
     animation-duration: 10s;
 }
 
-.box li:nth-child(3){
+.box li:nth-child(3) {
     left: 70%;
     width: 100px;
     height: 100px;
     animation-delay: 5.5s;
 }
 
-.box li:nth-child(4){
+.box li:nth-child(4) {
     left: 45%;
     width: 150px;
     height: 150px;
@@ -151,14 +152,14 @@ header > section > section:nth-child(2)>div:nth-child(1) {
     animation-duration: 15s;
 }
 
-.box li:nth-child(5){
+.box li:nth-child(5) {
     left: 65%;
     width: 40px;
     height: 40px;
     animation-delay: 0s;
 }
 
-.box li:nth-child(6){
+.box li:nth-child(6) {
     left: 15%;
     width: 110px;
     height: 110px;
@@ -167,11 +168,12 @@ header > section > section:nth-child(2)>div:nth-child(1) {
 
 
 @keyframes animate {
-    0%{
-        transform: translateY(0) scale(0);
+    0% {
+        transform: translateY(0) scale(0) rotate(360deg);
+
     }
-    100%{
-        transform: translateY(-800px) scale(2);
+    100% {
+        transform: translateY(-800px) scale(2) rotate(360deg);
         opacity: 0;
     }
 }
@@ -189,7 +191,7 @@ header > section > section:nth-child(2) > section:nth-child(2) > div {
     bottom: 0;
     top: 0;
     margin: auto;
-    background:url("../../assests/images/my image.png") no-repeat center;
+    background: url("../../assests/images/my image.png") no-repeat center;
     background-size: 105% 105%;
     z-index: 5;
 }
@@ -200,7 +202,8 @@ header > section > section:nth-child(2) > section:nth-child(3) > h1 {
     right: 0;
     left: 0;
     top: 298px;
-    /*font-family: 'Inter', sans-serif;*/
+    color: #F3BF06;
+    font-family: 'Inter', sans-serif;
     z-index: 5;
     font-size: 40px;
 }
@@ -220,12 +223,17 @@ header > section > section:nth-child(2) > section:nth-child(3) > h2 {
     font-size: 30px;
     color: #FFFFFF;
     clip-path: inset(0 100% 0 0);
-    animation:c5 5s steps(20) infinite;
+    animation: c5 5s steps(20) infinite;
 }
-@keyframes c5 {to{clip-path: inset(0 -1ch 0 0)}}
+
+@keyframes c5 {
+    to {
+        clip-path: inset(0 -1ch 0 0)
+    }
+}
 
 
-    /* add icons path */
+/* add icons path */
 header > section > section:nth-child(2) > section:nth-child(4) {
     display: inline-block;
     position: absolute;
@@ -243,7 +251,7 @@ header > section > section:nth-child(2) > section:nth-child(4) > img {
     padding-right: 8px;
 }
 
-header > section > section:nth-child(2) > div:nth-child(5){
+header > section > section:nth-child(2) > div:nth-child(5) {
     position: absolute;
     background: url("../../assests/images/scroll 1.png");
     background-size: cover;
@@ -265,119 +273,119 @@ header > section > section:nth-child(2) > div:nth-child(6) {
 }
 
 
-    /*================================== 320->Mobile -S ==================================*/
-    @media all and (max-width: 320px){
-        header{
-            height:192px ;
-            width: 320px;
-        }
-
-        /* add header background colour*/
-        header > section > section:nth-child(1) {
-            top: 0;
-            height: 42px;
-            width: 320px;
-            /*z-index: 5;*/
-        }
-
-        /* add header name */
-        header > section > section:nth-child(1) > div {
-            font-size: 14px;
-            top: 2px;
-            left: 130px;
-        }
-
-        /*nav of header*/
-        header > section > section:nth-child(1) > nav {
-            top: 2px;
-            left: 0;
-            right: 0;
-            margin-left: 13px;
-            width: max-content;
-            height: 30px;
-        }
-
-        /*header nav links*/
-        header > section > section:nth-child(1) > nav > ul > li {
-            padding: 0;
-            font-size: 8px;
-            margin-left: 4px;
-        }
-
-        header > section > section:nth-child(1) > nav > ul{
-            padding-left: 0;
-        }
-
-
-        header > section > section:nth-child(2) {
-            height: 140px;
-            overflow: hidden;
-            width: 320px;
-            /*width: 320px;*/
-        }
-
-        /* add 2nd background image */
-        header > section > section:nth-child(2)>div:nth-child(1) {
-            top: 0;
-            left: 0;
-            height: 140px;
-            width: 320px;
-            margin: auto;
-            overflow: hidden;
-        }
-
-
-        /* add my pic for header image */
-        header > section > section:nth-child(2) > section:nth-child(2) > div {
-            border-radius: 50%;
-            border: 2px solid #C7A47B;
-            right: 0;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            overflow: hidden;
-        }
-
-        /* add h1 in header */
-        header > section > section:nth-child(2) > section:nth-child(3) > h1 {
-            right: 0;
-            left: 0;
-            top: 82px;
-            font-size: 15px;
-            width: 301px;
-            overflow: hidden;
-        }
-
-        /* add h2 in header */
-        header > section > section:nth-child(2) > section:nth-child(3) > h2 {
-            right: 0;
-            left: 0;
-            top: 99px;
-            font-size: 12px;
-            width: 301px;
-            overflow: hidden;
-        }
-
-        /* add icons path */
-        header > section > section:nth-child(2) > section:nth-child(4) {
-            right: 30px;
-            top: 120px;
-        }
-
-        /* add icons in header */
-        header > section > section:nth-child(2) > section:nth-child(4) > img {
-            /*position: absolute;*/
-            height: 15px;
-            width: 15px;
-            padding-right: 2px;
-        }
-
+/*================================== 320->Mobile -S ==================================*/
+@media all and (max-width: 320px) {
+    header {
+        height: 192px;
+        width: 320px;
     }
 
+    /* add header background colour*/
+    header > section > section:nth-child(1) {
+        top: 0;
+        height: 42px;
+        width: 320px;
+        /*z-index: 5;*/
+    }
+
+    /* add header name */
+    header > section > section:nth-child(1) > div {
+        font-size: 14px;
+        top: 2px;
+        left: 130px;
+    }
+
+    /*nav of header*/
+    header > section > section:nth-child(1) > nav {
+        top: 2px;
+        left: 0;
+        right: 0;
+        margin-left: 13px;
+        width: max-content;
+        height: 30px;
+    }
+
+    /*header nav links*/
+    header > section > section:nth-child(1) > nav > ul > li {
+        padding: 0;
+        font-size: 8px;
+        margin-left: 4px;
+    }
+
+    header > section > section:nth-child(1) > nav > ul {
+        padding-left: 0;
+    }
+
+
+    header > section > section:nth-child(2) {
+        height: 140px;
+        overflow: hidden;
+        width: 320px;
+        /*width: 320px;*/
+    }
+
+    /* add 2nd background image */
+    header > section > section:nth-child(2) > div:nth-child(1) {
+        top: 0;
+        left: 0;
+        height: 140px;
+        width: 320px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+
+    /* add my pic for header image */
+    header > section > section:nth-child(2) > section:nth-child(2) > div {
+        border-radius: 50%;
+        border: 2px solid #C7A47B;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    /* add h1 in header */
+    header > section > section:nth-child(2) > section:nth-child(3) > h1 {
+        right: 0;
+        left: 0;
+        top: 82px;
+        font-size: 15px;
+        width: 301px;
+        overflow: hidden;
+    }
+
+    /* add h2 in header */
+    header > section > section:nth-child(2) > section:nth-child(3) > h2 {
+        right: 0;
+        left: 0;
+        top: 99px;
+        font-size: 12px;
+        width: 301px;
+        overflow: hidden;
+    }
+
+    /* add icons path */
+    header > section > section:nth-child(2) > section:nth-child(4) {
+        right: 30px;
+        top: 120px;
+    }
+
+    /* add icons in header */
+    header > section > section:nth-child(2) > section:nth-child(4) > img {
+        /*position: absolute;*/
+        height: 15px;
+        width: 15px;
+        padding-right: 2px;
+    }
+
+}
+
 /*================================== 375 ->Mobile -M ==================================*/
-@media all and (min-width: 321px) and (max-width: 375px){
-    header{
-        height:192px ;
+@media all and (min-width: 321px) and (max-width: 375px) {
+    header {
+        height: 192px;
         width: 375px;
     }
 
@@ -413,7 +421,7 @@ header > section > section:nth-child(2) > div:nth-child(6) {
         margin-left: 4px;
     }
 
-    header > section > section:nth-child(1) > nav > ul{
+    header > section > section:nth-child(1) > nav > ul {
         padding-left: 0;
     }
 
@@ -426,7 +434,7 @@ header > section > section:nth-child(2) > div:nth-child(6) {
     }
 
     /*!* add 2nd background image *!*/
-    header > section > section:nth-child(2)>div:nth-child(1) {
+    header > section > section:nth-child(2) > div:nth-child(1) {
         top: 0;
         left: 0;
         height: 160px;
@@ -480,228 +488,228 @@ header > section > section:nth-child(2) > div:nth-child(6) {
     }
 }
 
- /*================================== 425->Mobile -L ================================== */
- @media all and (min-width: 376px) and (max-width: 425px){
-     header{
-         height:192px ;
-         width: 98.7vw;
-     }
+/*================================== 425->Mobile -L ================================== */
+@media all and (min-width: 376px) and (max-width: 425px) {
+    header {
+        height: 192px;
+        width: 98.7vw;
+    }
 
-     /* add header background colour*/
-     header > section > section:nth-child(1) {
-         top: 0;
-         height: 42px;
-         width: 98.7vw;
-         /*z-index: 5;*/
-     }
+    /* add header background colour*/
+    header > section > section:nth-child(1) {
+        top: 0;
+        height: 42px;
+        width: 98.7vw;
+        /*z-index: 5;*/
+    }
 
-     /* add header name */
-     header > section > section:nth-child(1) > div {
-         font-size: 17px;
-         top: 2px;
-         left: 184px;
-     }
+    /* add header name */
+    header > section > section:nth-child(1) > div {
+        font-size: 17px;
+        top: 2px;
+        left: 184px;
+    }
 
-     /*nav of header*/
-     header > section > section:nth-child(1) > nav {
-         top: 4px;
-         left: 0;
-         right: 0;
-         margin-left: 22px;
-         width: max-content;
-         height: 30px;
-     }
+    /*nav of header*/
+    header > section > section:nth-child(1) > nav {
+        top: 4px;
+        left: 0;
+        right: 0;
+        margin-left: 22px;
+        width: max-content;
+        height: 30px;
+    }
 
-     /*!*header nav links*!*/
-     header > section > section:nth-child(1) > nav > ul > li {
-         padding: 0;
-         font-size: 12px;
-         margin-left: 1px;
-     }
+    /*!*header nav links*!*/
+    header > section > section:nth-child(1) > nav > ul > li {
+        padding: 0;
+        font-size: 12px;
+        margin-left: 1px;
+    }
 
-     header > section > section:nth-child(1) > nav > ul{
-         padding-left: 0;
-     }
-
-
-     header > section > section:nth-child(2) {
-         height: 182px;
-         overflow: hidden;
-         width: 98.7vw;
-         /*width: 320px;*/
-     }
-
-     /*!* add 2nd background image *!*/
-     header > section > section:nth-child(2)>div:nth-child(1) {
-         top: 0;
-         left: 0;
-         height: 182px;
-         width: 98.7vw;
-         margin: auto;
-         overflow: hidden;
-     }
+    header > section > section:nth-child(1) > nav > ul {
+        padding-left: 0;
+    }
 
 
-     /*!* add my pic for header image *!*/
-     header > section > section:nth-child(2) > section:nth-child(2) > div {
-         border-radius: 50%;
-         border: 2px solid #C7A47B;
-         right: 0;
-         left: 0;
-         bottom: 0;
-         top: 0;
-         overflow: hidden;
-         width: 16vw;
-         height: 16vw;
-     }
+    header > section > section:nth-child(2) {
+        height: 182px;
+        overflow: hidden;
+        width: 98.7vw;
+        /*width: 320px;*/
+    }
 
-     /*!* add h1 in header *!*/
-     header > section > section:nth-child(2) > section:nth-child(3) > h1 {
-         right: 0;
-         left: 24px;
-         top: 117px;
-         font-size: 18px;
-         width: 351px;
-     }
+    /*!* add 2nd background image *!*/
+    header > section > section:nth-child(2) > div:nth-child(1) {
+        top: 0;
+        left: 0;
+        height: 182px;
+        width: 98.7vw;
+        margin: auto;
+        overflow: hidden;
+    }
 
-     /*!* add h2 in header *!*/
-     header > section > section:nth-child(2) > section:nth-child(3) > h2 {
-         right: 0;
-         left: 26px;
-         top: 135px;
-         font-size: 14px;
-         width: 349px;
-     }
 
-     /*!* add icons path *!*/
-     header > section > section:nth-child(2) > section:nth-child(4) {
-         right: 30px;
-         top: 152px;
-     }
+    /*!* add my pic for header image *!*/
+    header > section > section:nth-child(2) > section:nth-child(2) > div {
+        border-radius: 50%;
+        border: 2px solid #C7A47B;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        overflow: hidden;
+        width: 16vw;
+        height: 16vw;
+    }
 
-     /*!* add icons in header *!*/
-     header > section > section:nth-child(2) > section:nth-child(4) > img {
-         /*position: absolute;*/
-         height: 20px;
-         width: 20px;
-         padding-right: 2px;
-     }
- }
+    /*!* add h1 in header *!*/
+    header > section > section:nth-child(2) > section:nth-child(3) > h1 {
+        right: 0;
+        left: 24px;
+        top: 117px;
+        font-size: 18px;
+        width: 351px;
+    }
+
+    /*!* add h2 in header *!*/
+    header > section > section:nth-child(2) > section:nth-child(3) > h2 {
+        right: 0;
+        left: 26px;
+        top: 135px;
+        font-size: 14px;
+        width: 349px;
+    }
+
+    /*!* add icons path *!*/
+    header > section > section:nth-child(2) > section:nth-child(4) {
+        right: 30px;
+        top: 152px;
+    }
+
+    /*!* add icons in header *!*/
+    header > section > section:nth-child(2) > section:nth-child(4) > img {
+        /*position: absolute;*/
+        height: 20px;
+        width: 20px;
+        padding-right: 2px;
+    }
+}
 
 /*================================== 768->Tablet ================================== */
- @media all and (min-width: 426px) and (max-width: 768px){
-     header{
-         height:460px ;
-         width: 98.7vw;
-     }
+@media all and (min-width: 426px) and (max-width: 768px) {
+    header {
+        height: 460px;
+        width: 98.7vw;
+    }
 
-     /* add header background colour*/
-     header > section > section:nth-child(1) {
-         width: 98.7vw;
-         top: 0;
-         height: 56px;
-     }
+    /* add header background colour*/
+    header > section > section:nth-child(1) {
+        width: 98.7vw;
+        top: 0;
+        height: 56px;
+    }
 
-     /* add header name */
-     header > section > section:nth-child(1) > div {
-         font-size: 27px;
-         top: 11px;
-         left: 10px;
-     }
+    /* add header name */
+    header > section > section:nth-child(1) > div {
+        font-size: 27px;
+        top: 11px;
+        left: 10px;
+    }
 
-     /*nav of header*/
-     header > section > section:nth-child(1) > nav {
-         right: 10px;
-         top: 2px;
-         left: 0;
-         margin-left: 102px;
-         height: 30px;
-     }
+    /*nav of header*/
+    header > section > section:nth-child(1) > nav {
+        right: 10px;
+        top: 2px;
+        left: 0;
+        margin-left: 102px;
+        height: 30px;
+    }
 
-     /*header nav links*/
-     header > section > section:nth-child(1) > nav > ul > li {
-         padding: 0;
-         font-size: 17px;
-         margin-left: 11px;
-     }
+    /*header nav links*/
+    header > section > section:nth-child(1) > nav > ul > li {
+        padding: 0;
+        font-size: 17px;
+        margin-left: 11px;
+    }
 
-     header > section > section:nth-child(1) > nav > ul{
-         padding-left: 13px;
-     }
+    header > section > section:nth-child(1) > nav > ul {
+        padding-left: 13px;
+    }
 
-     header > section > section:nth-child(2) {
-         height: 460px;
-         width: 98.7vw;
-     }
+    header > section > section:nth-child(2) {
+        height: 460px;
+        width: 98.7vw;
+    }
 
-     /* add 2nd background image */
-     header > section > section:nth-child(2)>div:nth-child(1) {
-         top: 0;
-         left: 0;
-         height: 460px;
-         width: 98.7vw;
-     }
+    /* add 2nd background image */
+    header > section > section:nth-child(2) > div:nth-child(1) {
+        top: 0;
+        left: 0;
+        height: 460px;
+        width: 98.7vw;
+    }
 
 
-     /* add my pic for header image */
-     header > section > section:nth-child(2) > section:nth-child(2) > div {
-         width: 16vw;
-         height: 16vw;
-         right: 0;
-         left: 0;
-         bottom: 0;
-         top: 14px;
-     }
+    /* add my pic for header image */
+    header > section > section:nth-child(2) > section:nth-child(2) > div {
+        width: 16vw;
+        height: 16vw;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 14px;
+    }
 
-     /* add h1 in header */
-     header > section > section:nth-child(2) > section:nth-child(3) > h1 {
-         right: 0;
-         left: 177px;
-         top: 280px;
-         font-size: 40px;
-         width: 397px;
-     }
+    /* add h1 in header */
+    header > section > section:nth-child(2) > section:nth-child(3) > h1 {
+        right: 0;
+        left: 177px;
+        top: 280px;
+        font-size: 40px;
+        width: 397px;
+    }
 
-     /* add h2 in header */
-     header > section > section:nth-child(2) > section:nth-child(3) > h2 {
-         right: 0;
-         left: 194px;
-         top: 330px;
-         font-size: 27px;
-         width: 349px;
-     }
+    /* add h2 in header */
+    header > section > section:nth-child(2) > section:nth-child(3) > h2 {
+        right: 0;
+        left: 194px;
+        top: 330px;
+        font-size: 27px;
+        width: 349px;
+    }
 
-     /* add icons path */
-     header > section > section:nth-child(2) > section:nth-child(4) {
-         right: 15px;
-         top: 397px;
-     }
+    /* add icons path */
+    header > section > section:nth-child(2) > section:nth-child(4) {
+        right: 15px;
+        top: 397px;
+    }
 
-     /* add icons in header */
-     header > section > section:nth-child(2) > section:nth-child(4) > img {
-         height: 40px;
-         width: 40px;
-         padding-right: 8px;
-     }
+    /* add icons in header */
+    header > section > section:nth-child(2) > section:nth-child(4) > img {
+        height: 40px;
+        width: 40px;
+        padding-right: 8px;
+    }
 
-     header > section > section:nth-child(2) > div:nth-child(5){
-         top: 425px;
-         left: 28px;
-         width: 49px;
-         height: 1px;
-     }
+    header > section > section:nth-child(2) > div:nth-child(5) {
+        top: 425px;
+        left: 28px;
+        width: 49px;
+        height: 1px;
+    }
 
-     /* add scroll down bar path in header */
-     header > section > section:nth-child(2) > div:nth-child(6) {
-         left: 87px;
-         top: 397px;
-     }
+    /* add scroll down bar path in header */
+    header > section > section:nth-child(2) > div:nth-child(6) {
+        left: 87px;
+        top: 397px;
+    }
 }
 
 /*================================== 1024->Laptop ================================== */
-@media all and (min-width: 769px) and (max-width: 1024px){
-    header{
-        height:460px ;
+@media all and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        height: 460px;
         width: 98.7vw;
     }
 
@@ -735,7 +743,7 @@ header > section > section:nth-child(2) > div:nth-child(6) {
         margin-left: 16px;
     }
 
-    header > section > section:nth-child(1) > nav > ul{
+    header > section > section:nth-child(1) > nav > ul {
         padding-left: 225px;
     }
 
@@ -745,7 +753,7 @@ header > section > section:nth-child(2) > div:nth-child(6) {
     }
 
     /* add 2nd background image */
-    header > section > section:nth-child(2)>div:nth-child(1) {
+    header > section > section:nth-child(2) > div:nth-child(1) {
         top: 0;
         left: 0;
         height: 460px;
@@ -794,7 +802,7 @@ header > section > section:nth-child(2) > div:nth-child(6) {
         padding-right: 8px;
     }
 
-    header > section > section:nth-child(2) > div:nth-child(5){
+    header > section > section:nth-child(2) > div:nth-child(5) {
         top: 428px;
         left: 28px;
         width: 49px;
