@@ -93,12 +93,12 @@
             </div>
 
             <form class="d-flex" role="search">
-                <input aria-label="Search" class="form-control me-2" placeholder="Input ID/Name Here"
+                <input aria-label="Search" class="form-control me-2" id="inputItemSearch" placeholder="Input ID/Name Here"
                        style="margin-top: 1rem; font-family: 'Inter', sans-serif; width: 50%"
                        type="search">
             </form>
 
-            <button class="btn btn-success" style="margin-top: 1rem;
+            <button class="btn btn-success" id="btnItemSearch" style="margin-top: 1rem;
                  font-family: 'Inter', sans-serif;" type="button">Search
             </button>
 
@@ -294,6 +294,27 @@
 
         });
     }
+
+    $("#btnItemSearch").click(function (){
+
+        for (let itemKey of items){
+
+            if (itemKey.id===$('#inputItemSearch').val()){
+                $('#txtCode').val(itemKey.id);
+                $('#txtName').val(itemKey.name);
+                $('#txtPrice').val(itemKey.price);
+                $('#txtQuantity').val(itemKey.quantity);
+            }
+            else if (itemKey.name===$('#inputItemSearch').val()){
+                $('#txtCode').val(itemKey.id);
+                $('#txtName').val(itemKey.name);
+                $('#txtPrice').val(itemKey.price);
+                $('#txtQuantity').val(itemKey.quantity);
+            }
+        }
+
+    });
+
 </script>
 
 
