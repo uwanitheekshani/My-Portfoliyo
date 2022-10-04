@@ -73,11 +73,13 @@ main > section:nth-child(1)>div:nth-child(1)>h3{
     left: 40rem;
 }
 
+/*======================Standalone===========================*/
+
 main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1){
     position: absolute;
     border: 1px solid #F3BF06;
     z-index: 4;
-    height: 1460px;
+    height: 1400px;
     width: 88vw;
     margin: auto;
     top: 136px;
@@ -105,7 +107,7 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
 .p1{
     position: absolute;
     z-index: 4;
-    background-color: #6c5ce7;
+    background-color: #474787;
     box-shadow: 9px -20px 12px 13px #f3858500;
     top: 56px;
     left: 2rem;
@@ -156,7 +158,7 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
 .p2{
     position: absolute;
     z-index: 4;
-    background-color: #6c5ce7;
+    background-color: #474787;
     box-shadow: 9px -20px 12px 13px #f3858500;
     top: 377px;
     left: 2rem;
@@ -206,7 +208,7 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
 .p3{
     position: absolute;
     z-index: 4;
-    background-color: #6c5ce7;
+    background-color: #474787;
     box-shadow: 9px -20px 12px 13px #f3858500;
     top: 698px;
     left: 2rem;
@@ -244,21 +246,21 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
 
 /*///////////////////////////////////////////////////*/
 
-.hostel{
+.cake{
     position: absolute;
     z-index: 4;
-    top: 719px;
+    top: 1048px;
     left: 5rem;
     color: #F3BF06;
     font-size: 1.5rem;
 }
 
-.p3{
+.p4{
     position: absolute;
     z-index: 4;
-    background-color: #6c5ce7;
+    background-color: #474787;
     box-shadow: 9px -20px 12px 13px #f3858500;
-    top: 698px;
+    top: 1019px;
     left: 2rem;
     width: 90vw;
     height: 28rem;
@@ -266,11 +268,11 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
 }
 
 
-.s3{
+.s4{
     position: absolute;
     z-index: 4;
-    top: 121px;
-    background:url("../../assests/images/hostel.png");
+    top: 131px;
+    background:url("../../assests/images/cake.png");
     background-size: cover;
     background-position: center;
     border: 3px solid #F3BF06;
@@ -279,7 +281,7 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
     height: 11rem;
 }
 
-.hostelIn{
+.cakeIn{
     position: absolute;
     z-index: 4;
     font-size: 1.3rem;
@@ -288,6 +290,9 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
     right: 5vw;
     font-family: 'Inter', sans-serif;
     left: 33rem;
-    top: 139px;
+    top: 127px;
     color: #FFFFFF;
 }
+
+/*======================web===========================*/
+
