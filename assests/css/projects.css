@@ -60,7 +60,7 @@ main > section:nth-child(1){
     background: #283641;
     opacity: 0.8;
     z-index: 4;
-    height: 1800px;
+    height: 2300px;
     width: 98.7vw;
     margin: auto;
 }
@@ -296,3 +296,70 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
 
 /*======================web===========================*/
 
+main > section:nth-child(1)>section:nth-child(2)>div:nth-child(2){
+    position: absolute;
+    border: 1px solid #F3BF06;
+    z-index: 4;
+    height: 438px;
+    width: 88vw;
+    margin: auto;
+    top: 1648px;
+    left: 4rem;
+}
+
+main > section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>h3{
+    position: absolute;
+    font-size: 2rem;
+    top: -17px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    left: 1rem;
+}
+
+.portfoliyo{
+    position: absolute;
+    z-index: 4;
+    top: 48px;
+    left: 5rem;
+    color: #F3BF06;
+    font-size: 1.5rem;
+}
+
+.p5{
+    position: absolute;
+    z-index: 4;
+    background-color: #227093;
+    drop-shadow(1.25em .75em 0px rgb(150, 223, 150));
+    top: 28px;
+    left: 2rem;
+    width: 90vw;
+    height: 28rem;
+    clip-path: polygon(78% 19%, 93% 49%, 76% 76%, 0 76%, 10% 49%, 0 19%);
+}
+
+
+.s5{
+    position: absolute;
+    z-index: 4;
+    top: 120px;
+    background:url("../../assests/images/web1.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #F3BF06;
+    left: 10rem;
+    width: 20vw;
+    height: 11rem;
+}
+
+.portfoliyoIn{
+    position: absolute;
+    z-index: 4;
+    font-size: 1.3rem;
+    width: 448px;
+    height: 151px;
+    right: 5vw;
+    font-family: 'Inter', sans-serif;
+    left: 33rem;
+    top: 129px;
+    color: #FFFFFF;
+}
