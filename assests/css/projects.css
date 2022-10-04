@@ -60,7 +60,7 @@ main > section:nth-child(1){
     background: #283641;
     opacity: 0.8;
     z-index: 4;
-    height: 700px;
+    height: 1800px;
     width: 98.7vw;
     margin: auto;
 }
@@ -77,7 +77,7 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1){
     position: absolute;
     border: 1px solid #F3BF06;
     z-index: 4;
-    height: 528px;
+    height: 1460px;
     width: 88vw;
     margin: auto;
     top: 136px;
@@ -139,5 +139,155 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
     font-family: 'Inter', sans-serif;
     left: 33rem;
     top: 120px;
+    color: #FFFFFF;
+}
+
+/*///////////////////////////////////////////////////*/
+
+.parkV{
+    position: absolute;
+    z-index: 4;
+    top: 390px;
+    left: 5rem;
+    color: #F3BF06;
+    font-size: 1.5rem;
+}
+
+.p2{
+    position: absolute;
+    z-index: 4;
+    background-color: #6c5ce7;
+    box-shadow: 9px -20px 12px 13px #f3858500;
+    top: 377px;
+    left: 2rem;
+    width: 90vw;
+    height: 28rem;
+    clip-path: polygon(78% 19%, 93% 49%, 76% 76%, 0 76%, 10% 49%, 0 19%);
+}
+
+
+.s2{
+    position: absolute;
+    z-index: 4;
+    top: 130px;
+    background:url("../../assests/images/park.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #F3BF06;
+    left: 10rem;
+    width: 20vw;
+    height: 11rem;
+}
+
+.parkIn{
+    position: absolute;
+    z-index: 4;
+    font-size: 1.3rem;
+    width: 520px;
+    height: 151px;
+    right: 5vw;
+    font-family: 'Inter', sans-serif;
+    left: 33rem;
+    top: 119px;
+    color: #FFFFFF;
+}
+
+/*///////////////////////////////////////////////////*/
+
+.hostel{
+    position: absolute;
+    z-index: 4;
+    top: 719px;
+    left: 5rem;
+    color: #F3BF06;
+    font-size: 1.5rem;
+}
+
+.p3{
+    position: absolute;
+    z-index: 4;
+    background-color: #6c5ce7;
+    box-shadow: 9px -20px 12px 13px #f3858500;
+    top: 698px;
+    left: 2rem;
+    width: 90vw;
+    height: 28rem;
+    clip-path: polygon(78% 19%, 93% 49%, 76% 76%, 0 76%, 10% 49%, 0 19%);
+}
+
+
+.s3{
+    position: absolute;
+    z-index: 4;
+    top: 121px;
+    background:url("../../assests/images/hostel.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #F3BF06;
+    left: 10rem;
+    width: 20vw;
+    height: 11rem;
+}
+
+.hostelIn{
+    position: absolute;
+    z-index: 4;
+    font-size: 1.3rem;
+    width: 520px;
+    height: 151px;
+    right: 5vw;
+    font-family: 'Inter', sans-serif;
+    left: 33rem;
+    top: 139px;
+    color: #FFFFFF;
+}
+
+/*///////////////////////////////////////////////////*/
+
+.hostel{
+    position: absolute;
+    z-index: 4;
+    top: 719px;
+    left: 5rem;
+    color: #F3BF06;
+    font-size: 1.5rem;
+}
+
+.p3{
+    position: absolute;
+    z-index: 4;
+    background-color: #6c5ce7;
+    box-shadow: 9px -20px 12px 13px #f3858500;
+    top: 698px;
+    left: 2rem;
+    width: 90vw;
+    height: 28rem;
+    clip-path: polygon(78% 19%, 93% 49%, 76% 76%, 0 76%, 10% 49%, 0 19%);
+}
+
+
+.s3{
+    position: absolute;
+    z-index: 4;
+    top: 121px;
+    background:url("../../assests/images/hostel.png");
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #F3BF06;
+    left: 10rem;
+    width: 20vw;
+    height: 11rem;
+}
+
+.hostelIn{
+    position: absolute;
+    z-index: 4;
+    font-size: 1.3rem;
+    width: 520px;
+    height: 151px;
+    right: 5vw;
+    font-family: 'Inter', sans-serif;
+    left: 33rem;
+    top: 139px;
     color: #FFFFFF;
 }
