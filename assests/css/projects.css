@@ -117,6 +117,9 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
 
 }
 
+.p1:hover{
+    background-color: darkblue;
+}
 
 .s1{
     position: absolute;
@@ -167,6 +170,9 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
     clip-path: polygon(78% 19%, 93% 49%, 76% 76%, 0 76%, 10% 49%, 0 19%);
 }
 
+.p2:hover{
+    background-color: darkblue;
+}
 
 .s2{
     position: absolute;
@@ -217,6 +223,9 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
     clip-path: polygon(78% 19%, 93% 49%, 76% 76%, 0 76%, 10% 49%, 0 19%);
 }
 
+.p3:hover{
+    background-color: darkblue;
+}
 
 .s3{
     position: absolute;
@@ -267,6 +276,9 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(1)>h3{
     clip-path: polygon(78% 19%, 93% 49%, 76% 76%, 0 76%, 10% 49%, 0 19%);
 }
 
+.p4:hover{
+    background-color: darkblue;
+}
 
 .s4{
     position: absolute;
@@ -336,7 +348,9 @@ main > section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>h3{
     height: 28rem;
     clip-path: polygon(78% 19%, 93% 49%, 76% 76%, 0 76%, 10% 49%, 0 19%);
 }
-
+.p5:hover{
+  background-color: #0abde3;
+}
 
 .s5{
     position: absolute;
