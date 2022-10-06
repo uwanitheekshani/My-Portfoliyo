@@ -62,7 +62,13 @@ body{
     left: 39px;
     top: 510px;
     clip-path: inset(5% 6% 6% 4%);
-    background-color: #0abde3;
+    /*background-color: #0abde3;*/
+    background: rgba(160, 206, 228, 0.48);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(160, 206, 228, 0.14);
     width: 333px;
     height: 253px;
 }
@@ -130,7 +136,13 @@ body{
     left: 510px;
     top: 510px;
     clip-path: inset(5% 6% 6% 4%);
-    background-color: #0abde3;
+    /*background-color: #0abde3;*/
+    background: rgba(160, 206, 228, 0.48);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(160, 206, 228, 0.14);
     width: 333px;
     height: 253px;
 }
@@ -166,7 +178,14 @@ body{
     left: 981px;
     top: 510px;
     clip-path: inset(5% 6% 6% 4%);
-    background-color: #0abde3;
+    /*background-color: #0abde3;*/
+    /* From https://css.glass */
+    background: rgba(160, 206, 228, 0.48);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(160, 206, 228, 0.14);
     width: 333px;
     height: 253px;
 }
