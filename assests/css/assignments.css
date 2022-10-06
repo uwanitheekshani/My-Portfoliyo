@@ -33,7 +33,7 @@ body{
 
 .slider span{
     position: absolute;
-    top: -123px;
+    top: -60px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -60,11 +60,11 @@ body{
 .basic{
     position: absolute;
     left: 39px;
-    top: 451px;
+    top: 510px;
     clip-path: inset(5% 6% 6% 4%);
     background-color: #0abde3;
-    width: 360px;
-    height: 228px;
+    width: 333px;
+    height: 253px;
 }
 
 #Bh{
@@ -72,13 +72,141 @@ body{
     left: 39px;
     top: 20px;
     font-size: 2rem;
-    color: #30336b;
+    color: #6D214F;
 }
 
 #b1{
     position: absolute;
     left: 39px;
-    top: 57px;
+    top: 68px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b2{
+    position: absolute;
+    left: 39px;
+    top: 118px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b3{
+    position: absolute;
+    left: 39px;
+    top: 168px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b4{
+    position: absolute;
+    left: 175px;
+    top: 68px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b5{
+    position: absolute;
+    left: 175px;
+    top: 118px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b6{
+    position: absolute;
+    left: 175px;
+    top: 168px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+ /*=============================================*/
+
+.Transitions{
+    position: absolute;
+    left: 510px;
+    top: 510px;
+    clip-path: inset(5% 6% 6% 4%);
+    background-color: #0abde3;
+    width: 333px;
+    height: 253px;
+}
+
+#Th{
+    position: absolute;
+    left: 39px;
+    top: 20px;
+    font-size: 2rem;
+    color: #6D214F;
+}
+
+#b7{
+    position: absolute;
+    left: 39px;
+    top: 68px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b8{
+    position: absolute;
+    left: 39px;
+    top: 118px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/*=============================================*/
+
+.Animations{
+    position: absolute;
+    left: 981px;
+    top: 510px;
+    clip-path: inset(5% 6% 6% 4%);
+    background-color: #0abde3;
+    width: 333px;
+    height: 253px;
+}
+
+#Ah{
+    position: absolute;
+    left: 39px;
+    top: 20px;
+    font-size: 2rem;
+    color: #6D214F;
+}
+
+#b9{
+    position: absolute;
+    left: 39px;
+    top: 68px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b10{
+    position: absolute;
+    left: 39px;
+    top: 118px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b11{
+    position: absolute;
+    left: 39px;
+    top: 168px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b12{
+    position: absolute;
+    left: 175px;
+    top: 68px;
     font-size: 1.5rem;
     color: black;
 }
