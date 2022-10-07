@@ -57,25 +57,57 @@ function bindRowClickEvents() {
     });
 }
 
-$("#btnSearch").click(function (){
+// $("#btnSearch").click(function (){
+//
+//     for (let customerKey of customers){
+//
+//         if (customerKey.id===$('#inputCusSearch').val()){
+//             $('#txtCusId').val(customerKey.id);
+//             $('#txtCusName').val(customerKey.name);
+//             $('#txtCusAddress').val(customerKey.address);
+//             $('#txtCusPhone').val(customerKey.contact);
+//         }
+//         else if (customerKey.name===$('#inputCusSearch').val()){
+//             $('#txtCusId').val(customerKey.id);
+//             $('#txtCusName').val(customerKey.name);
+//             $('#txtCusAddress').val(customerKey.address);
+//             $('#txtCusPhone').val(customerKey.contact);
+//         }
+//     }
+//
+// });
 
-    for (let customerKey of customers){
-
-        if (customerKey.id===$('#inputCusSearch').val()){
-            $('#txtCusId').val(customerKey.id);
-            $('#txtCusName').val(customerKey.name);
-            $('#txtCusAddress').val(customerKey.address);
-            $('#txtCusPhone').val(customerKey.contact);
-        }
-        else if (customerKey.name===$('#inputCusSearch').val()){
-            $('#txtCusId').val(customerKey.id);
-            $('#txtCusName').val(customerKey.name);
-            $('#txtCusAddress').val(customerKey.address);
-            $('#txtCusPhone').val(customerKey.contact);
+$("#txtCusId").on('keyup', function (event) {
+    if (event.code == "Enter") {
+        let typedId = $("#txtCusId").val();
+        let customer = searchCustomer(typedId);
+        if (customer != null) {
+            setTextfieldValues(customer.id, customer.name, customer.address, customer.contact);
+        } else {
+            alert("There is no cusotmer available for that " + typedId);
+            setTextfieldValues("", "", "", "");
         }
     }
-
 });
+
+function setTextfieldValues(id, name, address, contact) {
+    $("#txtCusId").val(id);
+    $("#txtCusName").val(name);
+    $("#txtCusAddress").val(address);
+    $("#txtCusPhone").val(contact);
+}
+
+
+function searchCustomer(cusID) {
+    for (let customer of customers) {
+        if (customer.id == cusID) {
+            return customer;
+        }
+    }
+    return null;
+}
+
+
 // ===================================================================
 
 
