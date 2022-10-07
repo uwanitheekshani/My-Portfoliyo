@@ -133,12 +133,12 @@
             </div>
 
             <form class="d-flex" role="search">
-                <input aria-label="Search" class="form-control me-2" placeholder="Input ID/Name Here"
+                <input aria-label="Search" class="form-control me-2" id="inputCusSearch" placeholder="Input ID/Name Here"
                        style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
                        type="search">
             </form>
 
-            <button class="btn btn-success" style="margin-top: 1rem;
+            <button class="btn btn-success" id="btnSearch" style="margin-top: 1rem;
                  font-family: 'Inter', sans-serif;" type="button">Search
             </button>
 
@@ -198,24 +198,24 @@
                         <div class="modal-body">
                             <section style="height: 25rem; border: 1px solid white; background-color: white">
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFile">Customer ID</label>
-                                    <input class="form-control" id="formFile" type="text">
+                                    <label class="form-label" for="txtCustomerID">Customer ID</label>
+                                    <input class="form-control" id="txtCustomerID" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileMultiple">Customer Name</label>
-                                    <input class="form-control" id="formFileMultiple" multiple type="text">
+                                    <label class="form-label" for="txtCustomerName">Customer Name</label>
+                                    <input class="form-control" id="txtCustomerName" multiple type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileDisabled">Customer Address</label>
-                                    <input class="form-control" id="formFileDisabled" type="text">
+                                    <label class="form-label" for="txtCustomerAddress">Customer Address</label>
+                                    <input class="form-control" id="txtCustomerAddress" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileLi">Customer Phone</label>
-                                    <input class="form-control form-control-sm" id="formFileLi" type="text">
+                                    <label class="form-label" for="txtCustomerPhone">Customer Phone</label>
+                                    <input class="form-control form-control-sm" id="txtCustomerPhone" type="text">
                                 </div>
 
                                 <div aria-label="Basic mixed styles example" class="btn-group" role="group">
-                                    <button class="btn btn-danger" type="button">Save</button>
+                                    <button class="btn btn-danger" id="btnSaveCus" type="button">Save</button>
                                     <button class="btn btn-warning" type="button">Renew</button>
                                     <button class="btn btn-success" type="button">Close</button>
                                 </div>
@@ -230,9 +230,26 @@
             </div>
 
 
-            <button class="btn" style="background-color: #F3BF06; color: black;
+            <button class="btn" id="btnViewAllCustomers" style="background-color: #F3BF06; color: black;
                               font-family: 'Inter', sans-serif;" type="button">View All Customers
             </button>
+
+            <form class="d-grid" role="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCusId" placeholder="Customer ID"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif; "
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCusName" placeholder="Customer Name"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCusAddress" placeholder="Customer Address"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCusPhone" placeholder="Customer Phone"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+            </form>
+
+
         </div>
 
         <!--        </div>-->
@@ -252,7 +269,7 @@
                         <th scope="col" style="border: 1px solid black">Phone Number</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tblCustomer">
 
                     </tbody>
                 </table>
