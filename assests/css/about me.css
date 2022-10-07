@@ -39,6 +39,11 @@ main > section:nth-child(1)>div:nth-child(1){
     margin: auto;
 }
 
+.navH a{
+    color:white;
+    text-decoration: none;
+}
+
 main > section:nth-child(1) > aside:nth-child(2)>div{
     position: absolute;
     width: 300px;
