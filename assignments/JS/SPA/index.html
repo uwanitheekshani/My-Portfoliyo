@@ -681,42 +681,16 @@
 </main>
 <script src="../../../assignments/JS/SPA/asserts/bootstrap/js/jquery-3.6.1.min.js"></script>
 
-<script>
-    $("#customerContent").css('display','none');
-    $("#itemContent").css('display','none');
-    $("#orderContent").css('display','none');
+<script src="../../../assignments/JS/SPA/controller/IndexController.js"></script>
+<script src="../../../assignments/JS/SPA/controller/CustomerController.js"></script>
+<script src="../../../assignments/JS/SPA/controller/ItemController.js"></script>
+<script src="../../../assignments/JS/SPA/controller/OrderController.js"></script>
+<script src="../../../assignments/JS/SPA/db/DB.js"></script>
+<script src="../../../assignments/JS/SPA/model/Customer.js"></script>
+<script src="../../../assignments/JS/SPA/model/Item.js"></script>
+<script src="../../../assignments/JS/SPA/model/OrderDetails.js"></script>
+<script src="../../../assignments/JS/SPA/model/Orders.js"></script>
 
-    $("#home").click(function(){
-        $("#customerContent").css('display','none');
-        $("#dashboardContent").css('display','block');
-        $("#itemContent").css('display','none');
-        $("#orderContent").css('display','none');
-    });
-
-    $("#cus").click(function(){
-        $("#customerContent").css('display','block');
-        $("#dashboardContent").css('display','none');
-        $("#itemContent").css('display','none');
-        $("#orderContent").css('display','none');
-    });
-
-    $("#item2").click(function(){
-        $("#customerContent").css('display','none');
-        $("#dashboardContent").css('display','none');
-        $("#itemContent").css('display','block');
-        $("#orderContent").css('display','none');
-    });
-
-    $("#orders").click(function(){
-        $("#customerContent").css('display','none');
-        $("#dashboardContent").css('display','none');
-        $("#itemContent").css('display','none');
-        $("#orderContent").css('display','block');
-    });
-
-    // ======================================================================
-
-</script>
 
 </body>
 <script src="../../../assignments/JS/SPA/asserts/bootstrap/js/bootstrap.min.js"></script>
