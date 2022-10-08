@@ -1,5 +1,7 @@
 
  // global scope (Store all the customer records)
+ $("#txtCustomerID").focus();
+ // $("#txtCusId").focus();
 
 $("#btnSaveCus").click(function () {
 
@@ -153,58 +155,203 @@ function searchCustomer(cusID) {
  }
 
 
+ // customer reguler expressions
+ const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
+ const cusNameRegEx = /^[A-z ]{5,20}$/;
+ const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+ const cusPhoneRegEx = /^07(7|6|8|1|2|5|0|4)-[0-9]{7}$/;
+
+ let customerValidations = [];
+ customerValidations.push({reg: cusIDRegEx, field: $('#txtCustomerID'),error:'Customer ID Pattern is Wrong : C00-001'});
+ customerValidations.push({reg: cusNameRegEx, field: $('#txtCustomerName'),error:'Customer Name Pattern is Wrong : A-z 5-20'});
+ customerValidations.push({reg: cusAddressRegEx, field: $('#txtCustomerAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
+ customerValidations.push({reg: cusPhoneRegEx, field: $('#txtCustomerPhone'),error:'Customer Salary Pattern is Wrong : 07(7|6|8|1|2|5|0|4)-'});
+
+
+ //disable tab key of all four text fields using grouping selector in CSS
+ $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerPhone").on('keydown', function (event) {
+     if (event.key == "Tab") {
+         event.preventDefault();
+     }
+ });
+
+
+ $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerPhone").on('keyup', function (event) {
+     checkValidity();
+ });
+
+ $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerPhone").on('blur', function (event) {
+     checkValidity();
+ });
+
+
+ $("#txtCustomerID").on('keydown', function (event) {
+     if (event.key == "Enter" && check(cusIDRegEx, $("#txtCustomerID"))) {
+         $("#txtCustomerName").focus();
+     } else {
+         focusText($("#txtCustomerID"));
+     }
+ });
+
+
+ $("#txtCustomerName").on('keydown', function (event) {
+     if (event.key == "Enter" && check(cusNameRegEx, $("#txtCustomerName"))) {
+         focusText($("#txtCustomerAddress"));
+     }
+ });
+
+
+ $("#txtCustomerAddress").on('keydown', function (event) {
+     if (event.key == "Enter" && check(cusAddressRegEx, $("#txtCustomerAddress"))) {
+         focusText($("#txtCustomerPhone"));
+     }
+ });
+
+
+ $("#txtCustomerPhone").on('keydown', function (event) {
+     if (event.key == "Enter" && check(cusPhoneRegEx, $("#txtCustomerPhone"))) {
+         // let res = confirm("Do you want to add this customer.?");
+         // if (res) {
+         //     clearAllTexts();
+         // }
+         let customerID = $("#txtCustomerID").val();
+         let customerName = $("#txtCustomerName").val();
+         let customerAddress = $("#txtCustomerAddress").val();
+         let customerPhone = $("#txtCustomerPhone").val();
+
+         var customerObject = {
+             id: customerID,
+             name: customerName,
+             address: customerAddress,
+             contact: customerPhone
+         }
+
+         //add the customer object to the array
+         customers.push(customerObject);
+         console.log(customers);
+         let res = confirm("Do you want to add this customer.?");
+         if (res) {
+             clearAllTexts();
+         }
+     }
+
+     loadAllCustomers();
+    bindRowClickEvents();
+ });
+
+
+ function checkValidity() {
+     let errorCount=0;
+     for (let validation of customerValidations) {
+         if (check(validation.reg,validation.field)) {
+             textSuccess(validation.field,"");
+         } else {
+             errorCount=errorCount+1;
+             setTextError(validation.field,validation.error);
+         }
+     }
+     setButtonState(errorCount);
+ }
+
+ function check(regex, txtField) {
+     let inputValue = txtField.val();
+     return regex.test(inputValue) ? true : false;
+ }
+
+ function setTextError(txtField,error) {
+     if (txtField.val().length <= 0) {
+         defaultText(txtField,"");
+     } else {
+         txtField.css('border', '2px solid red');
+         txtField.parent().children('span').text(error);
+     }
+ }
+
+ function textSuccess(txtField,error) {
+     if (txtField.val().length <= 0) {
+         defaultText(txtField,"");
+     } else {
+         txtField.css('border', '2px solid green');
+         txtField.parent().children('span').text(error);
+     }
+ }
+
+ function defaultText(txtField,error) {
+     txtField.css("border", "1px solid #ced4da");
+     txtField.parent().children('span').text(error);
+ }
+
+ function focusText(txtField) {
+     txtField.focus();
+ }
+
+ function setButtonState(value){
+     if (value>0){
+         $("#btnSaveCus").attr('disabled',true);
+     }else{
+         $("#btnSaveCus").attr('disabled',false);
+     }
+ }
+
+ function clearAllTexts() {
+     $("#txtCustomerID").focus();
+     $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerPhone").val("");
+     checkValidity();
+ }
+
+
+
 // ===================================================================
 
-
-$("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerPhone").on('keydown', function (event) {
-    if (event.key == "Tab") {
-        event.preventDefault();
-    }
-});
-
-
-$("#txtCustomerID").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#txtCustomerName").focus();
-    }
-});
-
-$("#txtCustomerName").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#txtCustomerAddress").focus();
-    }
-});
-
-$("#txtCustomerAddress").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#txtCustomerPhone").focus();
-    }
-});
-
-$("#txtCustomerPhone").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#btnSaveCus").focus();
-    }
-});
-
-$("#btnSaveCus").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        let customerID = $("#txtCustomerID").val();
-        let customerName = $("#txtCustomerName").val();
-        let customerAddress = $("#txtCustomerAddress").val();
-        let customerPhone = $("#txtCustomerPhone").val();
-
-        var customerObject = {
-            id: customerID,
-            name: customerName,
-            address: customerAddress,
-            contact: customerPhone
-        }
-
-        //add the customer object to the array
-        customers.push(customerObject);
-        console.log(customers);
-    }
-    loadAllCustomers();
-    bindRowClickEvents();
-});
+// $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerPhone").on('keydown', function (event) {
+//     if (event.key == "Tab") {
+//         event.preventDefault();
+//     }
+// });
+//
+//
+// $("#txtCustomerID").on('keydown', function (event) {
+//     if (event.key == "Enter") {
+//         $("#txtCustomerName").focus();
+//     }
+// });
+//
+// $("#txtCustomerName").on('keydown', function (event) {
+//     if (event.key == "Enter") {
+//         $("#txtCustomerAddress").focus();
+//     }
+// });
+//
+// $("#txtCustomerAddress").on('keydown', function (event) {
+//     if (event.key == "Enter") {
+//         $("#txtCustomerPhone").focus();
+//     }
+// });
+//
+// $("#txtCustomerPhone").on('keydown', function (event) {
+//     if (event.key == "Enter") {
+//         $("#btnSaveCus").focus();
+//     }
+// });
+//
+// $("#btnSaveCus").on('keydown', function (event) {
+//     if (event.key == "Enter") {
+//         let customerID = $("#txtCustomerID").val();
+//         let customerName = $("#txtCustomerName").val();
+//         let customerAddress = $("#txtCustomerAddress").val();
+//         let customerPhone = $("#txtCustomerPhone").val();
+//
+//         var customerObject = {
+//             id: customerID,
+//             name: customerName,
+//             address: customerAddress,
+//             contact: customerPhone
+//         }
+//
+//         //add the customer object to the array
+//         customers.push(customerObject);
+//         console.log(customers);
+//     }
+//     loadAllCustomers();
+//     bindRowClickEvents();
+// });
