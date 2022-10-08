@@ -1,5 +1,5 @@
 
-var customers=[]; // global scope (Store all the customer records)
+ // global scope (Store all the customer records)
 
 $("#btnSaveCus").click(function () {
 
@@ -7,7 +7,6 @@ $("#btnSaveCus").click(function () {
     let customerName = $("#txtCustomerName").val();
     let customerAddress = $("#txtCustomerAddress").val();
     let customerPhone = $("#txtCustomerPhone").val();
-
 
     var customerObject = {
         id: customerID,
