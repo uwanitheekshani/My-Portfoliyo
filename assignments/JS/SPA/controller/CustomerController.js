@@ -83,6 +83,18 @@ $("#btnSearch").click(function (){
      }
  });
 
+ $("#btnCusUpdate").click(function () {
+     let customerID = $("#txtCusId").val();
+     let response = updateCustomer(customerID);
+     if (response) {
+         alert("Customer Updated Successfully");
+         setTextfieldValues("", "", "", "");
+     } else {
+         alert("Update Failed..!");
+
+     }
+ });
+
 $("#txtCusId").on('keyup', function (event) {
     if (event.code == "Enter") {
         let typedId = $("#txtCusId").val();
@@ -123,6 +135,21 @@ function searchCustomer(cusID) {
      } else {
          return false;
      }
+ }
+
+ function updateCustomer(customerID) {
+     let customer = searchCustomer(customerID);
+     if (customer != null) {
+         customer.id = $("#txtCusId").val();
+         customer.name = $("#txtCusName").val();
+         customer.address = $("#txtCusAddress").val();
+         customer.salary = $("#txtCusPhone").val();
+         loadAllCustomers();
+         return true;
+     } else {
+         return false;
+     }
+
  }
 
 
