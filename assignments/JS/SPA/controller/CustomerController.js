@@ -58,22 +58,6 @@ function bindRowClickEvents() {
 
 $("#btnSearch").click(function (){
 
-    // for (let customerKey of customers){
-    //
-    //     if (customerKey.id===$('#inputCusSearch').val()){
-    //         $('#txtCusId').val(customerKey.id);
-    //         $('#txtCusName').val(customerKey.name);
-    //         $('#txtCusAddress').val(customerKey.address);
-    //         $('#txtCusPhone').val(customerKey.contact);
-    //     }
-    //     else if (customerKey.name===$('#inputCusSearch').val()){
-    //         $('#txtCusId').val(customerKey.id);
-    //         $('#txtCusName').val(customerKey.name);
-    //         $('#txtCusAddress').val(customerKey.address);
-    //         $('#txtCusPhone').val(customerKey.contact);
-    //     }
-    // }
-
     let typedId = $("#inputCusSearch").val();
     let customer = searchCustomer(typedId);
     if (customer != null) {
@@ -84,6 +68,20 @@ $("#btnSearch").click(function (){
     }
 
 });
+
+ $("#btnCusDelete").click(function () {
+     let deleteID = $("#txtCusId").val();
+
+     let option = confirm("Do you really want to delete customer id :" + deleteID);
+     if (option){
+         if (deleteCustomer(deleteID)) {
+             alert("Customer Successfully Deleted..");
+             setTextfieldValues("", "", "", "");
+         } else {
+             alert("No such customer to delete. please check the id");
+         }
+     }
+ });
 
 $("#txtCusId").on('keyup', function (event) {
     if (event.code == "Enter") {
@@ -114,6 +112,18 @@ function searchCustomer(cusID) {
     }
     return null;
 }
+
+ function deleteCustomer(customerID) {
+     let customer = searchCustomer(customerID);
+     if (customer != null) {
+         let indexNumber = customers.indexOf(customer);
+         customers.splice(indexNumber, 1);
+         loadAllCustomers();
+         return true;
+     } else {
+         return false;
+     }
+ }
 
 
 // ===================================================================
