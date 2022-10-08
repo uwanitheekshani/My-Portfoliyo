@@ -124,7 +124,7 @@ main > section:nth-child(9)>section:nth-child(3)>div:nth-child(3)>h3{
     font-family: 'Poly', serif;
 }
 
-main > section:nth-child(9)>section:nth-child(4)>div:nth-child(1){
+.d1{
     position: absolute;
     left:82px;
     top: 327px;
@@ -137,7 +137,7 @@ main > section:nth-child(9)>section:nth-child(4)>div:nth-child(1){
     z-index: 5;
 }
 
-main > section:nth-child(9)>section:nth-child(4)>div:nth-child(2){
+.d2{
     position: absolute;
     left:260px;
     top: 368px;
@@ -150,7 +150,7 @@ main > section:nth-child(9)>section:nth-child(4)>div:nth-child(2){
     z-index: 5;
 }
 
-main > section:nth-child(9)>section:nth-child(4)>div:nth-child(3){
+.d3{
     position: absolute;
     left:493px;
     top: 393px;
@@ -163,7 +163,7 @@ main > section:nth-child(9)>section:nth-child(4)>div:nth-child(3){
     z-index: 5;
 }
 
-main > section:nth-child(9)>section:nth-child(4)>div:nth-child(4){
+.d4{
     position: absolute;
     left:737px;
     top: 368px;
@@ -176,7 +176,7 @@ main > section:nth-child(9)>section:nth-child(4)>div:nth-child(4){
     z-index: 5;
 }
 
-main > section:nth-child(9)>section:nth-child(4)>div:nth-child(5){
+.d5{
     position: absolute;
     left:933px;
     top: 327px;
