@@ -201,6 +201,9 @@ main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>p:nth-chi
     font-family: 'Inter', sans-serif;
 }
 
+
+/*//////==========Web Development==============///////////*/
+
 main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3){
     position: absolute;
     left: 946px;
@@ -209,7 +212,34 @@ main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3){
     height: 380px;
     z-index: 5;
     border: 3px solid #F3BF06;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
 }
+
+main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3):hover{
+    transform: translateY(20px);
+}
+
+
+#wD:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 367px;
+    height: 380px;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+#wD:hover:before{
+    opacity: 1;
+}
+
+/*////////////======================///////////////*/
+
 
 main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(1){
     position: absolute;
@@ -292,7 +322,23 @@ main>hr:nth-child(12){
         width: 158px;
         height: 143px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
     }
+
+    #ui:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 158px;
+        height: 143px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
+    }
+
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
         left: -7px;
@@ -319,6 +365,21 @@ main>hr:nth-child(12){
         width: 158px;
         height: 143px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #sD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 158px;
+        height: 143px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
@@ -347,6 +408,21 @@ main>hr:nth-child(12){
         width: 158px;
         height: 143px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #wD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 158px;
+        height: 143px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(1){
@@ -420,6 +496,21 @@ main>hr:nth-child(12){
         width: 169px;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #ui:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 169px;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
@@ -447,6 +538,21 @@ main>hr:nth-child(12){
         width: 169px;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #sD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 169px;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
@@ -475,6 +581,21 @@ main>hr:nth-child(12){
         width: 169px;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #wD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 169px;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(1){
@@ -548,6 +669,21 @@ main>hr:nth-child(12){
         width: 51vw;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #ui:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 51vw;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
@@ -575,6 +711,21 @@ main>hr:nth-child(12){
         width: 51vw;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #sD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 51vw;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
@@ -603,6 +754,21 @@ main>hr:nth-child(12){
         width: 51vw;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #wD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 51vw;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(1){
@@ -677,6 +843,21 @@ main>hr:nth-child(12){
         width: 51vw;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #ui:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 51vw;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
@@ -704,6 +885,21 @@ main>hr:nth-child(12){
         width: 51vw;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #sD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 51vw;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
@@ -732,6 +928,21 @@ main>hr:nth-child(12){
         width: 51vw;
         height: 170px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #wD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 51vw;
+        height: 170px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(1){
@@ -805,6 +1016,21 @@ main>hr:nth-child(12){
         width: 28vw;
         height: 260px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #ui:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 28vw;
+        height: 260px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
@@ -832,6 +1058,21 @@ main>hr:nth-child(12){
         width: 28vw;
         height: 260px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #sD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 28vw;
+        height: 260px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
@@ -861,6 +1102,21 @@ main>hr:nth-child(12){
         width: 28vw;
         height: 260px;
         border: 2px solid #F3BF06;
+        box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #wD:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 28vw;
+        height: 260px;
+        background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+        transition: 0.5s all;
+        opacity: 0;
     }
 
     main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(3)>div:nth-child(1){
