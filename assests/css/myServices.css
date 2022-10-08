@@ -62,7 +62,8 @@ main > section:nth-child(11)>section:nth-child(2)>div:nth-child(3){
     width: 69px;
     height: 3px;
 }
-/*//////========================///////////*/
+
+/*//////==========UI/UX==============///////////*/
 main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1){
     position: absolute;
     left: 41px;
@@ -100,7 +101,6 @@ main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1):hover{
 /*////////////======================///////////////*/
 
 
-
 main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>div:nth-child(1){
     position: absolute;
     left: 2px;
@@ -130,6 +130,9 @@ main > section:nth-child(11)>section:nth-child(3)>aside:nth-child(1)>p:nth-child
     font-family: 'Inter', sans-serif;
 }
 
+
+/*//////==========Software Development==============///////////*/
+
 main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2){
     position: absolute;
     left: 492px;
@@ -138,7 +141,35 @@ main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2){
     height: 380px;
     z-index: 5;
     border: 3px solid #F3BF06;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out;
 }
+
+main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2):hover{
+    transform: translateY(20px);
+}
+
+
+#sD:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 367px;
+    height: 380px;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+#sD:hover:before{
+    opacity: 1;
+}
+
+/*////////////======================///////////////*/
+
+
 
 main > section:nth-child(11)>section:nth-child(3)>section:nth-child(2)>div:nth-child(1){
     position: absolute;
