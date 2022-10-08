@@ -299,6 +299,12 @@ function searchCustomer(cusID) {
      checkValidity();
  }
 
+ $("#btnCusClear").click(function (){
+     $("#txtCusId").focus();
+     $("#txtCusId,#txtCusName,#txtCusAddress,#txtCusPhone").val("");
+     checkValidity();
+
+ });
 
 
 // ===================================================================
