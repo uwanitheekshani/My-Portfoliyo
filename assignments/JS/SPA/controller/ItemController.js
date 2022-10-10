@@ -81,25 +81,37 @@ $("#btnItemSearch").click(function (){
     let typedId = $("#inputItemSearch").val();
     let item = searchItem(typedId);
     if (item != null) {
-        setTextfieldValues(item.id, customer.name, customer.address, customer.contact);
+        setItemTextfieldValues(item.id, item.name, item.price, item.quantity);
     } else {
-        alert("There is no cusotmer available for that " + typedId);
-        setTextfieldValues("", "", "", "");
+        alert("There is no item available for that " + typedId);
+        setItemTextfieldValues("", "", "", "");
     }
 
 });
 
-$("#btnCusDelete").click(function () {
-    let deleteID = $("#txtCusId").val();
+$("#btnItemDelete").click(function () {
+    let deleteID = $("#txtCode").val();
 
-    let option = confirm("Do you really want to delete customer id :" + deleteID);
+    let option = confirm("Do you really want to delete item code :" + deleteID);
     if (option){
-        if (deleteCustomer(deleteID)) {
-            alert("Customer Successfully Deleted..");
-            setTextfieldValues("", "", "", "");
+        if (deleteItem(deleteID)) {
+            alert("Item Successfully Deleted..");
+            setItemTextfieldValues("", "", "", "");
         } else {
-            alert("No such customer to delete. please check the id");
+            alert("No such item to delete. please check the id");
         }
+    }
+});
+
+$("#btnItemUpdate").click(function () {
+    let itemID = $("#txtCode").val();
+    let response = updateItem(itemID);
+    if (response) {
+        alert("Item Updated Successfully");
+        setItemTextfieldValues("", "", "", "");
+    } else {
+        alert("Update Failed..!");
+
     }
 });
 
@@ -143,4 +155,19 @@ function deleteItem(itemCode) {
     } else {
         return false;
     }
+}
+
+function updateItem(itemID) {
+    let item = searchItem(itemID);
+    if (item != null) {
+        item.id = $("#txtCode").val();
+        item.name = $("#txtName").val();
+        item.price = $("#txtPrice").val();
+        item.quantity = $("#txtQuantity").val();
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+    }
+
 }

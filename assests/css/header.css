@@ -52,7 +52,7 @@ header > section > section:nth-child(1) > nav {
 
 }
 
-header > section > section:nth-child(1) > nav > ul > li:hover {
+header > section > section:nth-child(1) > nav > ul > li>a:hover {
     color: #fff200;
 }
 
