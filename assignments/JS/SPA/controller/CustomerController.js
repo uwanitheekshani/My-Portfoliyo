@@ -197,7 +197,7 @@ function searchCustomer(cusID) {
 
  let customerValidations = [];
  customerValidations.push({reg: cusIDRegEx, field: $('#txtCustomerID'),error:'Customer ID Pattern is Wrong : C00-001'});
- customerValidations.push({reg: cusNameRegEx, field: $('#txtCustomerName'),error:'Customer Name Pattern is Wrong : A-z 5-20'});
+ customerValidations.push({reg: cusNameRegEx, field: $('#txtCustomerName'),error:'Customer Name Pattern is Wrong : A-z 3-20'});
  customerValidations.push({reg: cusAddressRegEx, field: $('#txtCustomerAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
  customerValidations.push({reg: cusPhoneRegEx, field: $('#txtCustomerPhone'),error:'Customer Salary Pattern is Wrong : 07(7|6|8|1|2|5|0|4)-'});
 

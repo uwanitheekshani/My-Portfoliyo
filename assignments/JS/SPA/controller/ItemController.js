@@ -179,7 +179,7 @@ const itemPriceRegEx = /^[0-9]{1,}$/;
 const itemQuantityRegEx = /^[1-9]{1,}$/;
 
 let itemValidations = [];
-customerValidations.push({reg: cusIDRegEx, field: $('#txtCustomerID'),error:'Customer ID Pattern is Wrong : C00-001'});
-customerValidations.push({reg: cusNameRegEx, field: $('#txtCustomerName'),error:'Customer Name Pattern is Wrong : A-z 5-20'});
-customerValidations.push({reg: cusAddressRegEx, field: $('#txtCustomerAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
-customerValidations.push({reg: cusPhoneRegEx, field: $('#txtCustomerPhone'),error:'Customer Salary Pattern is Wrong : 07(7|6|8|1|2|5|0|4)-'});
+itemValidations.push({reg: itemIDRegEx, field: $('#txtItemCode'),error:'Item Code Pattern is Wrong : I00-001'});
+itemValidations.push({reg: itemNameRegEx, field: $('#txtItemName'),error:'Item Name Pattern is Wrong : A-z 3-20'});
+itemValidations.push({reg: itemPriceRegEx, field: $('#txtItemPrice'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
+itemValidations.push({reg: itemQuantityRegEx, field: $('#txtItemQuantity'),error:'Customer Salary Pattern is Wrong : 07(7|6|8|1|2|5|0|4)-'});
