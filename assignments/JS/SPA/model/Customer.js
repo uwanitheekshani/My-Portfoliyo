@@ -7,9 +7,3 @@ function customerObject(customerId, customerName, customerAddress, customerPhone
         contact: customerPhone
     };
 }
-// var customerObject = {
-//     id: customerID,
-//     name: customerName,
-//     address: customerAddress,
-//     contact: customerPhone
-// }
