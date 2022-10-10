@@ -293,12 +293,12 @@
             </div>
 
             <form class="d-flex" role="search">
-                <input aria-label="Search" class="form-control me-2" placeholder="Input ID/Name Here"
+                <input aria-label="Search" class="form-control me-2" id="inputItemSearch" placeholder="Input ID/Name Here"
                        style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
                        type="search">
             </form>
 
-            <button class="btn btn-success" style="margin-top: 1rem;
+            <button class="btn btn-success" id="btnItemSearch" style="margin-top: 1rem;
                  font-family: 'Inter', sans-serif;" type="button">Search
             </button>
 
@@ -358,24 +358,24 @@
                         <div class="modal-body">
                             <section style="height: 25rem; border: 1px solid white; background-color: white">
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileItem">Item Code</label>
-                                    <input class="form-control" id="formFileItem" type="text">
+                                    <label class="form-label" for="txtItemCode">Item Code</label>
+                                    <input class="form-control" id="txtItemCode" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileMultipleItem">Item Name</label>
-                                    <input class="form-control" id="formFileMultipleItem" multiple type="text">
+                                    <label class="form-label" for="txtItemName">Item Name</label>
+                                    <input class="form-control" id="txtItemName" multiple type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileDisabledItem">Item Price</label>
-                                    <input class="form-control" id="formFileDisabledItem" type="text">
+                                    <label class="form-label" for="txtItemPrice">Item Price</label>
+                                    <input class="form-control" id="txtItemPrice" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="formFileLiItem">Item Quantity</label>
-                                    <input class="form-control form-control-sm" id="formFileLiItem" type="text">
+                                    <label class="form-label" for="txtItemQuantity">Item Quantity</label>
+                                    <input class="form-control form-control-sm" id="txtItemQuantity" type="text">
                                 </div>
 
                                 <div aria-label="Basic mixed styles example" class="btn-group" role="group">
-                                    <button class="btn btn-danger" type="button">Save</button>
+                                    <button class="btn btn-danger" id="btnSaveItem" type="button">Save</button>
                                     <button class="btn btn-warning" type="button">Renew</button>
                                     <button class="btn btn-success" type="button">Close</button>
                                 </div>
@@ -387,9 +387,25 @@
             </div>
 
 
-            <button class="btn" style="background-color: #F3BF06; color: black;
+            <button class="btn" id="btnViewAllItems" style="background-color: #F3BF06; color: black;
                               font-family: 'Inter', sans-serif;" type="button">View All Customers
             </button>
+
+            <form class="d-grid" role="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtCode" placeholder="Item Code"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif; "
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtName" placeholder="Item Name"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtPrice" placeholder="Item price"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+                <input aria-label="Search" class="form-control me-2 col-5" id="txtQuantity" placeholder="Item Quantity"
+                       style="margin-top: 1rem; font-family: 'Inter', sans-serif;"
+                       type="search">
+            </form>
+
         </div>
 
 
@@ -406,7 +422,7 @@
                         <th scope="col" style="border: 1px solid black">Quantity</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tblItem">
 
                     </tbody>
                 </table>

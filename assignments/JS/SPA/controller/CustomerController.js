@@ -10,17 +10,21 @@ $("#btnSaveCus").click(function () {
     let customerAddress = $("#txtCustomerAddress").val();
     let customerPhone = $("#txtCustomerPhone").val();
 
-    var customerObject = {
-        id: customerID,
-        name: customerName,
-        address: customerAddress,
-        contact: customerPhone
-    }
-
+    // var customerObject = {
+    //     id: customerID,
+    //     name: customerName,
+    //     address: customerAddress,
+    //     contact: customerPhone
+    // }
+    var customer = customerObject(customerID, customerName, customerAddress, customerPhone);
+    // customerDB.push(customer);
     //add the customer object to the array
-    customers.push(customerObject);
+    customers.push(customer);
     console.log(customers);
     loadAllCustomers();
+   // doubleClickEvents();
+    clearAllTexts();
+
     bindRowClickEvents();
 });
 
@@ -42,6 +46,7 @@ function loadAllCustomers(){
     }
 }
 
+ // let sm=null;
 function bindRowClickEvents() {
     $("#tblCustomer>tr").click(function () {
         let id = $(this).children(":eq(0)").text();
@@ -55,8 +60,37 @@ function bindRowClickEvents() {
         $('#txtCusAddress').val(address);
         $('#txtCusPhone').val(phone);
 
+        // if(sm===id){
+        //     // deleteCustomer(id);
+        //     $(this).children().remove();
+        //     // let id = $(this).children(":eq(0)").text();
+        //         alert("if"+id);
+        // }else{
+        //     sm=id;
+        //     alert("else"+id);
+        //
+        // }
+
+        // $("#tblCustomer>tr").on('dblclick', function () {
+        //     // let id = $(this).children(":eq(0)").text();
+        //     // deleteCustomer(id);
+        //     // $(this).children().remove();
+        //     // let option = confirm("Do you really want to delete customer id :" + id);
+        //     // if (option){
+        //     //     if (deleteCustomer(id)) {
+        //     //         alert("Customer Successfully Deleted..");
+        //     //         setTextfieldValues("", "", "", "");
+        //     //     } else {
+        //     //         alert("No such customer to delete. please check the id");
+        //     //     }
+        //     // }
+        // });
     });
 }
+
+ $("#tblCustomer>tr").on('dblclick', function () {
+     $(this).remove();
+ });
 
 $("#btnSearch").click(function (){
 
@@ -306,4 +340,22 @@ function searchCustomer(cusID) {
 
  });
 
+
+ // function doubleClickEvents() {
+ //     console.log("delete");
+ //     $("#tblCustomer>tr").on('dblclick', function () {
+ //         let id = $(this).children(":eq(0)").text();
+ //         deleteCustomer(id);
+ //         $(this).children().remove();
+ //         // let option = confirm("Do you really want to delete customer id :" + id);
+ //         // if (option){
+ //         //     if (deleteCustomer(id)) {
+ //         //         alert("Customer Successfully Deleted..");
+ //         //         setTextfieldValues("", "", "", "");
+ //         //     } else {
+ //         //         alert("No such customer to delete. please check the id");
+ //         //     }
+ //         // }
+ //     });
+ // }
 
