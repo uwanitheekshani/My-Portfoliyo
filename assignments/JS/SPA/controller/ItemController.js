@@ -183,3 +183,69 @@ itemValidations.push({reg: itemIDRegEx, field: $('#txtItemCode'),error:'Item Cod
 itemValidations.push({reg: itemNameRegEx, field: $('#txtItemName'),error:'Item Name Pattern is Wrong : A-z 3-20'});
 itemValidations.push({reg: itemPriceRegEx, field: $('#txtItemPrice'),error:'Item Price Pattern is Wrong : 0-9 1,/'});
 itemValidations.push({reg: itemQuantityRegEx, field: $('#txtItemQuantity'),error:'Item Quantity Pattern is Wrong : 1-9 1,/'});
+
+// function check(regex, txtField) {
+//     let inputValue = txtField.val();
+//     return regex.test(inputValue) ? true : false;
+// }
+
+// function setTextError(txtField,error) {
+//     if (txtField.val().length <= 0) {
+//         defaultText(txtField,"");
+//     } else {
+//         txtField.css('border', '2px solid red');
+//         txtField.parent().children('span').text(error);
+//     }
+// }
+//
+// function textSuccess(txtField,error) {
+//     if (txtField.val().length <= 0) {
+//         defaultText(txtField,"");
+//     } else {
+//         txtField.css('border', '2px solid green');
+//         txtField.parent().children('span').text(error);
+//     }
+// }
+//
+// function defaultText(txtField,error) {
+//     txtField.css("border", "1px solid #ced4da");
+//     txtField.parent().children('span').text(error);
+// }
+//
+// function focusText(txtField) {
+//     txtField.focus();
+// }
+
+function checkItemValidity() {
+    let errorCount=0;
+    for (let validation of itemValidations) {
+        if (check(validation.reg,validation.field)) {
+            textSuccess(validation.field,"");
+        } else {
+            errorCount=errorCount+1;
+            setTextError(validation.field,validation.error);
+        }
+    }
+    setItemButtonState(errorCount);
+}
+
+function setItemButtonState(value){
+    if (value>0){
+        $("#btnSaveItem").attr('disabled',true);
+    }else{
+        $("#btnSaveItem").attr('disabled',false);
+    }
+}
+
+function clearAllTexts() {
+    $("#txtCode").focus();
+    $("#txtItemCode,#txtItemName,#txtItemPrice,#txtItemQuantity").val("");
+    checkItemValidity();
+}
+
+$("#btnItemClear").click(function (){
+    $("#txtCode").focus();
+    $("#txtCode,#txtName,#txtPrice,#txtQuantity").val("");
+    checkItemValidity();
+
+});

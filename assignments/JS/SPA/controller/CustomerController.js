@@ -253,15 +253,10 @@ function searchCustomer(cusID) {
          let customerAddress = $("#txtCustomerAddress").val();
          let customerPhone = $("#txtCustomerPhone").val();
 
-         var customerObject = {
-             id: customerID,
-             name: customerName,
-             address: customerAddress,
-             contact: customerPhone
-         }
+         var customer = customerObject(customerID, customerName, customerAddress, customerPhone);
 
          //add the customer object to the array
-         customers.push(customerObject);
+         customers.push(customer);
          console.log(customers);
          let res = confirm("Do you want to add this customer.?");
          if (res) {
