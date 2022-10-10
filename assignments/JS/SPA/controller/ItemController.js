@@ -181,5 +181,5 @@ const itemQuantityRegEx = /^[1-9]{1,}$/;
 let itemValidations = [];
 itemValidations.push({reg: itemIDRegEx, field: $('#txtItemCode'),error:'Item Code Pattern is Wrong : I00-001'});
 itemValidations.push({reg: itemNameRegEx, field: $('#txtItemName'),error:'Item Name Pattern is Wrong : A-z 3-20'});
-itemValidations.push({reg: itemPriceRegEx, field: $('#txtItemPrice'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
-itemValidations.push({reg: itemQuantityRegEx, field: $('#txtItemQuantity'),error:'Customer Salary Pattern is Wrong : 07(7|6|8|1|2|5|0|4)-'});
+itemValidations.push({reg: itemPriceRegEx, field: $('#txtItemPrice'),error:'Item Price Pattern is Wrong : 0-9 1,/'});
+itemValidations.push({reg: itemQuantityRegEx, field: $('#txtItemQuantity'),error:'Item Quantity Pattern is Wrong : 1-9 1,/'});
