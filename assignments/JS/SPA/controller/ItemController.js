@@ -171,3 +171,15 @@ function updateItem(itemID) {
     }
 
 }
+
+// item reguler expressions
+const itemIDRegEx = /^(I00-)[0-9]{1,3}$/;
+const itemNameRegEx = /^[A-z ]{3,20}$/;
+const itemPriceRegEx = /^[0-9]{1,}$/;
+const itemQuantityRegEx = /^[1-9]{1,}$/;
+
+let itemValidations = [];
+customerValidations.push({reg: cusIDRegEx, field: $('#txtCustomerID'),error:'Customer ID Pattern is Wrong : C00-001'});
+customerValidations.push({reg: cusNameRegEx, field: $('#txtCustomerName'),error:'Customer Name Pattern is Wrong : A-z 5-20'});
+customerValidations.push({reg: cusAddressRegEx, field: $('#txtCustomerAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
+customerValidations.push({reg: cusPhoneRegEx, field: $('#txtCustomerPhone'),error:'Customer Salary Pattern is Wrong : 07(7|6|8|1|2|5|0|4)-'});

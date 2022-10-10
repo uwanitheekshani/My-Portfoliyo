@@ -191,7 +191,7 @@ function searchCustomer(cusID) {
 
  // customer reguler expressions
  const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
- const cusNameRegEx = /^[A-z ]{5,20}$/;
+ const cusNameRegEx = /^[A-z ]{3,20}$/;
  const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
  const cusPhoneRegEx = /^07(7|6|8|1|2|5|0|4)-[0-9]{7}$/;
 
