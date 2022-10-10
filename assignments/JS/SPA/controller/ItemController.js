@@ -1,4 +1,6 @@
 
+$("#txtItemCode").focus();
+
 $("#btnSaveItem").click(function () {
 
     let itemCode = $("#txtItemCode").val();
@@ -6,13 +8,14 @@ $("#btnSaveItem").click(function () {
     let itemPrice = $("#txtItemPrice").val();
     let itemQuantity = $("#txtItemQuantity").val();
 
-    var item = customerObject(itemCode, itemName, itemPrice, itemQuantity);
+    var item = itemObject(itemCode, itemName, itemPrice, itemQuantity);
 
 
     //add the customer object to the array
     items.push(item);
     console.log(items);
     loadAllItems();
+    clearAllItemTexts();
     bindItemRowClickEvents();
 });
 
@@ -54,27 +57,6 @@ function bindItemRowClickEvents() {
 $("#tblItem>tr").on('dblclick', function () {
     $(this).remove();
 });
-
-// $("#btnItemSearch").click(function (){
-//
-//     for (let itemKey of items){
-//
-//         if (itemKey.id===$('#inputItemSearch').val()){
-//             $('#txtCode').val(itemKey.id);
-//             $('#txtName').val(itemKey.name);
-//             $('#txtPrice').val(itemKey.price);
-//             $('#txtQuantity').val(itemKey.quantity);
-//         }
-//         else if (itemKey.name===$('#inputItemSearch').val()){
-//             $('#txtCode').val(itemKey.id);
-//             $('#txtName').val(itemKey.name);
-//             $('#txtPrice').val(itemKey.price);
-//             $('#txtQuantity').val(itemKey.quantity);
-//         }
-//     }
-//
-// });
-
 
 $("#btnItemSearch").click(function (){
 
@@ -176,7 +158,7 @@ function updateItem(itemID) {
 const itemIDRegEx = /^(I00-)[0-9]{1,3}$/;
 const itemNameRegEx = /^[A-z ]{3,20}$/;
 const itemPriceRegEx = /^[0-9]{1,}$/;
-const itemQuantityRegEx = /^[1-9]{1,}$/;
+const itemQuantityRegEx = /^[0-9]{1,}$/;
 
 let itemValidations = [];
 itemValidations.push({reg: itemIDRegEx, field: $('#txtItemCode'),error:'Item Code Pattern is Wrong : I00-001'});
@@ -184,49 +166,115 @@ itemValidations.push({reg: itemNameRegEx, field: $('#txtItemName'),error:'Item N
 itemValidations.push({reg: itemPriceRegEx, field: $('#txtItemPrice'),error:'Item Price Pattern is Wrong : 0-9 1,/'});
 itemValidations.push({reg: itemQuantityRegEx, field: $('#txtItemQuantity'),error:'Item Quantity Pattern is Wrong : 1-9 1,/'});
 
-// function check(regex, txtField) {
-//     let inputValue = txtField.val();
-//     return regex.test(inputValue) ? true : false;
-// }
 
-// function setTextError(txtField,error) {
-//     if (txtField.val().length <= 0) {
-//         defaultText(txtField,"");
-//     } else {
-//         txtField.css('border', '2px solid red');
-//         txtField.parent().children('span').text(error);
-//     }
-// }
-//
-// function textSuccess(txtField,error) {
-//     if (txtField.val().length <= 0) {
-//         defaultText(txtField,"");
-//     } else {
-//         txtField.css('border', '2px solid green');
-//         txtField.parent().children('span').text(error);
-//     }
-// }
-//
-// function defaultText(txtField,error) {
-//     txtField.css("border", "1px solid #ced4da");
-//     txtField.parent().children('span').text(error);
-// }
-//
-// function focusText(txtField) {
-//     txtField.focus();
-// }
+
+//disable tab key of all four text fields using grouping selector in CSS
+$("#txtItemCode,#txtItemName,#txtItemPrice,#txtItemQuantity").on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
+
+$("#txtItemCode,#txtItemName,#txtItemPrice,#txtItemQuantity").on('keyup', function (event) {
+    checkItemValidity();
+});
+
+$("#txtItemCode,#txtItemName,#txtItemPrice,#txtItemQuantity").on('blur', function (event) {
+    checkItemValidity();
+});
+
+
+$("#txtItemCode").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(itemIDRegEx, $("#txtItemCode"))) {
+        $("#txtItemName").focus();
+    } else {
+        focusItemText($("#txtItemCode"));
+    }
+});
+
+
+$("#txtItemName").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(itemNameRegEx, $("#txtItemName"))) {
+        focusItemText($("#txtItemPrice"));
+    }
+});
+
+
+$("#txtItemPrice").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(itemPriceRegEx, $("#txtItemPrice"))) {
+        focusItemText($("#txtItemQuantity"));
+    }
+});
+
+
+$("#txtItemQuantity").on('keydown', function (event) {
+    if (event.key == "Enter" && itemCheck(itemQuantityRegEx, $("#txtItemQuantity"))) {
+
+        let itemCode = $("#txtItemCode").val();
+        let itemName = $("#txtItemName").val();
+        let itemPrice = $("#txtItemPrice").val();
+        let itemQuantity = $("#txtItemQuantity").val();
+
+        var item = itemObject(itemCode, itemName, itemPrice, itemQuantity);
+
+        //add the customer object to the array
+        items.push(item);
+        console.log(items);
+        let res = confirm("Do you want to add this item.?");
+        if (res) {
+            clearAllItemTexts();
+            $("#txtItemCode").focus();
+        }
+    }
+
+    loadAllItems();
+    bindItemRowClickEvents();
+});
 
 function checkItemValidity() {
     let errorCount=0;
     for (let validation of itemValidations) {
-        if (check(validation.reg,validation.field)) {
-            textSuccess(validation.field,"");
+        if (itemCheck(validation.reg,validation.field)) {
+            textItemSuccess(validation.field,"");
         } else {
             errorCount=errorCount+1;
-            setTextError(validation.field,validation.error);
+            setItemTextError(validation.field,validation.error);
         }
     }
     setItemButtonState(errorCount);
+}
+
+function itemCheck(regex, txtField) {
+    let inputValue = txtField.val();
+    return regex.test(inputValue) ? true : false;
+}
+
+function setItemTextError(txtField,error) {
+    if (txtField.val().length <= 0) {
+        defaultItemText(txtField,"");
+    } else {
+        txtField.css('border', '2px solid red');
+        txtField.parent().children('span').text(error);
+    }
+}
+//
+function textItemSuccess(txtField,error) {
+    if (txtField.val().length <= 0) {
+        defaultItemText(txtField,"");
+    } else {
+        txtField.css('border', '2px solid green');
+        txtField.parent().children('span').text(error);
+    }
+}
+//
+function defaultItemText(txtField,error) {
+    txtField.css("border", "1px solid #ced4da");
+    txtField.parent().children('span').text(error);
+}
+//
+function focusItemText(txtField) {
+    txtField.focus();
 }
 
 function setItemButtonState(value){
@@ -237,7 +285,7 @@ function setItemButtonState(value){
     }
 }
 
-function clearAllTexts() {
+function clearAllItemTexts() {
     $("#txtCode").focus();
     $("#txtItemCode,#txtItemName,#txtItemPrice,#txtItemQuantity").val("");
     checkItemValidity();
