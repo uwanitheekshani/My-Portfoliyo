@@ -6,19 +6,14 @@ $("#btnSaveItem").click(function () {
     let itemPrice = $("#txtItemPrice").val();
     let itemQuantity = $("#txtItemQuantity").val();
 
+    var item = customerObject(itemCode, itemName, itemPrice, itemQuantity);
 
-    var itemObject = {
-        id: itemCode,
-        name: itemName,
-        price: itemPrice,
-        quantity: itemQuantity
-    }
 
     //add the customer object to the array
-    items.push(itemObject);
+    items.push(item);
     console.log(items);
     loadAllItems();
-    bindRowClickEvents();
+    bindItemRowClickEvents();
 });
 
 $("#btnViewAllItems").click(function (){
@@ -39,7 +34,7 @@ function loadAllItems(){
     }
 }
 
-function bindRowClickEvents() {
+function bindItemRowClickEvents() {
     $("#tblItem>tr").click(function () {
         let id = $(this).children(":eq(0)").text();
         let name = $(this).children(":eq(1)").text();
@@ -55,22 +50,97 @@ function bindRowClickEvents() {
     });
 }
 
+
+$("#tblItem>tr").on('dblclick', function () {
+    $(this).remove();
+});
+
+// $("#btnItemSearch").click(function (){
+//
+//     for (let itemKey of items){
+//
+//         if (itemKey.id===$('#inputItemSearch').val()){
+//             $('#txtCode').val(itemKey.id);
+//             $('#txtName').val(itemKey.name);
+//             $('#txtPrice').val(itemKey.price);
+//             $('#txtQuantity').val(itemKey.quantity);
+//         }
+//         else if (itemKey.name===$('#inputItemSearch').val()){
+//             $('#txtCode').val(itemKey.id);
+//             $('#txtName').val(itemKey.name);
+//             $('#txtPrice').val(itemKey.price);
+//             $('#txtQuantity').val(itemKey.quantity);
+//         }
+//     }
+//
+// });
+
+
 $("#btnItemSearch").click(function (){
 
-    for (let itemKey of items){
-
-        if (itemKey.id===$('#inputItemSearch').val()){
-            $('#txtCode').val(itemKey.id);
-            $('#txtName').val(itemKey.name);
-            $('#txtPrice').val(itemKey.price);
-            $('#txtQuantity').val(itemKey.quantity);
-        }
-        else if (itemKey.name===$('#inputItemSearch').val()){
-            $('#txtCode').val(itemKey.id);
-            $('#txtName').val(itemKey.name);
-            $('#txtPrice').val(itemKey.price);
-            $('#txtQuantity').val(itemKey.quantity);
-        }
+    let typedId = $("#inputItemSearch").val();
+    let item = searchItem(typedId);
+    if (item != null) {
+        setTextfieldValues(item.id, customer.name, customer.address, customer.contact);
+    } else {
+        alert("There is no cusotmer available for that " + typedId);
+        setTextfieldValues("", "", "", "");
     }
 
 });
+
+$("#btnCusDelete").click(function () {
+    let deleteID = $("#txtCusId").val();
+
+    let option = confirm("Do you really want to delete customer id :" + deleteID);
+    if (option){
+        if (deleteCustomer(deleteID)) {
+            alert("Customer Successfully Deleted..");
+            setTextfieldValues("", "", "", "");
+        } else {
+            alert("No such customer to delete. please check the id");
+        }
+    }
+});
+
+$("#txtCode").on('keyup', function (event) {
+    if (event.code == "Enter") {
+        let typedId = $("#txtCode").val();
+        let item = searchItem(typedId);
+        if (item != null) {
+            setItemTextfieldValues(item.id, item.name, item.price, item.quantity);
+        } else {
+            alert("There is no item available for that " + typedId);
+            setItemTextfieldValues("", "", "", "");
+        }
+    }
+});
+
+function setItemTextfieldValues(id, name, price, quantity) {
+    $("#txtCode").val(id);
+    $("#txtName").val(name);
+    $("#txtPrice").val(price);
+    $("#txtQuantity").val(quantity);
+}
+
+
+function searchItem(itemCode) {
+    for (let item of items) {
+        if (item.id == itemCode) {
+            return item;
+        }
+    }
+    return null;
+}
+
+function deleteItem(itemCode) {
+    let item = searchItem(itemCode);
+    if (item != null) {
+        let indexNumber = items.indexOf(item);
+        items.splice(indexNumber, 1);
+        loadAllItems();
+        return true;
+    } else {
+        return false;
+    }
+}
