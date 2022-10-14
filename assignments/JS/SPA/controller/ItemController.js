@@ -17,6 +17,7 @@ $("#btnSaveItem").click(function () {
     loadAllItems();
     clearAllItemTexts();
     bindItemRowClickEvents();
+    loadAllItemCodes();
 });
 
 $("#btnViewAllItems").click(function (){
@@ -226,10 +227,12 @@ $("#txtItemQuantity").on('keydown', function (event) {
             clearAllItemTexts();
             $("#txtItemCode").focus();
         }
+
+        loadAllItems();
+        bindItemRowClickEvents();
+        loadAllItemCodes();
     }
 
-    loadAllItems();
-    bindItemRowClickEvents();
 });
 
 function checkItemValidity() {

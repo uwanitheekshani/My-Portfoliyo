@@ -9,7 +9,7 @@ function loadAllCustomerId() {
 function loadAllItemCodes() {
     $('#oItemId').empty();
     for (let item of items) {
-        $('#oItemId').append(`<option>${item.code}</option>`);
+        $('#oItemId').append(`<option>${item.id}</option>`);
     }
 }
 
@@ -121,7 +121,7 @@ function searchRowExists(itemCode) {
 
 function minQty(itemCode,orderQty) {
     for (let itemArElement of items) {
-        if(itemArElement.code===itemCode){
+        if(itemArElement.id===itemCode){
             itemArElement.quantity=parseInt(itemArElement.quantity)-parseInt(orderQty);
         }
     }

@@ -24,8 +24,8 @@ $("#btnSaveCus").click(function () {
     loadAllCustomers();
    // doubleClickEvents();
     clearAllTexts();
-
     bindRowClickEvents();
+    loadAllCustomerId();
 });
 
 $("#btnViewAllCustomers").click(function (){
@@ -262,10 +262,12 @@ function searchCustomer(cusID) {
          if (res) {
              clearAllTexts();
          }
+         loadAllCustomers();
+         bindRowClickEvents();
+         loadAllCustomerId();
      }
 
-     loadAllCustomers();
-    bindRowClickEvents();
+
  });
 
 
