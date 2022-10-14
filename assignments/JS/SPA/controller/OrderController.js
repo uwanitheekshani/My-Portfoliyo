@@ -72,7 +72,7 @@ function addCartData() {
         var row="<tr><td>"+tc.orItemCOde+"</td><td>"+tc.orItemName+"</td><td>"+tc.orItemPrice+"</td><td>"+tc.orItemQTY+"</td><td>"+tc.orItemTotal+"</td></tr>";
         $('#orderTable').append(row);
     }
-    bindCustomerRowClickEvents();
+    bindRowClickEvents();
     getTotal();
 }
 

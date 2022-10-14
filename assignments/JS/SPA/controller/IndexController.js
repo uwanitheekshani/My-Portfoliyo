@@ -2,12 +2,16 @@
 $("#customerContent").css('display','none');
 $("#itemContent").css('display','none');
 $("#orderContent").css('display','none');
+$("#detail").css('display','none');
+
 
 $("#home").click(function(){
     $("#customerContent").css('display','none');
     $("#dashboardContent").css('display','block');
     $("#itemContent").css('display','none');
     $("#orderContent").css('display','none');
+    $("#detail").css('display','none');
+
 });
 
 $("#cus").click(function(){
@@ -15,6 +19,8 @@ $("#cus").click(function(){
     $("#dashboardContent").css('display','none');
     $("#itemContent").css('display','none');
     $("#orderContent").css('display','none');
+    $("#detail").css('display','none');
+
 });
 
 $("#item2").click(function(){
@@ -22,6 +28,8 @@ $("#item2").click(function(){
     $("#dashboardContent").css('display','none');
     $("#itemContent").css('display','block');
     $("#orderContent").css('display','none');
+    $("#detail").css('display','none');
+
 });
 
 $("#orders").click(function(){
@@ -29,4 +37,13 @@ $("#orders").click(function(){
     $("#dashboardContent").css('display','none');
     $("#itemContent").css('display','none');
     $("#orderContent").css('display','block');
+    $("#detail").css('display','none');
+});
+
+$("#d").click(function(){
+    $("#customerContent").css('display','none');
+    $("#dashboardContent").css('display','none');
+    $("#itemContent").css('display','none');
+    $("#orderContent").css('display','none');
+    $("#detail").css('display','block');
 });
