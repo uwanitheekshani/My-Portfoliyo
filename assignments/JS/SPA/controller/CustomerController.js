@@ -179,7 +179,7 @@ function searchCustomer(cusID) {
          customer.id = $("#txtCusId").val();
          customer.name = $("#txtCusName").val();
          customer.address = $("#txtCusAddress").val();
-         customer.salary = $("#txtCusPhone").val();
+         customer.contact = $("#txtCusPhone").val();
          loadAllCustomers();
          return true;
      } else {

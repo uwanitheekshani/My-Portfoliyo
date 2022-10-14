@@ -16,7 +16,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
-
     </style>
 </head>
 <body>
@@ -469,28 +468,28 @@
                         <div class="row gx-3">
                             <div class="col">
                                 <div class="mb-lg-4 mb-sm-3 mb-3">
-                                    <label class="form-label" for="customerId">Customer ID</label>
+                                    <label class="form-label" for="oCustomerId">Customer ID</label>
                                     <select aria-label=".form-select-lg example" class="form-select form-select-ls"
-                                            id="customerId">
+                                            id="oCustomerId">
                                         <option selected>C001</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="mb-lg-4 mb-sm-3 mb-3">
-                                    <label class="form-label" for="customerName">Customer</label>
-                                    <input class="form-control" id="customerName" placeholder="Uwani" type="text">
+                                    <label class="form-label" for="oCustomerName">Customer</label>
+                                    <input class="form-control" id="oCustomerName" placeholder="Uwani" type="text">
                                 </div>
                             </div>
                         </div>
                         <div class="row gx-3">
                             <div class="mb-lg-4 mb-sm-3 mb-3">
-                                <label class="form-label" for="salary">Phone</label>
-                                <input class="form-control" id="salary" type="text">
+                                <label class="form-label" for="oCustomerPhone">Phone</label>
+                                <input class="form-control" id="oCustomerPhone" type="text">
                             </div>
                             <div class="mb-lg-4 mb-md-5">
-                                <label class="form-label" for="address">Address</label>
-                                <input class="form-control" id="address" placeholder="Kaluthara" type="text">
+                                <label class="form-label" for="oCustomerAddress">Address</label>
+                                <input class="form-control" id="oCustomerAddress" placeholder="Kaluthara" type="text">
                             </div>
                         </div>
                     </div>
@@ -510,25 +509,25 @@
                         <div class="row gx-3">
                             <div class="col">
                                 <div class="mb-4">
-                                    <label class="form-label" for="itemId">Item ID</label>
+                                    <label class="form-label" for="oItemId">Item ID</label>
                                     <select aria-label=".form-select-lg example" class="form-select form-select-ls"
-                                            id="itemId">
+                                            id="oItemId">
                                         <option selected>P001</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="mb-4">
-                                    <label class="form-label" for="order">Item</label>
-                                    <input class="form-control" id="order" placeholder="Sunlight" type="text">
+                                    <label class="form-label" for="oItemName">Item</label>
+                                    <input class="form-control" id="oItemName" placeholder="Sunlight" type="text">
                                 </div>
                             </div>
                         </div>
                         <div class="row gx-3">
                             <div class="col">
                                 <div class="mb-4">
-                                    <label class="form-label" for="price">Price</label>
-                                    <input class="form-control" id="price" placeholder="0000.00" type="text">
+                                    <label class="form-label" for="oItemPrice">Price</label>
+                                    <input class="form-control" id="oItemPrice" placeholder="0000.00" type="text">
                                 </div>
                             </div>
                             <div class="col">
@@ -544,7 +543,7 @@
                                 <input class="form-control" id="orderQty" placeholder="00" type="number">
                             </div>
                             <div class="mt-2 d-grid  col-6 mx-auto">
-                                <button class="btn btn-primary" style="background-color: #E74C3C" type="button">Add
+                                <button class="btn btn-primary" id="btnAddToCart" style="background-color: #E74C3C" type="button">Add
                                     Item
                                 </button>
                             </div>
@@ -638,7 +637,7 @@
                     <th scope="col" style="border: 1px solid black">Total(Rs)</th>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="orderTable">
 
                 </tbody>
             </table>
@@ -646,6 +645,28 @@
     </section>
 
 </main>
+
+<main class="container position-relative"style="display:none;" id="detail">
+    <section>
+        <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar " >
+            <table class="table table-hover table-borderless table-striped" style="border: 1px solid black">
+                <thead class=" text-light" style="background-color: #34495E; border: 1px solid black">
+                <tr>
+                    <th scope="col" style="border: 1px solid black">Order ID</th>
+                    <th scope="col"  style="border: 1px solid black">Order Date</th>
+                    <th scope="col" style="border: 1px solid black">Customer Name</th>
+                    <th scope="col"  style="border: 1px solid black">Discount</th>
+                    <th scope="col"  style="border: 1px solid black">Total(Rs)</th>
+                </tr>
+                </thead>
+                <tbody id="tblOrderDetail">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
 <script src="../../../assignments/JS/SPA/asserts/bootstrap/js/jquery-3.6.1.min.js"></script>
 
 <script src="../../../assignments/JS/SPA/controller/IndexController.js"></script>
