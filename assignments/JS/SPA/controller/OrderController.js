@@ -145,7 +145,7 @@ $('#purchaseOrder').click(function (){
     let subTotal = $('#subTotal').val();
 
     orderModal(orderId,orderDate,customerName,discount,subTotal);
-
+    console.log(orderId,orderDate,customerName,discount,subTotal);
     loadAllOrder();
     // loadDetail();
     clearOrderTexts();
