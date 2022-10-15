@@ -1,3 +1,7 @@
+<h1 align="center">Tech/framework used</h1>
+    <h3> HTML</h3>
+    <h3> CSS</h3>
+     <h3>JAVA SCRIPT</h3>
 <h1 align="center">My Portfoliyo</h1>
 <h3 align="center">Here---> Links of Site Map,wire Frame & Mock Up</h3>
 <image align="center" src="assests\readme\Screenshot (322).png">
