@@ -21,8 +21,12 @@
     <link href="assests/css/myServices.css" rel="stylesheet">
     <link href="assests/css/contactMe.css" rel="stylesheet">
     <link href="assests/css/footer.css" rel="stylesheet">
+    <link href="assests/css/loading.css" rel="stylesheet">
 </head>
 <body>
+<div id="loadingContainer">
+    <div class="classic-4"></div>
+</div>
 <header>
     <section>
 
@@ -513,5 +517,14 @@
     </aside>
 
 </footer>
+
+
+<script src="assignments/JS/SPA/asserts/bootstrap/js/jquery-3.6.1.min.js"></script>
 </body>
+<script>
+    //for the Loading Window
+    $(window).on('load',function () {
+        $('#loadingContainer').fadeOut(1000);
+    })
+</script>
 </html>
