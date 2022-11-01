@@ -120,6 +120,12 @@ main > section:nth-child(3)>section:nth-child(3)>div:nth-child(5){
     font-family: 'Neuton', serif;
 }
 
+main > section:nth-child(3)>section:nth-child(3)>div:nth-child(5)>a{
+    color: #F3BF06;
+    font-family: 'Neuton', serif;
+    /*text-decoration: none;*/
+}
+
 .btn:hover {
     font-style: normal;
     font-weight: 500;
