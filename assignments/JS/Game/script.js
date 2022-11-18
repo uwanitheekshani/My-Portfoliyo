@@ -1,5 +1,5 @@
 var girl= document.getElementById("girl");
-idleImageNumber = 0;
+idleImageNumber = 1;
 idleAnimationNumber = 0;
 
 function idleAnimation(){
@@ -16,7 +16,7 @@ function idleAnimationStart(){
     idleAnimationNumber = setInterval(idleAnimation,200);
 }
 
-runImageNumber = 0;
+runImageNumber = 1;
 runAnimationNumber = 0;
 
 function runAnimation(){
@@ -44,19 +44,67 @@ function runAnimationStart(){
     clearInterval(idleAnimationNumber);
 }
 
-function keyCheck(event){
+jumpImageNumber = 1;
+jumpAnimationNumber = 0;
+girlMarginTop = 300;
+
+function jumpAnimation(){
+
+    jumpImageNumber = jumpImageNumber + 1;
+
+    if (jumpImageNumber <= 6){
+        girlMarginTop = girlMarginTop - 20;
+        girl.style.marginTop = girlMarginTop + "px";
+    }
+
+    if (jumpImageNumber >= 7){
+        girlMarginTop = girlMarginTop + 20;
+        girl.style.marginTop = girlMarginTop + "px";
+    }
+
+    if (jumpImageNumber == 11 ){
+        jumpImageNumber = 1;
+        clearInterval(jumpAnimationNumber);
+        jumpAnimationNumber = 0;
+        runImageNumber = 0;
+        runAnimationStart();
+    }
+
+    girl.src = "resources/jump (" + jumpImageNumber + ").png";
+}
+
+function jumpAnimationStart(){
+    clearInterval(idleAnimationNumber);
+    runImageNumber=0;
+    clearInterval(runAnimationNumber);
+    jumpAnimationNumber = setInterval(jumpAnimation,100);
+}
+
+function keyCheck(event) {
     // alert(event.which);
     // enter=13
+    //    space=32
 
-    var keyCode=event.which;
+    var keyCode = event.which;
 
-    if (keyCode == 13){
-        if (runAnimationNumber == 0){
+    if (keyCode == 13) {
+        if (runAnimationNumber == 0) {
             runAnimationStart();
         }
+
+    if (moveBackgroundAnimationId == 0) {
+        moveBackgroundAnimationId = setInterval(moveBackground, 100);
     }
-    if (moveBackgroundAnimationId == 0){
-        moveBackgroundAnimationId = setInterval(moveBackground,100);
+}
+
+    if (keyCode == 32){
+        if (jumpAnimationNumber == 0) {
+            jumpAnimationStart();
+        }
+
+        if (moveBackgroundAnimationId == 0) {
+            moveBackgroundAnimationId = setInterval(moveBackground, 100);
+        }
     }
 }
 
