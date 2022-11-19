@@ -120,11 +120,16 @@ function keyCheck(event) {
 var backgroundImagePositionX = 0;
 var moveBackgroundAnimationId = 0;
 
+var score = 0;
+
 function moveBackground(){
 
     backgroundImagePositionX = backgroundImagePositionX - 20;
 
     document.getElementById("background").style.backgroundPositionX = backgroundImagePositionX + "px";
+
+    score = score + 1;
+    document.getElementById("score").innerHTML = score;
 }
 
 boxMarginLeft = 1540;
