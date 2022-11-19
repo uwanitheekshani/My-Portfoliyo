@@ -9,10 +9,20 @@
     background-size: contain;
     background-position: center;
     background-repeat: repeat-x;
+    overflow-x: hidden;
+    position: absolute;
 }
 
 .girl{
     height: 250px;
     margin-top: 300px;
     position: absolute;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #c21e1e;
+    position: absolute;
+    margin-top: 440px;
 }
