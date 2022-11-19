@@ -20,9 +20,12 @@
 }
 
 .box{
-    width: 100px;
-    height: 100px;
-    background-color: #c21e1e;
+    width: 230px;
+    height: 230px;
+    /*background-color: #c21e1e;*/
     position: absolute;
-    margin-top: 440px;
+    margin-top: 400px;
+    background-image: url("resources/dragon4.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
