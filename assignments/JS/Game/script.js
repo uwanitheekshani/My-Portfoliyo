@@ -46,19 +46,19 @@ function runAnimationStart(){
 
 jumpImageNumber = 1;
 jumpAnimationNumber = 0;
-girlMarginTop = 300;
+girlMarginTop = 347;
 
 function jumpAnimation(){
 
     jumpImageNumber = jumpImageNumber + 1;
 
     if (jumpImageNumber <= 6){
-        girlMarginTop = girlMarginTop - 20;
+        girlMarginTop = girlMarginTop - 35;
         girl.style.marginTop = girlMarginTop + "px";
     }
 
     if (jumpImageNumber >= 7){
-        girlMarginTop = girlMarginTop + 20;
+        girlMarginTop = girlMarginTop + 35;
         girl.style.marginTop = girlMarginTop + "px";
     }
 
@@ -127,7 +127,7 @@ function moveBackground(){
     document.getElementById("background").style.backgroundPositionX = backgroundImagePositionX + "px";
 }
 
-boxMarginLeft = 1370;
+boxMarginLeft = 1540;
 
 function createBoxes(){
 
@@ -143,11 +143,11 @@ function createBoxes(){
         // boxMarginLeft = boxMarginLeft + 1000;
 
         if ( i < 5){
-            boxMarginLeft = boxMarginLeft + 1300;
+            boxMarginLeft = boxMarginLeft + 2000;
         }
 
         if ( i>=5){
-            boxMarginLeft = boxMarginLeft + 800;
+            boxMarginLeft = boxMarginLeft + 1000;
         }
     }
 }
@@ -157,7 +157,38 @@ function boxAnimation(){
     for (var i = 0; i < 10; i++){
         var box = document.getElementById("box" + i);
         var currentMarginLeft = getComputedStyle(box).marginLeft;
-        var newMarginLeft = parseInt(currentMarginLeft) - 25;
+        var newMarginLeft = parseInt(currentMarginLeft) - 35;
         box.style.marginLeft = newMarginLeft + "px";
+
+        if (newMarginLeft >= -110 & newMarginLeft <= 100){
+            if (girlMarginTop > 300){
+                clearInterval(boxAnimationId);
+
+                clearInterval(runAnimationNumber);
+                runAnimationNumber = -1;
+
+                clearInterval(jumpAnimationNumber);
+                jumpAnimationNumber = -1;
+
+                clearInterval(moveBackgroundAnimationId);
+                moveBackgroundAnimationId = -1;
+
+                deadAnimationNumber = setInterval(girlDeadAnimation,100);
+            }
+        }
     }
 }
+
+deadImageNumber = 1;
+deadAnimationNumber = 0;
+function girlDeadAnimation(){
+    deadImageNumber = deadImageNumber + 1;
+
+    if (deadImageNumber == 11 ){
+        deadImageNumber = 10;
+
+    }
+
+    girl.src = "resources/Dead (" + deadImageNumber + ").png";
+}
+

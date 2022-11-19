@@ -14,17 +14,17 @@
 }
 
 .girl{
-    height: 250px;
-    margin-top: 300px;
+    height: 210px;
+    margin-top: 347px;
     position: absolute;
 }
 
 .box{
-    width: 230px;
-    height: 230px;
+    width: 160px;
+    height: 160px;
     /*background-color: #c21e1e;*/
     position: absolute;
-    margin-top: 400px;
+    margin-top: 443px;
     background-image: url("resources/dragon4.gif");
     background-size: contain;
     background-repeat: no-repeat;
