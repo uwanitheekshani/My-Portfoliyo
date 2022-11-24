@@ -2,6 +2,7 @@ var girl= document.getElementById("girl");
 idleImageNumber = 1;
 idleAnimationNumber = 0;
 
+
 function idleAnimation(){
     idleImageNumber = idleImageNumber + 1;
 
@@ -10,6 +11,7 @@ function idleAnimation(){
     }
 
     girl.src = "resources/idle (" + idleImageNumber + ").png";
+
 }
 
 function idleAnimationStart(){
@@ -130,6 +132,16 @@ function moveBackground(){
 
     score = score + 1;
     document.getElementById("score").innerHTML = score;
+    if (score == 1000){
+        document.getElementById("win").style.display = "inline-block";
+        clearInterval(runAnimationNumber);
+        clearInterval(moveBackgroundAnimationId);
+        clearInterval(jumpAnimationNumber);
+        clearInterval(deadImageNumber);
+        clearInterval(boxAnimationId);
+
+        $("#yScore").append(score);
+    }
 }
 
 boxMarginLeft = 1540;
@@ -192,8 +204,23 @@ function girlDeadAnimation(){
     if (deadImageNumber == 11 ){
         deadImageNumber = 10;
 
-    }
+        document.getElementById("end").style.display = "inline-block";
 
+    }
+    $("#eScore").empty();
+    $("#eScore").append(score);
     girl.src = "resources/Dead (" + deadImageNumber + ").png";
+}
+
+function r1(){//win
+    location.reload();
+}
+
+function r2(){//lose
+    location.reload();
+}
+
+function r3(){//start
+    document.getElementById("start").style.display = "none";
 }
 
