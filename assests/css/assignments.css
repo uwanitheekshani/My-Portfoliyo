@@ -57,6 +57,14 @@ body{
     transform: translateY(-50px) scale(1.2);
 }
 
+#css{
+    position: absolute;
+    left: 39px;
+    top: 460px;
+    color: #F3BF06;
+    font-size: 40px;
+}
+
 .basic{
     position: absolute;
     left: 39px;
@@ -226,6 +234,73 @@ body{
     position: absolute;
     left: 175px;
     top: 68px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/*======================================================*/
+
+.js{
+    position: absolute;
+    left: 39px;
+    top: 915px;
+    clip-path: inset(5% 6% 6% 4%);
+    /*background-color: #0abde3;*/
+    background: rgba(160, 206, 228, 0.48);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(160, 206, 228, 0.14);
+    width: 333px;
+    height: 253px;
+}
+
+
+#js{
+    position: absolute;
+    left: 39px;
+    top: 832px;
+    color: #F3BF06;
+    font-size: 40px;
+}
+
+#b13{
+    position: absolute;
+    left: 39px;
+    top: 68px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b14{
+    position: absolute;
+    left: 39px;
+    top: 118px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b15{
+    position: absolute;
+    left: 39px;
+    top: 168px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b16{
+    position: absolute;
+    left: 225px;
+    top: 68px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+#b17{
+    position: absolute;
+    left: 225px;
+    top: 118px;
     font-size: 1.5rem;
     color: black;
 }

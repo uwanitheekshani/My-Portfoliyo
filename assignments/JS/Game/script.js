@@ -132,7 +132,7 @@ function moveBackground(){
 
     score = score + 1;
     document.getElementById("score").innerHTML = score;
-    if (score == 1000){
+    if (score == 400){
         document.getElementById("win").style.display = "inline-block";
         clearInterval(runAnimationNumber);
         clearInterval(moveBackgroundAnimationId);
